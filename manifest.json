@@ -1,0 +1,12 @@
+{
+  "name": "Radar Regulasi QHSE",
+  "short_name": "Radar Regulasi",
+  "description": "Daftar regulasi QHSE yang berlaku, pembaruan dari JDIH pusat dan daerah, dan unduhan Legal Compliance Register.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#eeece6",
+  "theme_color": "#2b2b2d",
+  "lang": "id",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

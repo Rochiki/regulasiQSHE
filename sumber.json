@@ -1,0 +1,28 @@
+{
+  "_catatan": "Daftar sumber yang dibaca robot pengecek. adapter 'kemnaker' mengikuti struktur daftar JDIH Kemnaker (diperiksa 7 Okt 2026). adapter 'generik' membaca semua tautan pada halaman dan mengenali pola 'Jenis ... Nomor ... Tahun ...'. {tahun} = tahun berjalan (dan tahun sebelumnya), {kata} = kata kunci, {provinsi} = nama provinsi. Set \"aktif\": false untuk mematikan sumber.",
+  "jeda_detik": 1.5,
+  "provinsi_per_jalan": 6,
+  "cek_status_per_jalan": 60,
+  "tautan_per_jalan": 40,
+  "sumber": [
+    { "id": "kemnaker", "nama": "JDIH Kemnaker", "adapter": "kemnaker", "aktif": true, "wil": "Nasional",
+      "url": ["https://jdih.kemnaker.go.id/peraturan?keyword=&nomor=&tahun={tahun}&status=&terjemahan=&per_page=15&sort=terbaru",
+              "https://jdih.kemnaker.go.id/peraturan?keyword=&nomor=&tahun={tahun}&status=&terjemahan=&per_page=15&sort=terbaru&hal=2",
+              "https://jdih.kemnaker.go.id/peraturan?keyword=&nomor=&tahun={tahun}&status=&terjemahan=&per_page=15&sort=terbaru&hal=3"] },
+    { "id": "bpk-pusat", "nama": "JDIH BPK (pusat)", "adapter": "generik", "aktif": true, "wil": "Nasional", "pola_href": "/Details/\\d+",
+      "url": ["https://peraturan.bpk.go.id/Search?keywords={kata}&tentang=&nomor=&tahun={tahun}"],
+      "kata": ["keselamatan kerja", "kesehatan kerja", "limbah B3", "air limbah", "baku mutu emisi", "persetujuan lingkungan", "alat berat", "keselamatan pertambangan", "kebakaran"] },
+    { "id": "bpk-daerah", "nama": "JDIH BPK (daerah)", "adapter": "generik", "aktif": true, "per_provinsi": true, "pola_href": "/Details/\\d+",
+      "url": ["https://peraturan.bpk.go.id/Search?keywords={kata}+{provinsi}&tentang=&nomor="],
+      "kata": ["limbah", "lingkungan hidup", "kebakaran", "keselamatan kerja", "sampah", "kawasan tanpa rokok"] },
+    { "id": "klh", "nama": "JDIH KLH/BPLH", "adapter": "generik", "aktif": true, "wil": "Nasional", "url": ["https://jdih.kemenlh.go.id/"] },
+    { "id": "esdm", "nama": "JDIH ESDM", "adapter": "generik", "aktif": true, "wil": "Nasional", "url": ["https://jdih.esdm.go.id/"] },
+    { "id": "kemkes", "nama": "JDIH Kemenkes", "adapter": "generik", "aktif": true, "wil": "Nasional", "url": ["https://jdih.kemkes.go.id/"] },
+    { "id": "pu", "nama": "JDIH PU", "adapter": "generik", "aktif": true, "wil": "Nasional", "url": ["https://jdih.pu.go.id/"] },
+    { "id": "dki", "nama": "JDIH DKI Jakarta", "adapter": "generik", "aktif": true, "wil": "DKI Jakarta", "url": ["https://jdih.jakarta.go.id/"] }
+  ],
+  "provinsi": ["Aceh", "Sumatera Utara", "Sumatera Barat", "Riau", "Jambi", "Sumatera Selatan", "Kepulauan Bangka Belitung", "Lampung", "Banten", "DKI Jakarta",
+    "Jawa Barat", "Jawa Tengah", "Jawa Timur", "Kalimantan Barat", "Kalimantan Tengah", "Kalimantan Selatan", "Kalimantan Timur", "Kalimantan Utara",
+    "Sulawesi Utara", "Gorontalo", "Sulawesi Tengah", "Sulawesi Selatan", "Sulawesi Tenggara", "Nusa Tenggara Barat", "Nusa Tenggara Timur",
+    "Maluku", "Maluku Utara", "Papua", "Papua Selatan", "Papua Barat Daya"]
+}

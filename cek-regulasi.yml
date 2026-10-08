@@ -1,0 +1,36 @@
+name: Cek regulasi
+
+on:
+  schedule:
+    - cron: "0 23 * * *"      # setiap hari 06.00 WIB
+  workflow_dispatch:           # juga bisa dijalankan dari tab Actions atau dari Pengaturan aplikasi
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cek-regulasi
+  cancel-in-progress: false
+
+jobs:
+  cek:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pasang pustaka
+        run: pip install --quiet requests beautifulsoup4
+      - name: Uji pembaca halaman
+        run: python scripts/cek_regulasi.py --uji
+      - name: Baca sumber JDIH
+        run: python scripts/cek_regulasi.py
+      - name: Simpan hasil ke repositori
+        run: |
+          git config user.name "robot-regulasi"
+          git config user.email "robot-regulasi@users.noreply.github.com"
+          git add data/kandidat.json data/register.json
+          git diff --cached --quiet || git commit -m "Hasil cek regulasi $(TZ=Asia/Jakarta date +%F)"
+          git push

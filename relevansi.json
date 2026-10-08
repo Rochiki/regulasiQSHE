@@ -1,0 +1,37 @@
+{
+  "_catatan": "Saringan relevansi. Skor = jumlah bobot kata yang muncul di jenis+judul. Kandidat diusulkan bila skor >= min_skor dan tidak memuat kata pada daftar 'tolak'. Ubah di sini bila terlalu longgar atau terlalu ketat.",
+  "min_skor": 5,
+  "tahun_mundur": 1,
+  "kategori": {
+    "Safety": {
+      "keselamatan dan kesehatan kerja": 6, "keselamatan kerja": 6, "k3": 5, "smk3": 6, "pesawat angkat": 6, "pesawat angkut": 6, "pesawat tenaga": 6,
+      "bejana tekan": 6, "alat berat": 6, "ruang terbatas": 6, "ketinggian": 4, "alat pelindung diri": 6, "kebakaran": 5, "penyalur petir": 5,
+      "listrik": 3, "ketenagalistrikan": 4, "kecelakaan kerja": 6, "pengawasan ketenagakerjaan": 5, "ahli k3": 6, "p2k3": 6, "pertambangan": 3,
+      "keselamatan pertambangan": 6, "lalu lintas": 4, "angkutan jalan": 4, "kendaraan bermotor": 4, "pengemudi": 4, "mengemudi": 4, "bangunan gedung": 4,
+      "laik fungsi": 4, "bahan kimia berbahaya": 6, "tanggap darurat": 4, "pengoperasian": 2, "operator": 3, "juru las": 5, "perancah": 5
+    },
+    "Health": {
+      "kesehatan kerja": 6, "penyakit akibat kerja": 6, "pemeriksaan kesehatan": 5, "lingkungan kerja": 5, "higiene": 4, "sanitasi": 3, "p3k": 5,
+      "kawasan tanpa rokok": 5, "tuberkulosis": 4, "hiv": 3, "narkotika": 3, "kantin": 3, "air minum": 3, "klinik": 3, "jaminan kecelakaan kerja": 5,
+      "jaminan sosial": 3, "kesehatan lingkungan": 5, "kebisingan": 4, "iklim kerja": 5, "ergonomi": 5, "kesehatan jiwa": 3
+    },
+    "Environment": {
+      "limbah b3": 7, "limbah bahan berbahaya": 7, "bahan berbahaya dan beracun": 6, "air limbah": 6, "baku mutu": 5, "emisi": 5, "pencemaran": 5,
+      "lingkungan hidup": 4, "persetujuan lingkungan": 6, "ukl-upl": 6, "amdal": 4, "sampah": 4, "kebakaran hutan": 5, "kebakaran lahan": 5,
+      "karhutla": 5, "kabut asap": 5, "air tanah": 4, "gas rumah kaca": 4, "nilai ekonomi karbon": 4, "konservasi energi": 4, "proper": 4,
+      "minyak pelumas bekas": 7, "pcb": 5, "merkuri": 4, "bahan perusak ozon": 4, "sumur resapan": 3, "kualitas udara": 5, "uji emisi": 5, "sanksi administratif": 3
+    },
+    "Quality": {
+      "alat berat": 6, "standar nasional indonesia": 3, "skkni": 2, "kompetensi kerja": 2, "kalibrasi": 4, "metrologi": 4, "tera": 3,
+      "perlindungan konsumen": 5, "impor": 2, "suku cadang": 5, "label": 2, "garansi": 4, "purna jual": 5, "sistem manajemen mutu": 5, "pelindungan data pribadi": 4
+    }
+  },
+  "tolak": [
+    "organisasi dan tata kerja", "tata kerja", "anggaran", "apbd", "apbn", "bantuan pemerintah", "tunjangan", "jabatan fungsional", "peta jabatan",
+    "aparatur sipil", "pegawai negeri", "pengangkatan", "pemberhentian", "politeknik", "senat", "kearsipan", "kehumasan", "pekerja migran",
+    "tenaga kerja asing", "pemagangan", "upah minimum", "retribusi", "pajak daerah", "rencana strategis", "rencana kerja", "satuan tugas",
+    "tim koordinasi", "panitia", "penghargaan", "pakan ternak", "akuakultur", "perikanan", "mangrove", "kehutanan sosial", "perhutanan",
+    "minyak bumi", "gas alam", "panas bumi", "pendidikan", "sekolah", "rumah sakit", "puskesmas", "pariwisata", "telekomunikasi", "perbankan",
+    "pemilihan", "desa", "kelurahan", "rancangan", "pencabutan keputusan", "pengantar kerja"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+ "diperbarui": "2026-10-08",
+ "sumber_ok": [
+  "JDIH Kemnaker",
+  "JDIH BPK"
+ ],
+ "sumber_gagal": [],
+ "kandidat": [],
+ "perubahan_status": [],
+ "disaring": [
+  {
+   "nomor": "Permenaker 13/2026",
+   "judul": "Pedoman Penyaluran Bantuan Pemerintah di Lingkungan Kemnaker TA 2027",
+   "alasan": "Administrasi internal kementerian"
+  },
+  {
+   "nomor": "Permenaker 14/2026",
+   "judul": "Organisasi dan Tata Kerja Kementerian Ketenagakerjaan",
+   "alasan": "Organisasi pemerintah"
+  },
+  {
+   "nomor": "Permen LH/BPLH 2/2026",
+   "judul": "Baku Mutu Air Limbah Usaha Pakan Ternak dan Pakan Akuakultur",
+   "alasan": "Sektor usaha tidak dijalankan"
+  },
+  {
+   "nomor": "Permen LH/BPLH 8/2026",
+   "judul": "Penetapan Fungsi Ekosistem Mangrove",
+   "alasan": "Tidak menyangkut kegiatan perusahaan"
+  },
+  {
+   "nomor": "Kepmenaker 256/2026",
+   "judul": "SKKNI Migas Bidang Manajemen Tanggap Darurat, Krisis, dan Kelangsungan Bisnis",
+   "alasan": "Sektor hulu migas"
+  },
+  {
+   "nomor": "Pergub Kep. Bangka Belitung 34/2019",
+   "judul": "Pedoman Pengendalian Pencemaran Air Permukaan bagi Usaha Tambak Udang",
+   "alasan": "Khusus usaha tambak udang, tidak terkait operasional"
+  },
+  {
+   "nomor": "Perda Kab. Malang 3/2016",
+   "judul": "Perlindungan dan Pengelolaan Lingkungan Hidup",
+   "alasan": "Peraturan Kabupaten Malang, bukan Provinsi Jawa Timur; tidak ada lokasi operasional di kabupaten itu"
+  },
+  {
+   "nomor": "Perda Kab. Konawe 9/2018",
+   "judul": "Pengelolaan dan Pengendalian Limbah Bahan Berbahaya dan Beracun",
+   "alasan": "Peraturan Kabupaten Konawe, bukan Provinsi Sulawesi Tenggara; lokasi operasional ada di Kota Kendari"
+  }
+ ]
+}
