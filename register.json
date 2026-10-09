@@ -1,5 +1,5 @@
 {
- "versi": "2026-10-09",
+ "versi": "2026-10-10",
  "baris": [
   {
    "id": "Q-001",
@@ -1079,7 +1079,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-041",
@@ -1099,7 +1100,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-042",
@@ -1119,7 +1121,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-043",
@@ -1139,7 +1142,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-044",
@@ -1159,7 +1163,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-045",
@@ -1179,7 +1184,8 @@
    "src": "",
    "saran": "",
    "cek": "2026-09-16",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-046",
@@ -1199,7 +1205,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-047",
@@ -1299,7 +1306,8 @@
    "src": "",
    "saran": "",
    "cek": "2026-09-16",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-052",
@@ -1319,7 +1327,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-053",
@@ -1339,7 +1348,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-054",
@@ -1359,7 +1369,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-055",
@@ -1459,7 +1470,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-060",
@@ -1519,7 +1531,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-063",
@@ -1539,7 +1552,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-064",
@@ -1579,7 +1593,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-066",
@@ -1599,7 +1614,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-067",
@@ -1619,7 +1635,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-068",
@@ -1639,7 +1656,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-069",
@@ -1659,7 +1677,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-070",
@@ -1679,7 +1698,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-071",
@@ -1719,7 +1739,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-073",
@@ -1739,7 +1760,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-074",
@@ -1759,7 +1781,8 @@
    "src": "",
    "saran": "",
    "cek": "2026-09-16",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-075",
@@ -1779,7 +1802,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-076",
@@ -1799,7 +1823,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-077",
@@ -1819,7 +1844,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-078",
@@ -1839,7 +1865,8 @@
    "src": "",
    "saran": "",
    "cek": "2026-09-16",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-079",
@@ -1859,7 +1886,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-080",
@@ -1879,7 +1907,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-081",
@@ -1899,7 +1928,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-082",
@@ -1939,7 +1969,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-093",
@@ -1959,7 +1990,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-094",
@@ -1979,7 +2011,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-095",
@@ -1999,7 +2032,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-096",
@@ -2019,7 +2053,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-097",
@@ -2039,7 +2074,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-099",
@@ -2059,7 +2095,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-100",
@@ -2079,7 +2116,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-101",
@@ -2099,7 +2137,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-102",
@@ -2119,7 +2158,8 @@
    "src": "",
    "saran": "",
    "cek": "2026-09-16",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-10"
   },
   {
    "id": "S-103",
@@ -2378,7 +2418,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3070/peraturan-menteri-ketenagakerjaan-nomor-11-tahun-2026",
    "saran": "",
-   "cek": "2026-10-09",
+   "cek": "2026-10-10",
    "masuk": ""
   },
   {
@@ -5138,7 +5178,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3072/keputusan-menteri-ketenagakerjaan-nomor-199-tahun-2026",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
-   "cek": "2026-10-09",
+   "cek": "2026-10-10",
    "masuk": "2026-10-07"
   },
   {
@@ -5878,7 +5918,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3059/keputusan-menteri-ketenagakerjaan-nomor-157-tahun-2026",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
-   "cek": "2026-10-09",
+   "cek": "2026-10-10",
    "masuk": "2026-10-08"
   },
   {
@@ -5898,7 +5938,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3054/keputusan-menteri-ketenagakerjaan-nomor-151-tahun-2026",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
-   "cek": "2026-10-09",
+   "cek": "2026-10-10",
    "masuk": "2026-10-08"
   },
   {
