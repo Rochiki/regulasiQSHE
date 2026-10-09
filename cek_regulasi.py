@@ -4,17 +4,21 @@
 Dijalankan GitHub Actions (terjadwal tiap Senin atau manual). Tugasnya:
   1. membaca daftar terbaru di JDIH (scripts/sumber.json),
   2. menyaring yang terkait operasional (scripts/relevansi.json),
-  3. menulis temuan ke data/kandidat.json untuk ditelaah di aplikasi,
+  3. menulis temuan ke kandidat.json untuk ditelaah di aplikasi,
   4. mengecek ulang status baris register yang punya tautan sumber resmi; bila sumber
-     menyatakan Tidak Berlaku/Dicabut, status di data/register.json diubah (baris TIDAK dihapus —
+     menyatakan Tidak Berlaku/Dicabut, status di register.json diubah (baris TIDAK dihapus —
      aplikasi memindahkannya ke arsip).
 
-Uji tanpa internet:  python scripts/cek_regulasi.py --uji
+Uji tanpa internet:  python cek_regulasi.py --uji
 """
 import json, re, sys, time, datetime, pathlib, urllib.parse
 
-AKAR = pathlib.Path(__file__).resolve().parent.parent
-DATA, SKRIP = AKAR / "data", AKAR / "scripts"
+# Semua berkas (register.json, kandidat.json, sumber.json, dst.) berada satu folder dengan skrip ini,
+# yaitu di akar repositori. Bila kelak dipindah ke folder data/ dan scripts/, baris di bawah menyesuaikan sendiri.
+SINI = pathlib.Path(__file__).resolve().parent
+AKAR = SINI.parent if SINI.name == "scripts" else SINI
+DATA = AKAR / "data" if (AKAR / "data" / "register.json").exists() else AKAR
+SKRIP = SINI
 WIB = datetime.timezone(datetime.timedelta(hours=7))
 HARI_INI = datetime.datetime.now(WIB).date().isoformat()
 BULAN = {b: i + 1 for i, b in enumerate("januari februari maret april mei juni juli agustus september oktober november desember".split())}

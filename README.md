@@ -11,13 +11,13 @@ Berjalan di GitHub Pages tanpa server. Tetap bisa dibuka tanpa sinyal setelah se
 | Berkas | Fungsi |
 |---|---|
 | `index.html` | Aplikasinya. Register dasar ikut tertanam, jadi langsung berisi saat dibuka. |
-| `vendor/exceljs.min.js` | Pustaka penyusun Excel (lisensi MIT), supaya unduhan tidak bergantung internet. |
-| `data/register.json` | Register yang dibaca tombol **Perbarui daftar**. Inilah daftar bersama tim. |
-| `data/kandidat.json` | Temuan robot pengecek yang menunggu ditelaah. |
-| `data/ditolak.json` | Kandidat yang sudah ditolak, supaya tidak diusulkan lagi. |
-| `scripts/cek_regulasi.py` | Robot pengecek sumber JDIH. |
-| `scripts/sumber.json` | Daftar sumber dan provinsi yang dibaca robot. |
-| `scripts/relevansi.json` | Kata kunci dan ambang skor saringan relevansi. |
+| `exceljs.min.js` | Pustaka penyusun Excel (lisensi MIT), supaya unduhan tidak bergantung internet. |
+| `register.json` | Register yang dibaca tombol **Perbarui daftar**. Inilah daftar bersama tim. |
+| `kandidat.json` | Temuan robot pengecek yang menunggu ditelaah. |
+| `ditolak.json` | Kandidat yang sudah ditolak, supaya tidak diusulkan lagi. |
+| `cek_regulasi.py` | Robot pengecek sumber JDIH. |
+| `sumber.json` | Daftar sumber dan provinsi yang dibaca robot. |
+| `relevansi.json` | Kata kunci dan ambang skor saringan relevansi. |
 | `.github/workflows/cek-regulasi.yml` | Jadwal robot: setiap hari 06.00 WIB, atau dijalankan manual. |
 | `sw.js`, `manifest.json`, `icon.svg` | Mode luring dan pemasangan sebagai aplikasi. |
 
@@ -32,8 +32,8 @@ Tombol **ID | EN | 日本語** di kanan atas mengganti bahasa aplikasi dan unduh
 ## Memasang di GitHub (sekali saja)
 
 1. Buat repositori baru, misalnya `radar-regulasi`. Boleh privat bila paket GitHub mendukung Pages privat.
-2. **Add file → Upload files**, seret seluruh isi folder ini termasuk folder `data`, `scripts`, `vendor`, dan `.github`, lalu **Commit changes**.
-   Folder `.github` kadang tersembunyi di komputer. Bila tidak ikut terunggah, buat berkasnya langsung di GitHub:
+2. **Add file → Upload files**, seret semua berkas di folder ini (tanpa subfolder; semuanya berada di akar repositori), lalu **Commit changes**.
+   Jadwal robot adalah satu-satunya berkas yang harus berada di folder khusus. Buat langsung di GitHub:
    **Add file → Create new file**, ketik nama `.github/workflows/cek-regulasi.yml`, lalu tempel isinya.
 3. **Settings → Pages → Build and deployment**: Source = *Deploy from a branch*, Branch = `main`, folder `/ (root)`, **Save**.
 4. **Settings → Actions → General → Workflow permissions**: pilih *Read and write permissions*, **Save**.
@@ -47,19 +47,19 @@ Tombol **ID | EN | 日本語** di kanan atas mengganti bahasa aplikasi dan unduh
 - **Label BARU** diberikan pada regulasi yang tahun terbitnya sama dengan tahun pengecekan. Regulasi lama yang baru ditambahkan ke daftar tidak diberi label BARU.
 
 ```
-JDIH pusat & daerah ──► robot (GitHub Actions) ──► data/kandidat.json ──┐
+JDIH pusat & daerah ──► robot (GitHub Actions) ──► kandidat.json ──┐
                               │                                         ├─► tombol Perbarui ──► register di perangkat
-                              └─► status dicabut ─► data/register.json ─┘
+                              └─► status dicabut ─► register.json ─┘
 ```
 
-- **Regulasi baru** di `data/register.json` ditambahkan ke daftar.
+- **Regulasi baru** di `register.json` ditambahkan ke daftar.
 - **Baris yang isinya diperbarui** ditandai BERUBAH.
 - **Regulasi yang dicabut** pindah ke tab Arsip tidak berlaku. Tidak ada baris yang dihapus.
 - **Baris lama** yang tidak ada di repositori tetap dipertahankan.
 - **Temuan robot** tidak langsung masuk register. Temuan muncul di tab Kandidat baru untuk diterima atau ditolak,
   karena kecocokan kata kunci belum tentu berarti mengikat operasional.
 
-Bila `data/register.json` tidak terjangkau (misalnya berkas dibuka langsung dari komputer), tombol memakai
+Bila `register.json` tidak terjangkau (misalnya berkas dibuka langsung dari komputer), tombol memakai
 paket pembaruan yang tertanam di `index.html`.
 
 ## Membagikan perubahan ke seluruh tim
@@ -67,7 +67,7 @@ paket pembaruan yang tertanam di `index.html`.
 Perubahan di aplikasi (menerima kandidat, menambah regulasi, mengubah baris) tersimpan di peramban perangkat itu.
 Ada dua cara menjadikannya daftar bersama:
 
-- **Tanpa token:** Pengaturan → *Unduh register.json*, lalu unggah berkas itu ke folder `data/` di repositori (timpa yang lama).
+- **Tanpa token:** Pengaturan → *Unduh register.json*, lalu unggah berkas itu ke folder `` di repositori (timpa yang lama).
 - **Dengan token:** Pengaturan → isi sambungan GitHub → *Simpan register ke GitHub*.
   Buat token di GitHub: **Settings → Developer settings → Fine-grained tokens**, batasi ke repositori ini saja,
   izin **Contents: Read and write** dan **Actions: Read and write**. Token hanya disimpan di peramban itu.
@@ -94,15 +94,15 @@ Baris diurutkan dari tahun regulasi terbaru ke terlama (tahun regulasi induk bil
 
 ## Menyetel robot pengecek
 
-- **Terlalu banyak kandidat tidak relevan:** naikkan `min_skor` atau tambah kata pada `tolak` di `scripts/relevansi.json`.
+- **Terlalu banyak kandidat tidak relevan:** naikkan `min_skor` atau tambah kata pada `tolak` di `relevansi.json`.
 - **Ada regulasi relevan yang terlewat:** tambah kata kunci beserta bobotnya pada kategori yang sesuai.
-- **Menambah sumber:** tambah entri di `scripts/sumber.json`. Adapter `generik` membaca tautan apa pun yang teksnya
+- **Menambah sumber:** tambah entri di `sumber.json`. Adapter `generik` membaca tautan apa pun yang teksnya
   berpola "Peraturan ... Nomor ... Tahun ...".
-- **Sumber gagal dibaca:** lihat `sumber_gagal` di `data/kandidat.json` atau log pada tab Actions.
+- **Sumber gagal dibaca:** lihat `sumber_gagal` di `kandidat.json` atau log pada tab Actions.
   Beberapa situs pemerintah menolak akses dari server luar negeri; sumber seperti itu perlu dicek manual.
 - Peraturan daerah dicek bergilir, enam provinsi tiap hari, sehingga 30 provinsi selesai dalam lima hari.
 
-Uji robot tanpa internet: `python scripts/cek_regulasi.py --uji`
+Uji robot tanpa internet: `python cek_regulasi.py --uji`
 
 ## Batasan
 
@@ -122,7 +122,7 @@ Google Sites hanya menjadi bingkai. Isi, robot pengecek, dan pembaruan tetap ber
 
 ## Kandidat masuk otomatis
 
-Temuan robot di `data/kandidat.json` yang nomor dan judulnya jelas langsung masuk ke daftar saat aplikasi dibuka,
+Temuan robot di `kandidat.json` yang nomor dan judulnya jelas langsung masuk ke daftar saat aplikasi dibuka,
 tanpa perlu disetujui satu per satu. Temuan yang masih bertanda "perlu dicek" tetap menunggu di tab Kandidat baru.
-Untuk membuang temuan yang tidak terkait, catat `kid`-nya di `data/ditolak.json` atau tambahkan kata kuncinya
-ke daftar `tolak` di `scripts/relevansi.json`.
+Untuk membuang temuan yang tidak terkait, catat `kid`-nya di `ditolak.json` atau tambahkan kata kuncinya
+ke daftar `tolak` di `relevansi.json`.
