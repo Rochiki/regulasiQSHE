@@ -1,52 +1,700 @@
 {
- "diperbarui": "2026-10-08",
+ "diperbarui": "2026-10-09",
  "sumber_ok": [
-  "JDIH Kemnaker",
-  "JDIH BPK"
+  "JDIH Kemnaker (6/6 halaman)",
+  "JDIH KLH/BPLH (1/1 halaman)",
+  "JDIH ESDM (1/1 halaman)",
+  "JDIH Kemenkes (1/1 halaman)",
+  "JDIH PU (1/1 halaman)",
+  "JDIH DKI Jakarta (1/1 halaman)"
  ],
- "sumber_gagal": [],
+ "sumber_gagal": [
+  {
+   "id": "bpk-pusat",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja&tentang=&nomor=&tahun=2025",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-pusat",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kesehatan+kerja&tentang=&nomor=&tahun=2025",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-pusat",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+B3&tentang=&nomor=&tahun=2025",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-pusat",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=air+limbah&tentang=&nomor=&tahun=2025",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-pusat",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=baku+mutu+emisi&tentang=&nomor=&tahun=2025",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-pusat",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=persetujuan+lingkungan&tentang=&nomor=&tahun=2025",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-pusat",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=alat+berat&tentang=&nomor=&tahun=2025",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-pusat",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+pertambangan&tentang=&nomor=&tahun=2025",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-pusat",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran&tentang=&nomor=&tahun=2025",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-pusat",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja&tentang=&nomor=&tahun=2026",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-pusat",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kesehatan+kerja&tentang=&nomor=&tahun=2026",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-pusat",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+B3&tentang=&nomor=&tahun=2026",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-pusat",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=air+limbah&tentang=&nomor=&tahun=2026",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-pusat",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=baku+mutu+emisi&tentang=&nomor=&tahun=2026",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-pusat",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=persetujuan+lingkungan&tentang=&nomor=&tahun=2026",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-pusat",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=alat+berat&tentang=&nomor=&tahun=2026",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-pusat",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+pertambangan&tentang=&nomor=&tahun=2026",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-pusat",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran&tentang=&nomor=&tahun=2026",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Sulawesi+Utara&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Gorontalo&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Sulawesi+Tengah&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Sulawesi+Selatan&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Sulawesi+Tenggara&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Nusa+Tenggara+Barat&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Sulawesi+Utara&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Gorontalo&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Sulawesi+Tengah&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Sulawesi+Selatan&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Sulawesi+Tenggara&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Nusa+Tenggara+Barat&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Sulawesi+Utara&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Gorontalo&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Sulawesi+Tengah&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Sulawesi+Selatan&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Sulawesi+Tenggara&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Nusa+Tenggara+Barat&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Sulawesi+Utara&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Gorontalo&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Sulawesi+Tengah&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Sulawesi+Selatan&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Sulawesi+Tenggara&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Nusa+Tenggara+Barat&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Sulawesi+Utara&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Gorontalo&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Sulawesi+Tengah&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Sulawesi+Selatan&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Sulawesi+Tenggara&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Nusa+Tenggara+Barat&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Sulawesi+Utara&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Gorontalo&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Sulawesi+Tengah&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Sulawesi+Selatan&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Sulawesi+Tenggara&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "bpk-daerah",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Nusa+Tenggara+Barat&tentang=&nomor=",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "cek-status",
+   "url": "https://peraturan.bpk.go.id/Details/35507",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "cek-status",
+   "url": "https://peraturan.bpk.go.id/Details/177410",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "cek-status",
+   "url": "https://peraturan.bpk.go.id/Details/323942",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "Permen No.86/ M-DAG/PER/12/2016",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "UU 16/2009 jo. UU 7/2021 & UU 6/2023",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "UU 8/1999",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "UU 8/1999",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "UU 8/1999",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "UU 7/2014 jo. UU 6/2023",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "UU 27/2022",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "UU 13/2003 jo. UU 6/2023",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "UU 13/2003 jo. UU 6/2023",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "UU 22/2009",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "UU 22/2009",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "UU 22/2009",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "Permenhub PM 19/2021 (jo. PP 55/2012)",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "PP 50/2012",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "PP 50/2012",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "PP 50/2012",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "Peraturan Pemerintah No.80 tahun 2012",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "Permenaker 02/1983 & Pergub DKI 250/2015",
+   "galat": "HTTP 403"
+  }
+ ],
+ "provinsi_dicek": [
+  "Sulawesi Utara",
+  "Gorontalo",
+  "Sulawesi Tengah",
+  "Sulawesi Selatan",
+  "Sulawesi Tenggara",
+  "Nusa Tenggara Barat"
+ ],
  "kandidat": [],
  "perubahan_status": [],
  "disaring": [
   {
-   "nomor": "Permenaker 13/2026",
-   "judul": "Pedoman Penyaluran Bantuan Pemerintah di Lingkungan Kemnaker TA 2027",
-   "alasan": "Administrasi internal kementerian"
+   "nomor": "Kepmenaker 256/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Pertambangan dan Penggalian Golongan Pokok Pertambangan Minyak Bumi Mentah dan Gas Alam Bidang Manajemen Tanggap Darurat, Krisis, dan Kelangsungan Bisnis",
+   "alasan": "memuat 'minyak bumi'"
+  },
+  {
+   "nomor": "Kepmenaker 255/2026",
+   "judul": "Program Mitra Kebijakan di Kementerian Ketenagakerjaan",
+   "alasan": "skor relevansi 0 di bawah ambang"
+  },
+  {
+   "nomor": "Kepmenaker 254/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Industri Pengolahan Golongan Pokok Industri Produk dari Batu Bara dan Pengilangan Minyak Bumi Bidang Blending Minyak Bumi dan Produk-Produknya Serta Turunannya",
+   "alasan": "memuat 'minyak bumi'"
+  },
+  {
+   "nomor": "Kepmenaker 252/2026",
+   "judul": "Besaran Bantuan Pemerintah Program Pemagangan Lulusan Perguruan Tinggi Tahun 2026",
+   "alasan": "memuat 'bantuan pemerintah'"
+  },
+  {
+   "nomor": "Kepmenaker 247/2026",
+   "judul": "Peta Jabatan Aparatur Sipil Negara di Kementerian Ketenagakerjaan",
+   "alasan": "memuat 'peta jabatan'"
+  },
+  {
+   "nomor": "Kepmenaker 235/2026",
+   "judul": "Kontributor Sistem Informasi Kearsipan Nasional dan Jaringan Informasi Kearsipan Nasonal Terbaik Kementerian Ketenagakerjaan Taun 2026",
+   "alasan": "memuat 'kearsipan'"
+  },
+  {
+   "nomor": "Kepmenaker 230/2026",
+   "judul": "Penyelenggaraan Pengembangan Talenta dan Inovasi Melalui Layanan Talenta dan Inovasi (Talent and Innovation Hub) di Kementerian Ketenagakerjaan",
+   "alasan": "skor relevansi 0 di bawah ambang"
+  },
+  {
+   "nomor": "Kepmenaker 202/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Pertanian, Kehutanan, dan Perikanan Golongan Pokok Pengelolaan Kehutanan dan Pemanenan Kayu Bidang Perhutanan Sosial",
+   "alasan": "memuat 'perikanan'"
+  },
+  {
+   "nomor": "Kepmenaker 200/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Telekomunikasi, Pemrograman Komputer, Konsultansi, Infrastruktur Komputasi, dan Jasa Informasi Lainnya Golongan Pokok Aktivitas Pemrograman, Konsultansi Komputer, dan Aktivitas Terkait Bidang Information and Communication Technologies Project Management",
+   "alasan": "memuat 'telekomunikasi'"
+  },
+  {
+   "nomor": "Kepmenaker 256/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Pertambangan dan Penggalian Golongan Pokok Pertambangan Minyak Bumi Mentah dan Gas Alam Bidang Manajemen Tanggap Darurat, Krisis, dan Kelangsungan Bisnis",
+   "alasan": "memuat 'minyak bumi'"
+  },
+  {
+   "nomor": "Kepmenaker 255/2026",
+   "judul": "Program Mitra Kebijakan di Kementerian Ketenagakerjaan",
+   "alasan": "skor relevansi 0 di bawah ambang"
+  },
+  {
+   "nomor": "Kepmenaker 254/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Industri Pengolahan Golongan Pokok Industri Produk dari Batu Bara dan Pengilangan Minyak Bumi Bidang Blending Minyak Bumi dan Produk-Produknya Serta Turunannya",
+   "alasan": "memuat 'minyak bumi'"
+  },
+  {
+   "nomor": "Kepmenaker 252/2026",
+   "judul": "Besaran Bantuan Pemerintah Program Pemagangan Lulusan Perguruan Tinggi Tahun 2026",
+   "alasan": "memuat 'bantuan pemerintah'"
+  },
+  {
+   "nomor": "Kepmenaker 247/2026",
+   "judul": "Peta Jabatan Aparatur Sipil Negara di Kementerian Ketenagakerjaan",
+   "alasan": "memuat 'peta jabatan'"
+  },
+  {
+   "nomor": "Kepmenaker 235/2026",
+   "judul": "Kontributor Sistem Informasi Kearsipan Nasional dan Jaringan Informasi Kearsipan Nasonal Terbaik Kementerian Ketenagakerjaan Taun 2026",
+   "alasan": "memuat 'kearsipan'"
+  },
+  {
+   "nomor": "Kepmenaker 230/2026",
+   "judul": "Penyelenggaraan Pengembangan Talenta dan Inovasi Melalui Layanan Talenta dan Inovasi (Talent and Innovation Hub) di Kementerian Ketenagakerjaan",
+   "alasan": "skor relevansi 0 di bawah ambang"
+  },
+  {
+   "nomor": "Kepmenaker 202/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Pertanian, Kehutanan, dan Perikanan Golongan Pokok Pengelolaan Kehutanan dan Pemanenan Kayu Bidang Perhutanan Sosial",
+   "alasan": "memuat 'perikanan'"
+  },
+  {
+   "nomor": "Kepmenaker 200/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Telekomunikasi, Pemrograman Komputer, Konsultansi, Infrastruktur Komputasi, dan Jasa Informasi Lainnya Golongan Pokok Aktivitas Pemrograman, Konsultansi Komputer, dan Aktivitas Terkait Bidang Information and Communication Technologies Project Management",
+   "alasan": "memuat 'telekomunikasi'"
+  },
+  {
+   "nomor": "Kepmenaker 188/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Pertambangan dan Penggalian Golongan Pokok Pertambangan Minyak Bumi Mentah dan Gas Alam Bidang Pemrosesan Gas Alam",
+   "alasan": "memuat 'minyak bumi'"
+  },
+  {
+   "nomor": "Kepmenaker 153/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Pertambangan dan Penggalian Golongan Pokok Aktivitas Jasa Penunjang Pertambangan Bidang Intervensi Sumur Dengan Coiled Tubing",
+   "alasan": "skor relevansi 3 di bawah ambang"
+  },
+  {
+   "nomor": "Kepmenaker 152/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Pertanian, Kehutanan, dan Perikanan Golongan Pokok Perikanan Bidang Pengembangbiakan Karang Hias",
+   "alasan": "memuat 'perikanan'"
+  },
+  {
+   "nomor": "Kepmenaker 150/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Telekomunikasi, Pemrograman Komputer, Konsultasi, Infrastruktur Komputasi, dan Jasa Informasi Lainnya Golongan Pokok Telekomunikasi Bidang Pengujian Perangkat dan Kalibrasi Alat Ukur Komunikasi",
+   "alasan": "memuat 'telekomunikasi'"
+  },
+  {
+   "nomor": "Kepmenaker 145/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Administrasi Pemerintahan dan Pertahanan, Serta Jaminan Sosial Wajib Bidang Pengawasan atau Audit Intern",
+   "alasan": "skor relevansi 3 di bawah ambang"
+  },
+  {
+   "nomor": "Kepmenaker 137/2026",
+   "judul": "Ketua Senat Politeknik Ketenagakerjaan Tahun 2026 - 2030",
+   "alasan": "memuat 'politeknik'"
+  },
+  {
+   "nomor": "Kepmenaker 125/2026",
+   "judul": "Pencabutan Keputusan Menteri Tenaga Kerja dan Transmigrasi Nomor KEP.190/MEN/VIII/2025 tentang Penetapan Standar Kompetensi Kerja Nasional Indonesia Sektor Perikanan Sub Sektor Budidaya Ikan Air Payau, Keputusan Menteri Tenaga Kerja dan Transmigrasi Nomor KEP.212/MEN/IX/2005 tentang Penetapan Standar Kompetensi Kerja Nasional Indonesia Sektor Perikanan Sub Sektor Budidaya Ikan Hias, dan Keputusan Menteri Tenaga Kerja dan Transmigrasi Nomor KEP.213/MEN/IX/2005 tentang Penetapan Standar Kompetensi Kerja Nasional Indonesia Sektor Perikanan Sub Sektor Teknika Perikanan Laut",
+   "alasan": "memuat 'perikanan'"
+  },
+  {
+   "nomor": "Kepmenaker 122/2026",
+   "judul": "Unit Organisasi Pembina Jabatan Fungsional di Kementerian Ketenagakerjaan",
+   "alasan": "memuat 'jabatan fungsional'"
+  },
+  {
+   "nomor": "Kepmenaker 121/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Administrasi Pemerintahan dan Pertahanan, Serta Jaminan Sosial Wajib Golongan Pokok Administrasi Pemerintahan dan Pertahanan, Serta Jaminan Sosial Wajib Bidang Manajemen Risiko Sektor Publik",
+   "alasan": "skor relevansi 3 di bawah ambang"
+  },
+  {
+   "nomor": "Kepmenaker 120/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Profesional, Ilmiah, dan Teknis Golongan Pokok Aktivitas Arsitektural dan Enjinering; Pengujian dan Analisis Teknis Bidang Arsitektur",
+   "alasan": "skor relevansi 2 di bawah ambang"
+  },
+  {
+   "nomor": "Kepmenaker 119/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Konstruksi Golongan Pokok Konstruksi Bangunan Sipil Pada Bidang Irigasi dan Rawa",
+   "alasan": "skor relevansi 2 di bawah ambang"
+  },
+  {
+   "nomor": "Kepmenaker 118/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Keuangan dan Asuransi Golongan Pokok Aktivitas Jasa Keuangan, Kecuali Asuransi dan Dana Pensiun Bidang Tresuri Pasar Uang dan Pasar Valuta Asing",
+   "alasan": "skor relevansi 2 di bawah ambang"
+  },
+  {
+   "nomor": "Kepmenaker 188/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Pertambangan dan Penggalian Golongan Pokok Pertambangan Minyak Bumi Mentah dan Gas Alam Bidang Pemrosesan Gas Alam",
+   "alasan": "memuat 'minyak bumi'"
+  },
+  {
+   "nomor": "Kepmenaker 153/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Pertambangan dan Penggalian Golongan Pokok Aktivitas Jasa Penunjang Pertambangan Bidang Intervensi Sumur Dengan Coiled Tubing",
+   "alasan": "skor relevansi 3 di bawah ambang"
+  },
+  {
+   "nomor": "Kepmenaker 152/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Pertanian, Kehutanan, dan Perikanan Golongan Pokok Perikanan Bidang Pengembangbiakan Karang Hias",
+   "alasan": "memuat 'perikanan'"
+  },
+  {
+   "nomor": "Kepmenaker 150/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Telekomunikasi, Pemrograman Komputer, Konsultasi, Infrastruktur Komputasi, dan Jasa Informasi Lainnya Golongan Pokok Telekomunikasi Bidang Pengujian Perangkat dan Kalibrasi Alat Ukur Komunikasi",
+   "alasan": "memuat 'telekomunikasi'"
+  },
+  {
+   "nomor": "Kepmenaker 145/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Administrasi Pemerintahan dan Pertahanan, Serta Jaminan Sosial Wajib Bidang Pengawasan atau Audit Intern",
+   "alasan": "skor relevansi 3 di bawah ambang"
+  },
+  {
+   "nomor": "Kepmenaker 137/2026",
+   "judul": "Ketua Senat Politeknik Ketenagakerjaan Tahun 2026 - 2030",
+   "alasan": "memuat 'politeknik'"
+  },
+  {
+   "nomor": "Kepmenaker 125/2026",
+   "judul": "Pencabutan Keputusan Menteri Tenaga Kerja dan Transmigrasi Nomor KEP.190/MEN/VIII/2025 tentang Penetapan Standar Kompetensi Kerja Nasional Indonesia Sektor Perikanan Sub Sektor Budidaya Ikan Air Payau, Keputusan Menteri Tenaga Kerja dan Transmigrasi Nomor KEP.212/MEN/IX/2005 tentang Penetapan Standar Kompetensi Kerja Nasional Indonesia Sektor Perikanan Sub Sektor Budidaya Ikan Hias, dan Keputusan Menteri Tenaga Kerja dan Transmigrasi Nomor KEP.213/MEN/IX/2005 tentang Penetapan Standar Kompetensi Kerja Nasional Indonesia Sektor Perikanan Sub Sektor Teknika Perikanan Laut",
+   "alasan": "memuat 'perikanan'"
+  },
+  {
+   "nomor": "Kepmenaker 122/2026",
+   "judul": "Unit Organisasi Pembina Jabatan Fungsional di Kementerian Ketenagakerjaan",
+   "alasan": "memuat 'jabatan fungsional'"
+  },
+  {
+   "nomor": "Kepmenaker 121/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Administrasi Pemerintahan dan Pertahanan, Serta Jaminan Sosial Wajib Golongan Pokok Administrasi Pemerintahan dan Pertahanan, Serta Jaminan Sosial Wajib Bidang Manajemen Risiko Sektor Publik",
+   "alasan": "skor relevansi 3 di bawah ambang"
+  },
+  {
+   "nomor": "Kepmenaker 120/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Profesional, Ilmiah, dan Teknis Golongan Pokok Aktivitas Arsitektural dan Enjinering; Pengujian dan Analisis Teknis Bidang Arsitektur",
+   "alasan": "skor relevansi 2 di bawah ambang"
+  },
+  {
+   "nomor": "Kepmenaker 119/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Konstruksi Golongan Pokok Konstruksi Bangunan Sipil Pada Bidang Irigasi dan Rawa",
+   "alasan": "skor relevansi 2 di bawah ambang"
+  },
+  {
+   "nomor": "Kepmenaker 118/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Keuangan dan Asuransi Golongan Pokok Aktivitas Jasa Keuangan, Kecuali Asuransi dan Dana Pensiun Bidang Tresuri Pasar Uang dan Pasar Valuta Asing",
+   "alasan": "skor relevansi 2 di bawah ambang"
+  },
+  {
+   "nomor": "Kepmenaker 108/2026",
+   "judul": "Pedoman Tata Cara Pengangkatan dan Pemberhentian Direktur, Wakil Direktur, Ketua Senat, dan Dewan Penyantun Politeknik Ketenagakerjaan",
+   "alasan": "memuat 'pengangkatan'"
+  },
+  {
+   "nomor": "Kepmenaker 105/2026",
+   "judul": "Pencabutan Keputusan Menteri Tenaga Kerja dan Transmigrasi Nomor 225 Tahun 2014 tentang Standar Audit Aparat Pengawasan Intern Pemerintah Kementerian Tenaga kerja dan Transmigrasi",
+   "alasan": "memuat 'pencabutan keputusan'"
+  },
+  {
+   "nomor": "Kepmenaker 103/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Telekomunikasi, Pemrograman Komputer, Konsultansi, Infrastruktur Komputasi, dan Jasa Informasi Lainnya Golongan Pokok Aktivitas Pemrograman, Konsultansi Komputer, dan Aktivitas Terkait Bidang Keahlian Artificial Intelligence Subbidang Knowledge Based System",
+   "alasan": "memuat 'telekomunikasi'"
+  },
+  {
+   "nomor": "Kepmenaker 65/2026",
+   "judul": "Besaran Bantuan Pemerintah Program Pemagangan Lulusan Perguruan Tinggi Tahun 2026",
+   "alasan": "memuat 'bantuan pemerintah'"
+  },
+  {
+   "nomor": "Kepmenaker 44/2026",
+   "judul": "Pencabutan Keputusan Menteri Ketenagakerjaan Nomor 628 Tahun 2016 tentang Unit Pemberantasan Pungutan Liar Di Kementerian Ketenagakerjaan",
+   "alasan": "memuat 'pencabutan keputusan'"
+  },
+  {
+   "nomor": "PP 31/2026",
+   "judul": "Konsesi Bagi Penyandang Disabilitas dan Insentif Bagi Perusahaan",
+   "alasan": "skor relevansi 0 di bawah ambang"
+  },
+  {
+   "nomor": "PP 27/2026",
+   "judul": "Perubahan Kedua Atas Peraturan Pemerintah Nomor 99 Tahun 2013 Tentang Pengelolaan Aset Jaminan Sosial Ketenagakerjaan",
+   "alasan": "skor relevansi 3 di bawah ambang"
+  },
+  {
+   "nomor": "Perpres 25/2026",
+   "judul": "Pengesahan Convention Concerning Work In The Fishing Sector, International Labour Organization Convention 188 (Konvensi mengenai Pekerjaan dalam Sektor Penangkapan Ikan, Konvensi Organisasi Ketenagakerjaan Internasional 188)",
+   "alasan": "skor relevansi 0 di bawah ambang"
   },
   {
    "nomor": "Permenaker 14/2026",
    "judul": "Organisasi dan Tata Kerja Kementerian Ketenagakerjaan",
-   "alasan": "Organisasi pemerintah"
+   "alasan": "memuat 'organisasi dan tata kerja'"
   },
   {
-   "nomor": "Permen LH/BPLH 2/2026",
-   "judul": "Baku Mutu Air Limbah Usaha Pakan Ternak dan Pakan Akuakultur",
-   "alasan": "Sektor usaha tidak dijalankan"
+   "nomor": "Permenaker 13/2026",
+   "judul": "Pedoman Penyaluran Bantuan Pemerintah di Lingkungan Kementerian Ketenagakerjaan Tahun Anggaran 2027",
+   "alasan": "memuat 'anggaran'"
   },
   {
-   "nomor": "Permen LH/BPLH 8/2026",
-   "judul": "Penetapan Fungsi Ekosistem Mangrove",
-   "alasan": "Tidak menyangkut kegiatan perusahaan"
+   "nomor": "Permenaker 12/2026",
+   "judul": "Perubahan Ketiga atas Peraturan Menteri Ketenagakerjaan Nomor 8 Tahun 2025 tentang Pedoman Pemberian Bantuan Pemerintah Program Pemagangan Lulusan Perguruan Tinggi",
+   "alasan": "memuat 'bantuan pemerintah'"
   },
   {
-   "nomor": "Kepmenaker 256/2026",
-   "judul": "SKKNI Migas Bidang Manajemen Tanggap Darurat, Krisis, dan Kelangsungan Bisnis",
-   "alasan": "Sektor hulu migas"
+   "nomor": "Permenaker 10/2026",
+   "judul": "Pencabutan Peraturan Menteri Tenaga Kerja dan Transmigrasi Nomor Per.12/Men/X/2011 tentang Atase Ketenagakerjaan dan Staf Teknis Ketenagakerjaan pada Perwakilan Republik Indonesia di Luar Negeri",
+   "alasan": "skor relevansi 0 di bawah ambang"
   },
   {
-   "nomor": "Pergub Kep. Bangka Belitung 34/2019",
-   "judul": "Pedoman Pengendalian Pencemaran Air Permukaan bagi Usaha Tambak Udang",
-   "alasan": "Khusus usaha tambak udang, tidak terkait operasional"
+   "nomor": "Permenaker 9/2026",
+   "judul": "Perubahan Kedua atas Peraturan Menteri Ketenagakerjaan Nomor 8 Tahun 2025 tentang Pedoman Pemberian Bantuan Pemerintah Program Pemagangan Lulusan Perguruan Tinggi",
+   "alasan": "memuat 'bantuan pemerintah'"
   },
   {
-   "nomor": "Perda Kab. Malang 3/2016",
-   "judul": "Perlindungan dan Pengelolaan Lingkungan Hidup",
-   "alasan": "Peraturan Kabupaten Malang, bukan Provinsi Jawa Timur; tidak ada lokasi operasional di kabupaten itu"
+   "nomor": "Permen 9/2026",
+   "judul": "Jaminan Sosial Pekerja Migran Indonesia",
+   "alasan": "memuat 'pekerja migran'"
   },
   {
-   "nomor": "Perda Kab. Konawe 9/2018",
-   "judul": "Pengelolaan dan Pengendalian Limbah Bahan Berbahaya dan Beracun",
-   "alasan": "Peraturan Kabupaten Konawe, bukan Provinsi Sulawesi Tenggara; lokasi operasional ada di Kota Kendari"
+   "nomor": "Kepmenaker 108/2026",
+   "judul": "Pedoman Tata Cara Pengangkatan dan Pemberhentian Direktur, Wakil Direktur, Ketua Senat, dan Dewan Penyantun Politeknik Ketenagakerjaan",
+   "alasan": "memuat 'pengangkatan'"
+  },
+  {
+   "nomor": "Kepmenaker 105/2026",
+   "judul": "Pencabutan Keputusan Menteri Tenaga Kerja dan Transmigrasi Nomor 225 Tahun 2014 tentang Standar Audit Aparat Pengawasan Intern Pemerintah Kementerian Tenaga kerja dan Transmigrasi",
+   "alasan": "memuat 'pencabutan keputusan'"
+  },
+  {
+   "nomor": "Kepmenaker 103/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Telekomunikasi, Pemrograman Komputer, Konsultansi, Infrastruktur Komputasi, dan Jasa Informasi Lainnya Golongan Pokok Aktivitas Pemrograman, Konsultansi Komputer, dan Aktivitas Terkait Bidang Keahlian Artificial Intelligence Subbidang Knowledge Based System",
+   "alasan": "memuat 'telekomunikasi'"
+  },
+  {
+   "nomor": "Kepmenaker 65/2026",
+   "judul": "Besaran Bantuan Pemerintah Program Pemagangan Lulusan Perguruan Tinggi Tahun 2026",
+   "alasan": "memuat 'bantuan pemerintah'"
   }
  ]
 }
