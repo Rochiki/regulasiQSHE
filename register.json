@@ -1,5 +1,5 @@
 {
- "versi": "2026-10-10",
+ "versi": "2026-10-11",
  "baris": [
   {
    "id": "Q-001",
@@ -2179,7 +2179,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "S-104",
@@ -2199,7 +2200,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "S-105",
@@ -2219,7 +2221,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "S-106",
@@ -2239,7 +2242,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "S-107",
@@ -2279,7 +2283,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "S-109",
@@ -2299,7 +2304,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "S-111",
@@ -2319,7 +2325,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "S-112",
@@ -2339,7 +2346,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "S-113",
@@ -2359,7 +2367,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "S-114",
@@ -2379,7 +2388,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "S-115",
@@ -2399,7 +2409,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "S-116",
@@ -2418,7 +2429,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3070/peraturan-menteri-ketenagakerjaan-nomor-11-tahun-2026",
    "saran": "",
-   "cek": "2026-10-10",
+   "cek": "2026-10-11",
    "masuk": ""
   },
   {
@@ -2439,7 +2450,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-002",
@@ -2479,7 +2491,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-004",
@@ -2499,7 +2512,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-005",
@@ -2579,7 +2593,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-009",
@@ -2599,7 +2614,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-010",
@@ -2619,7 +2635,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-011",
@@ -2639,7 +2656,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-012",
@@ -2679,7 +2697,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-014",
@@ -2699,7 +2718,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-015",
@@ -2719,7 +2739,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-016",
@@ -2739,7 +2760,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-017",
@@ -2759,7 +2781,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-018",
@@ -2819,7 +2842,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-021",
@@ -2899,7 +2923,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-025",
@@ -2919,7 +2944,8 @@
    "src": "",
    "saran": "",
    "cek": "2026-09-16",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-026",
@@ -2939,7 +2965,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-027",
@@ -2959,7 +2986,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-028",
@@ -2979,7 +3007,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-029",
@@ -2999,7 +3028,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-032",
@@ -3019,7 +3049,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-033",
@@ -3039,7 +3070,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-034",
@@ -3059,7 +3091,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-035",
@@ -3079,7 +3112,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-036",
@@ -3119,7 +3153,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-038",
@@ -3139,7 +3174,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-039",
@@ -3159,7 +3195,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-040",
@@ -3179,7 +3216,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-041",
@@ -3199,7 +3237,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-042",
@@ -3219,7 +3258,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tautan_dicoba": "2026-10-11"
   },
   {
    "id": "H-044",
@@ -5178,7 +5218,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3072/keputusan-menteri-ketenagakerjaan-nomor-199-tahun-2026",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
-   "cek": "2026-10-10",
+   "cek": "2026-10-11",
    "masuk": "2026-10-07"
   },
   {
@@ -5918,7 +5958,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3059/keputusan-menteri-ketenagakerjaan-nomor-157-tahun-2026",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
-   "cek": "2026-10-10",
+   "cek": "2026-10-11",
    "masuk": "2026-10-08"
   },
   {
@@ -5938,7 +5978,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3054/keputusan-menteri-ketenagakerjaan-nomor-151-tahun-2026",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
-   "cek": "2026-10-10",
+   "cek": "2026-10-11",
    "masuk": "2026-10-08"
   },
   {

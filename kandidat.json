@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-10-10",
+ "diperbarui": "2026-10-11",
  "sumber_ok": [
   "JDIH Kemnaker (6/6 halaman)",
   "JDIH KLH/BPLH (1/1 halaman)",
@@ -101,182 +101,182 @@
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Nusa+Tenggara+Timur&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Aceh&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Maluku&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Sumatera+Utara&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Maluku+Utara&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Sumatera+Barat&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Papua&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Riau&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Papua+Selatan&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Jambi&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Papua+Barat+Daya&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Sumatera+Selatan&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Nusa+Tenggara+Timur&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Aceh&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Maluku&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Sumatera+Utara&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Maluku+Utara&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Sumatera+Barat&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Papua&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Riau&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Papua+Selatan&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Jambi&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Papua+Barat+Daya&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Sumatera+Selatan&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Nusa+Tenggara+Timur&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Aceh&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Maluku&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Sumatera+Utara&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Maluku+Utara&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Sumatera+Barat&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Papua&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Riau&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Papua+Selatan&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Jambi&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Papua+Barat+Daya&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Sumatera+Selatan&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Nusa+Tenggara+Timur&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Aceh&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Maluku&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Sumatera+Utara&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Maluku+Utara&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Sumatera+Barat&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Papua&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Riau&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Papua+Selatan&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Jambi&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Papua+Barat+Daya&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Sumatera+Selatan&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Nusa+Tenggara+Timur&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Aceh&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Maluku&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Sumatera+Utara&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Maluku+Utara&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Sumatera+Barat&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Papua&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Riau&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Papua+Selatan&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Jambi&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Papua+Barat+Daya&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Sumatera+Selatan&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Nusa+Tenggara+Timur&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Aceh&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Maluku&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Sumatera+Utara&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Maluku+Utara&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Sumatera+Barat&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Papua&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Riau&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Papua+Selatan&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Jambi&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Papua+Barat+Daya&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Sumatera+Selatan&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
@@ -296,82 +296,127 @@
   },
   {
    "id": "tautan",
-   "url": "PP 50/2012 jo. Permenaker 26/2014",
+   "url": "Permen ESDM 10/2021",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Permen PU 26/2008; Kepmen PU 10/KPTS/2000; Pergub DKI 143/2016 & 200/2015; SNI 03-1745-2000",
+   "url": "Permen ESDM 7/2021 & SNI 0225 seri :2020 (PUIL 2020)",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Perda DKI No.8 Th 2008",
+   "url": "PERATURAN MENTERI PERTANIAN REPUBLIK INDONESIA NOMOR 43 TAHUN 2019",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Undang Undang No. 30 Tahun 2009",
+   "url": "Permen ESDM 26/2018 & Kepmen ESDM 1827 K/30/MEM/2018",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Peraturan Pemerintah Republik Indonesia No. 14 Tahun 2012",
+   "url": "Permen PUPR Nomor 3 Tahun 2020",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Peraturan Daerah No. 7 Tahun 2010",
+   "url": "UU 2/1981",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "PP 16/2021",
+   "url": "UU 35/2009",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Pergub DKI No. 250 Tahun 2015",
+   "url": "UU 24/2011 & Perpres 82/2018",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Pergub DKI No.143 Tahun 2016",
+   "url": "Permenakertrans PER.01/MEN/1981 & Perpres 7/2019",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "PERMEN ESDM NO.10 TAHUN 2016",
+   "url": "Kepmenkes No 4 Tahun 2016",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Pergub DKI No.90 Tahun 2017",
+   "url": "Permenkes 24/2022",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "PP No. 62 tahun 2012",
+   "url": "Perda DKI No.6 Th 2007",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Permen ESDM 12/2019",
+   "url": "Permenkes No 9 tahun 2014",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Pergub DKI No 200 Tahun 2015",
+   "url": "PP 28/2024 (pengganti PP 109/2012) & Pergub DKI 88/2010, 50/2012",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "Permenkes 48/2016",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "PERMENKES NO. 56 TAHUN 2016",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "Permenkes 70/2016",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "UU 17/2023 & PP 28/2024",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "Permenkes No.15 tahun 2013",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "Perpres No 7 Tahun 2019",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "PP 28/2024",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "UU 17/2023",
+   "galat": "HTTP 403"
+  },
+  {
+   "id": "tautan",
+   "url": "Permenkes 2/2023 (dicabut sebagian oleh Permenkes 3/2026)",
    "galat": "HTTP 403"
   }
  ],
  "provinsi_dicek": [
-  "Nusa Tenggara Timur",
-  "Maluku",
-  "Maluku Utara",
-  "Papua",
-  "Papua Selatan",
-  "Papua Barat Daya"
+  "Aceh",
+  "Sumatera Utara",
+  "Sumatera Barat",
+  "Riau",
+  "Jambi",
+  "Sumatera Selatan"
  ],
  "kandidat": [],
  "perubahan_status": [],
