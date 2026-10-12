@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-10-12",
+ "diperbarui": "2026-10-13",
  "sumber_ok": [
   "JDIH Kemnaker (6/6 halaman)",
   "JDIH KLH/BPLH (1/1 halaman)",
@@ -101,182 +101,182 @@
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Kepulauan+Bangka+Belitung&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Jawa+Timur&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Lampung&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Kalimantan+Barat&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Banten&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Kalimantan+Tengah&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+DKI+Jakarta&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Kalimantan+Selatan&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Jawa+Barat&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Kalimantan+Timur&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Jawa+Tengah&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=limbah+Kalimantan+Utara&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Kepulauan+Bangka+Belitung&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Jawa+Timur&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Lampung&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Kalimantan+Barat&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Banten&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Kalimantan+Tengah&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+DKI+Jakarta&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Kalimantan+Selatan&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Jawa+Barat&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Kalimantan+Timur&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Jawa+Tengah&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=lingkungan+hidup+Kalimantan+Utara&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Kepulauan+Bangka+Belitung&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Jawa+Timur&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Lampung&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Kalimantan+Barat&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Banten&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Kalimantan+Tengah&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+DKI+Jakarta&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Kalimantan+Selatan&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Jawa+Barat&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Kalimantan+Timur&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Jawa+Tengah&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kebakaran+Kalimantan+Utara&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Kepulauan+Bangka+Belitung&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Jawa+Timur&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Lampung&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Kalimantan+Barat&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Banten&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Kalimantan+Tengah&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+DKI+Jakarta&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Kalimantan+Selatan&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Jawa+Barat&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Kalimantan+Timur&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Jawa+Tengah&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=keselamatan+kerja+Kalimantan+Utara&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Kepulauan+Bangka+Belitung&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Jawa+Timur&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Lampung&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Kalimantan+Barat&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Banten&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Kalimantan+Tengah&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+DKI+Jakarta&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Kalimantan+Selatan&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Jawa+Barat&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Kalimantan+Timur&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Jawa+Tengah&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=sampah+Kalimantan+Utara&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Kepulauan+Bangka+Belitung&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Jawa+Timur&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Lampung&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Kalimantan+Barat&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Banten&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Kalimantan+Tengah&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+DKI+Jakarta&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Kalimantan+Selatan&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Jawa+Barat&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Kalimantan+Timur&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
    "id": "bpk-daerah",
-   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Jawa+Tengah&tentang=&nomor=",
+   "url": "https://peraturan.bpk.go.id/Search?keywords=kawasan+tanpa+rokok+Kalimantan+Utara&tentang=&nomor=",
    "galat": "HTTP 403"
   },
   {
@@ -296,131 +296,136 @@
   },
   {
    "id": "tautan",
-   "url": "UU 28 Tahun 2002",
+   "url": "Pergub DKI Nomor 66 tahun 2020",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "UU No. 17 Tahun 2004",
+   "url": "PermenLHK P.23/2020 & PermenLHK 13/2023",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "UU 30 Tahun 2007",
+   "url": "Permen LHK NOMORP.73/MENLHK/SETJEN/KUM.1/10/2019",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "UU 18/2008",
+   "url": "PP 22/2021",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "UU 32/2009 jo. UU 6/2023",
+   "url": "PP 22/2021",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Keppres No.92 Tahun 1998",
+   "url": "PP 22/2021 jo. PermenLHK 6/2021",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "PP 74 Th 2001",
+   "url": "PermenLHK NOMOR: P. 87/Menlhk/Setjen/Kum.1/11/2016",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "PP 81 Tahun 2012",
+   "url": "UU 32/2009 jo. UU 6/2023; PermenLHK 4/2021",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Kepmen LH 50 tahun 1996",
+   "url": "PermenLHK NOMOR 5 TAHUN 2021",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Permen LH 12 Tahun 2009",
+   "url": "PermenLHK 6/2021",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Permen LH 16 Tahun 2012",
+   "url": "PermenLHK 6/2021",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Permen LH 5 tahun 2006",
+   "url": "PermenLHK 6/2021",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Permen LH 03 tahun 2008",
+   "url": "PermenLHK 11/2021",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Permen LH 14 Th 2013",
+   "url": "PermenLHK P.5/2018",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Kepgub DKI 31 tahun 2008",
+   "url": "Pergub DKI Nomor 1 Tahun 2018",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Kepgub DKI 551 Th 2001",
+   "url": "Perda DKI Nomor 3 Tahun 2013",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Perda DKI 02 Tahun 2005",
+   "url": "PermenLHK NOMOR 14 TAHUN 2021",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Pergub DKI 88 Tahun 2010",
+   "url": "Permenperin 41/2014 & PermenLHK P.73/2019",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Pergub DKI 220 Tahun 2010",
+   "url": "Permenperin 23/M-IND/PER/4/2013 & PermenLH 03/2008",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Pergub DKI 20 Tahun 2013",
+   "url": "Pergub DKI 55 TAHUN 2021",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "PermenLH 5/2014 & Pergub DKI 69/2013",
+   "url": "Pergub DKI 102/2022 & Perda DKI 3/2013",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "PP 28/2025 Pasal 102; Permen LH/BPLH 22/2025 Pasal 12",
+   "url": "Perpres 110/2025",
    "galat": "HTTP 403"
   },
   {
    "id": "tautan",
-   "url": "Pergub DKI 76 Tahun 2009",
+   "url": "PerMenLHK NO P. 81 /MENLHK/SETJEN/KUM.1/10/2019",
    "galat": "HTTP 403"
   }
  ],
  "provinsi_dicek": [
-  "Kepulauan Bangka Belitung",
-  "Lampung",
-  "Banten",
-  "DKI Jakarta",
-  "Jawa Barat",
-  "Jawa Tengah"
+  "Jawa Timur",
+  "Kalimantan Barat",
+  "Kalimantan Tengah",
+  "Kalimantan Selatan",
+  "Kalimantan Timur",
+  "Kalimantan Utara"
  ],
  "kandidat": [],
  "perubahan_status": [],
  "disaring": [
+  {
+   "nomor": "Kepmenaker 276/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Transportasi dan Penyimpanan Golongan Pokok Pergudangan dan Aktivitas Penunjang Transportasi Bidang Usaha Bongkar Muat Barang",
+   "alasan": "skor relevansi 2 di bawah ambang"
+  },
   {
    "nomor": "Kepmenaker 256/2026",
    "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Pertambangan dan Penggalian Golongan Pokok Pertambangan Minyak Bumi Mentah dan Gas Alam Bidang Manajemen Tanggap Darurat, Krisis, dan Kelangsungan Bisnis",
@@ -462,9 +467,9 @@
    "alasan": "memuat 'perikanan'"
   },
   {
-   "nomor": "Kepmenaker 200/2026",
-   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Telekomunikasi, Pemrograman Komputer, Konsultansi, Infrastruktur Komputasi, dan Jasa Informasi Lainnya Golongan Pokok Aktivitas Pemrograman, Konsultansi Komputer, dan Aktivitas Terkait Bidang Information and Communication Technologies Project Management",
-   "alasan": "memuat 'telekomunikasi'"
+   "nomor": "Kepmenaker 276/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Transportasi dan Penyimpanan Golongan Pokok Pergudangan dan Aktivitas Penunjang Transportasi Bidang Usaha Bongkar Muat Barang",
+   "alasan": "skor relevansi 2 di bawah ambang"
   },
   {
    "nomor": "Kepmenaker 256/2026",
@@ -567,9 +572,9 @@
    "alasan": "skor relevansi 2 di bawah ambang"
   },
   {
-   "nomor": "Kepmenaker 118/2026",
-   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Keuangan dan Asuransi Golongan Pokok Aktivitas Jasa Keuangan, Kecuali Asuransi dan Dana Pensiun Bidang Tresuri Pasar Uang dan Pasar Valuta Asing",
-   "alasan": "skor relevansi 2 di bawah ambang"
+   "nomor": "Kepmenaker 200/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Telekomunikasi, Pemrograman Komputer, Konsultansi, Infrastruktur Komputasi, dan Jasa Informasi Lainnya Golongan Pokok Aktivitas Pemrograman, Konsultansi Komputer, dan Aktivitas Terkait Bidang Information and Communication Technologies Project Management",
+   "alasan": "memuat 'telekomunikasi'"
   },
   {
    "nomor": "Kepmenaker 188/2026",
@@ -692,14 +697,14 @@
    "alasan": "skor relevansi 0 di bawah ambang"
   },
   {
-   "nomor": "Permenaker 9/2026",
-   "judul": "Perubahan Kedua atas Peraturan Menteri Ketenagakerjaan Nomor 8 Tahun 2025 tentang Pedoman Pemberian Bantuan Pemerintah Program Pemagangan Lulusan Perguruan Tinggi",
-   "alasan": "memuat 'bantuan pemerintah'"
+   "nomor": "Kepmenaker 9/2026",
+   "judul": "Mekanisme Kerja dan Uraian Tugas Organisasi Jabatan Pimpinan Tinggi Pratama di Kementerian Ketenagakerjaan",
+   "alasan": "skor relevansi 0 di bawah ambang"
   },
   {
-   "nomor": "Permen 9/2026",
-   "judul": "Jaminan Sosial Pekerja Migran Indonesia",
-   "alasan": "memuat 'pekerja migran'"
+   "nomor": "Kepmenaker 118/2026",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Keuangan dan Asuransi Golongan Pokok Aktivitas Jasa Keuangan, Kecuali Asuransi dan Dana Pensiun Bidang Tresuri Pasar Uang dan Pasar Valuta Asing",
+   "alasan": "skor relevansi 2 di bawah ambang"
   },
   {
    "nomor": "Kepmenaker 108/2026",
@@ -715,11 +720,6 @@
    "nomor": "Kepmenaker 103/2026",
    "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Telekomunikasi, Pemrograman Komputer, Konsultansi, Infrastruktur Komputasi, dan Jasa Informasi Lainnya Golongan Pokok Aktivitas Pemrograman, Konsultansi Komputer, dan Aktivitas Terkait Bidang Keahlian Artificial Intelligence Subbidang Knowledge Based System",
    "alasan": "memuat 'telekomunikasi'"
-  },
-  {
-   "nomor": "Kepmenaker 65/2026",
-   "judul": "Besaran Bantuan Pemerintah Program Pemagangan Lulusan Perguruan Tinggi Tahun 2026",
-   "alasan": "memuat 'bantuan pemerintah'"
   }
  ]
 }
