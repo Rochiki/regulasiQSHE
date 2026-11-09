@@ -15,7 +15,7 @@ concurrency:
 jobs:
   cek:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -26,11 +26,15 @@ jobs:
       - name: Uji pembaca halaman
         run: python cek_regulasi.py --uji
       - name: Baca sumber JDIH
+        # Skrip membatasi dirinya 17 menit (batas_menit di sumber.json) dan keluar dengan kode 1 bila
+        # tidak ada satu pun sumber yang terbaca; run yang gagal memicu email pemberitahuan dari GitHub.
+        timeout-minutes: 22
         run: python cek_regulasi.py
       - name: Simpan hasil ke repositori
+        if: ${{ !cancelled() }}   # tetap menyimpan hasil sebagian walau langkah di atas gagal
         run: |
           git config user.name "robot-regulasi"
           git config user.email "robot-regulasi@users.noreply.github.com"
           git add kandidat.json register.json
           git diff --cached --quiet || git commit -m "Hasil cek regulasi $(TZ=Asia/Jakarta date +%F)"
-          git push
+          git push || { git pull --rebase -X theirs && git push; }

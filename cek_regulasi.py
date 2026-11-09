@@ -23,6 +23,30 @@ WIB = datetime.timezone(datetime.timedelta(hours=7))
 HARI_INI = datetime.datetime.now(WIB).date().isoformat()
 BULAN = {b: i + 1 for i, b in enumerate("januari februari maret april mei juni juli agustus september oktober november desember".split())}
 
+# ---- batas waktu & pemutus per host ------------------------------------------------------------
+# Sebelum ini setiap URL yang ditolak (HTTP 403 dari peraturan.bpk.go.id) diulang 3x dengan jeda 2+5+8 detik.
+# Dengan puluhan URL BPK per hari, job melewati batas 25 menit Actions, dibatalkan, dan hasilnya TIDAK pernah
+# tersimpan (mulai 13 Okt 2026). Kini: 403/404 langsung gagal, host yang 3x berturut-turut 403 dilewati
+# selama sisa run, dan seluruh run dibatasi waktu supaya hasil selalu sempat disimpan.
+MULAI = time.time()
+BATAS_DETIK = 17 * 60            # disetel dari "batas_menit" di sumber.json
+TOLAK_LANGSUNG = {401, 403, 404, 410, 451}   # diulang pun hasilnya sama
+GAGAL_BERUNTUN = {}              # host -> jumlah 401/403 beruntun
+HOST_BLOKIR = set()              # host yang dilewati selama sisa run
+DILEWATI = {}                    # host -> jumlah URL yang dilewati
+
+
+class HabisWaktu(Exception):
+    pass
+
+
+class HostDiblokir(Exception):
+    pass
+
+
+def sisa_waktu():
+    return BATAS_DETIK - (time.time() - MULAI)
+
 JENIS = [  # (pola pada nama panjang, singkatan baku)
     (r"undang-undang", "UU"), (r"peraturan pemerintah", "PP"), (r"peraturan presiden", "Perpres"), (r"keputusan presiden", "Keppres"),
     (r"peraturan menteri ketenagakerjaan|peraturan menteri tenaga kerja", "Permenaker"), (r"keputusan menteri ketenagakerjaan|keputusan menteri tenaga kerja", "Kepmenaker"),
@@ -123,15 +147,29 @@ def nilai(judul, aturan):
 
 # ---------------------------------------------------------------- pembaca halaman
 def ambil(url, sesi):
-    for coba in range(3):
+    host = urllib.parse.urlsplit(url).netloc
+    if host in HOST_BLOKIR:
+        DILEWATI[host] = DILEWATI.get(host, 0) + 1
+        raise HostDiblokir(host)
+    galat = "?"
+    for coba in range(2):
+        if sisa_waktu() <= 0:
+            raise HabisWaktu()
         try:
-            r = sesi.get(url, timeout=40)
+            r = sesi.get(url, timeout=(10, 25))
             if r.status_code == 200 and len(r.text) > 500:
+                GAGAL_BERUNTUN[host] = 0
                 return r.text
             galat = f"HTTP {r.status_code}"
+            if r.status_code in TOLAK_LANGSUNG:   # jangan diulang: hanya membuang waktu
+                if r.status_code in (401, 403):
+                    GAGAL_BERUNTUN[host] = GAGAL_BERUNTUN.get(host, 0) + 1
+                    if GAGAL_BERUNTUN[host] >= 3:
+                        HOST_BLOKIR.add(host)
+                break
         except Exception as e:  # jaringan, TLS, batas waktu
             galat = type(e).__name__
-        time.sleep(2 + coba * 3)
+        time.sleep(2 + coba * 2)
     raise RuntimeError(galat)
 
 
@@ -278,9 +316,11 @@ def jalankan():
     prov_kini = (semua_prov + semua_prov)[geser:geser + n]
     ada_kid = {k["kid"] for k in lama.get("kandidat", []) if k["kid"] not in tolak_kid}
     kandidat = [k for k in lama.get("kandidat", []) if k["kid"] not in tolak_kid]
-    disaring, ok, gagal = [], [], []
+    global BATAS_DETIK
+    BATAS_DETIK = int(float(cfg.get("batas_menit", 17)) * 60)
+    disaring, ok, gagal, habis = [], [], [], False
     for s in cfg.get("sumber", []):
-        if not s.get("aktif", True):
+        if not s.get("aktif", True) or habis:
             continue
         daftar = []
         for pola in s["url"]:
@@ -297,6 +337,11 @@ def jalankan():
                 kandidat += u
                 disaring += d
                 berhasil += 1
+            except HostDiblokir:
+                continue                      # sudah dicatat di DILEWATI; tanpa jeda
+            except HabisWaktu:
+                habis = True
+                break
             except Exception as e:
                 gagal.append(dict(id=s["id"], url=url, galat=str(e)))
             time.sleep(jeda)
@@ -306,6 +351,8 @@ def jalankan():
     berubah, bisa = [], [b for b in reg["baris"] if re.search(r"jdih\.kemnaker\.go\.id/peraturan/detail/|peraturan\.bpk\.go\.id/(Home/)?Details/", b.get("src", "")) and b["status"] not in ("Dicabut / Tidak Berlaku", "Kedaluwarsa")]
     bisa.sort(key=lambda b: b.get("cek", ""))
     for b in bisa[: int(cfg.get("cek_status_per_jalan", 60))]:
+        if habis:
+            break
         try:
             st, bukti = status_dari_halaman(ambil(b["src"], sesi))
             if st == "Dicabut / Tidak Berlaku":
@@ -314,6 +361,11 @@ def jalankan():
                 b["cat"] = f"{bukti} (sumber resmi, dicek {HARI_INI[8:]}-{HARI_INI[5:7]}-{HARI_INI[:4]}). Ganti rujukan di prosedur/IK."
             if st:
                 b["cek"] = HARI_INI
+        except HostDiblokir:
+            continue
+        except HabisWaktu:
+            habis = True
+            break
         except Exception as e:
             gagal.append(dict(id="cek-status", url=b["src"], galat=str(e)))
         time.sleep(jeda)
@@ -322,6 +374,8 @@ def jalankan():
     tanpa.sort(key=lambda b: b.get("tautan_dicoba", ""))
     sudah = {}
     for b in tanpa[: int(cfg.get("tautan_per_jalan", 40))]:
+        if habis:
+            break
         kunci_b = norm(b.get("nomor", ""))
         try:
             if kunci_b not in sudah:
@@ -330,6 +384,11 @@ def jalankan():
             if sudah[kunci_b]:
                 b["src"] = sudah[kunci_b]
                 terisi += 1
+        except HostDiblokir:
+            continue                          # baris ini dicoba lagi besok, bukan ditandai "sudah dicoba"
+        except HabisWaktu:
+            habis = True
+            break
         except Exception as e:
             gagal.append(dict(id="tautan", url=b.get("nomor", ""), galat=str(e)))
         b["tautan_dicoba"] = HARI_INI
@@ -340,10 +399,16 @@ def jalankan():
     if terisi or tanpa or berubah or any(b.get("cek") == HARI_INI for b in bisa):
         reg["versi"] = HARI_INI
         simpan(DATA / "register.json", reg)
-    simpan(DATA / "kandidat.json", dict(diperbarui=HARI_INI, sumber_ok=ok, sumber_gagal=gagal[:80], provinsi_dicek=prov_kini, kandidat=kandidat[:200], perubahan_status=berubah, disaring=disaring[:60]))
-    print(f"Selesai {HARI_INI}: {len(kandidat)} kandidat, {len(berubah)} perubahan status, {len(ok)} sumber terbaca, {len(gagal)} halaman gagal.")
+    for host, n in DILEWATI.items():   # satu baris ringkas per host, bukan puluhan baris galat yang sama
+        gagal.append(dict(id="dilewati", url=host, galat=f"{n} URL dilewati: server menolak akses (HTTP 401/403) 3x berturut-turut dari GitHub Actions"))
+    kesehatan = dict(selesai=not habis, detik=int(time.time() - MULAI), batas_detik=BATAS_DETIK, host_diblokir=sorted(HOST_BLOKIR))
+    simpan(DATA / "kandidat.json", dict(diperbarui=HARI_INI, sumber_ok=ok, sumber_gagal=gagal[:80], provinsi_dicek=prov_kini, kandidat=kandidat[:200], perubahan_status=berubah, disaring=disaring[:60], kesehatan=kesehatan))
+    print(f"Selesai {HARI_INI} dalam {kesehatan['detik']} detik{' (DIHENTIKAN batas waktu)' if habis else ''}: {len(kandidat)} kandidat, {len(berubah)} perubahan status, {len(ok)} sumber terbaca, {len(gagal)} catatan gagal.")
     for g in gagal[:15]:
         print("  gagal:", g["id"], g["galat"], g["url"][:90])
+    if not ok:   # tidak ada satu pun sumber terbaca: tandai run GAGAL supaya GitHub mengirim email pemberitahuan
+        print("PERINGATAN: tidak ada sumber yang terbaca pada run ini.")
+        sys.exit(1)
 
 
 CONTOH_KEMNAKER = """<div class="card"><div class="card-body"><span>SKKNI - INDUSTRI - ALAT BERAT</span>
@@ -389,6 +454,40 @@ def uji():
     assert pilih_tautan(hasil_cari, "permen", "lh", "11", "2026") == "" and pilih_tautan(hasil_cari, "permen", "naker", "12", "2026") == ""
     assert pilih_tautan(b, "perda", "kalimantan barat", "3", "2026").endswith("/Details/999001/perda-prov-x-no-3-tahun-2026") and pilih_tautan(b, "perda", "riau", "3", "2026") == ""
     assert nomor_tahun_pertama(dict(nomor="UU 13/2003 jo. UU 6/2023")) == ("13", "2003") and nomor_tahun_pertama(dict(nomor="Permenaker No. 05 Tahun 2018")) == ("5", "2018")
+    # --- pemutus host & batas waktu (penyebab run dibatalkan tiap hari sejak 13 Okt 2026) ---
+    class _R:
+        def __init__(s, kode): s.status_code, s.text = kode, ""
+
+    class _Sesi:
+        def __init__(s): s.n = 0
+        def get(s, url, timeout=None): s.n += 1; return _R(403)
+
+    for himpunan in (HOST_BLOKIR, GAGAL_BERUNTUN, DILEWATI):
+        himpunan.clear()
+    ss = _Sesi()
+    for i in range(3):
+        try:
+            ambil(f"https://contoh.go.id/a{i}", ss)
+            raise AssertionError("403 harus berujung galat")
+        except RuntimeError as e:
+            assert str(e) == "HTTP 403", e
+    assert ss.n == 3, "403 tidak boleh diulang (dulu 3x per URL + jeda 15 detik)"
+    try:
+        ambil("https://contoh.go.id/lagi", ss)
+        raise AssertionError("host harus dilewati setelah 3x 403")
+    except HostDiblokir:
+        pass
+    assert ss.n == 3 and DILEWATI == {"contoh.go.id": 1}, (ss.n, DILEWATI)
+    ambil_lama = globals()["BATAS_DETIK"]
+    globals()["BATAS_DETIK"] = -1
+    try:
+        ambil("https://host-lain.go.id/x", ss)
+        raise AssertionError("harus berhenti saat waktu habis")
+    except HabisWaktu:
+        pass
+    globals()["BATAS_DETIK"] = ambil_lama
+    for himpunan in (HOST_BLOKIR, GAGAL_BERUNTUN, DILEWATI):
+        himpunan.clear()
     print("UJI LULUS:", u[0]["nomor"], "| skor", u[0]["skor"], "|", u2[0]["nomor"], "| disaring:", d[0]["nomor"], "&", d2[0]["nomor"])
 
 

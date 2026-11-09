@@ -303,7 +303,7 @@ h2{font-family:var(--judul);font-weight:400;font-stretch:condensed;text-transfor
 <header class="top">
   <div class="brand">
     <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="#fff"/><rect x="10" y="12" width="9" height="40" fill="#8e1b3a"/><rect x="22" y="12" width="9" height="40" fill="#0e7490"/><rect x="34" y="12" width="9" height="40" fill="#be185d"/><rect x="46" y="12" width="9" height="40" fill="#f26522"/></svg>
-    <div><b>Radar Regulasi QHSE</b><span id="verLine"></span></div>
+    <div><b>Radar Regulasi QHSE</b><span id="verLine"></span><span id="robotLine" style="display:block;color:#f0a53a;font-weight:600"></span></div>
   </div>
   <span class="seg lang" id="lang" role="group" aria-label="Bahasa / Language / 言語"><button type="button" data-l="id" class="asli">ID</button><button type="button" data-l="en" class="asli">EN</button><button type="button" data-l="ja" class="asli">日本語</button></span>
   <button class="btn go" id="bUpd" type="button"><svg class="spin" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a8 8 0 1 0 7.4 5M12 4l3.5-2.5M12 4l2.5 3.6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span id="bUpdT">Perbarui daftar</span></button>
@@ -467,6 +467,7 @@ const TGL = "(\\d{1,2}) (Jan|Feb|Mar|Apr|Mei|Jun|Jul|Agu|Sep|Okt|Nov|Des) (\\d{4
 const POLA = [
   [new RegExp(`^Daftar per ${TGL} · dicek ${TGL}$`), m => [`List as of ${tglL(m[1], m[2], m[3])} · checked ${tglL(m[4], m[5], m[6])}`, `${tglL(m[1], m[2], m[3])}時点のリスト・${tglL(m[4], m[5], m[6])}確認`]],
   [new RegExp(`^Daftar per ${TGL} · belum pernah diperbarui di perangkat ini$`), m => [`List as of ${tglL(m[1], m[2], m[3])} · never updated on this device`, `${tglL(m[1], m[2], m[3])}時点のリスト・この端末では未更新`]],
+  [new RegExp(`^Robot pengecek JDIH terakhir berhasil ${TGL} \\((\\d+) hari lalu\\)\\. Cek tab Actions di GitHub\\.$`), m => [`The JDIH checker robot last succeeded on ${tglL(m[1], m[2], m[3])} (${m[4]} days ago). Check the Actions tab on GitHub.`, `JDIHチェックロボットの最終成功は${tglL(m[1], m[2], m[3])}（${m[4]}日前）。GitHubのActionsタブを確認してください。`]],
   [/^Seluruh (\d+) baris ditampilkan, tahun terbaru di atas\.$/, m => [`All ${m[1]} rows shown, newest year first.`, `全${m[1]}行を表示（新しい年が上）。`]],
   [/^(\d+) dari (\d+) baris ditampilkan, tahun terbaru di atas\.$/, m => [`${m[1]} of ${m[2]} rows shown, newest year first.`, `${m[2]}行中${m[1]}行を表示（新しい年が上）。`]],
   [/^(.+): (\d+) baris$/, m => [`${(KAMUS[m[1]] || [m[1]])[0]}: ${m[2]} rows`, `${(KAMUS[m[1]] || [0, m[1]])[1]}：${m[2]}行`]],
@@ -612,6 +613,8 @@ function grup(rows) {
 function drawHead() {
   const a = ringkas(aktif()), g = grup(a), nb = a.filter(r => penanda(r) === "baru").length, nu = a.filter(r => penanda(r) === "ubah").length;
   $("#verLine").textContent = `Daftar per ${tgl(S.versi)}` + (S.cek ? ` · dicek ${tgl(S.cek.slice(0, 10))}` : " · belum pernah diperbarui di perangkat ini");
+  const umurRobot = robotTgl ? Math.floor((Date.now() - new Date(robotTgl + "T00:00:00+07:00")) / 864e5) : 0;
+  $("#robotLine").textContent = umurRobot > 3 ? `Robot pengecek JDIH terakhir berhasil ${tgl(robotTgl)} (${umurRobot} hari lalu). Cek tab Actions di GitHub.` : "";
   $("#sumLine").innerHTML = `<b class="n">${g.length}</b> regulasi dalam <b class="n">${a.length}</b> baris. <b class="n">${nb}</b> terbit tahun ini, <b class="n">${nu}</b> diperbarui, dan <b class="n">${a.filter(isDaerah).length}</b> berasal dari peraturan daerah.`;
   $("#ctK").textContent = S.kandidat.length; $("#ctK").classList.toggle("hot", S.kandidat.length > 0);
   $("#ctA").textContent = arsip().length;
@@ -739,6 +742,7 @@ function terapkanPaket(baris, p) {
   for (const t of p.tambah || []) m.set(t.id, { ...t });
   return [...m.values()];
 }
+var robotTgl = "";   /* tanggal robot pengecek terakhir berhasil (dari kandidat.json) */
 const DASAR_DATA = location.protocol.startsWith("http") ? new URL("./", location.href).href : "";   /* register.json dan kandidat.json dibaca dari repositori ini */
 async function ambilJSON(u) { const r = await fetch(u + "?t=" + Date.now(), { cache: "no-store" }); if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); }
 function gabung(remote) {
@@ -792,7 +796,7 @@ async function perbarui(diam) {
   const mulai = Date.now(); let remote = null, kand = null, dis = null, asal = "", versi = "";
   if (DASAR_DATA) {
     try { const j = await ambilJSON(DASAR_DATA + "register.json"); remote = j.baris; versi = j.versi; asal = "repositori"; } catch (e) { remote = null; }
-    try { const k = await ambilJSON(DASAR_DATA + "kandidat.json"); kand = k.kandidat; dis = k.disaring; if (k.diperbarui && k.diperbarui > versi) versi = k.diperbarui; } catch (e) { kand = null; }
+    try { const k = await ambilJSON(DASAR_DATA + "kandidat.json"); kand = k.kandidat; dis = k.disaring; robotTgl = k.diperbarui || ""; if (k.diperbarui && k.diperbarui > versi) versi = k.diperbarui; } catch (e) { kand = null; }
   }
   if (!remote) { remote = terapkanPaket(BASE.baris, PAKET); kand = PAKET.kandidat; dis = PAKET.disaring; versi = PAKET.versi; asal = "paket bawaan aplikasi"; }
   if (!diam) await new Promise(r => setTimeout(r, Math.max(0, 900 - (Date.now() - mulai))));      // beri waktu agar proses terlihat

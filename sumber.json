@@ -1,6 +1,7 @@
 {
   "_catatan": "Daftar sumber yang dibaca robot pengecek. adapter 'kemnaker' mengikuti struktur daftar JDIH Kemnaker (diperiksa 7 Okt 2026). adapter 'generik' membaca semua tautan pada halaman dan mengenali pola 'Jenis ... Nomor ... Tahun ...'. {tahun} = tahun berjalan (dan tahun sebelumnya), {kata} = kata kunci, {provinsi} = nama provinsi. Set \"aktif\": false untuk mematikan sumber.",
   "jeda_detik": 1.5,
+  "batas_menit": 17,
   "provinsi_per_jalan": 6,
   "cek_status_per_jalan": 60,
   "tautan_per_jalan": 40,
