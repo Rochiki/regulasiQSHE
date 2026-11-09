@@ -103,7 +103,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "1999-04-20"
   },
   {
    "id": "Q-008",
@@ -124,7 +125,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "1999-04-20"
   },
   {
    "id": "Q-009",
@@ -145,7 +147,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "1999-04-20"
   },
   {
    "id": "Q-010",
@@ -166,7 +169,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "2014-03-11"
   },
   {
    "id": "Q-011",
@@ -208,7 +212,9 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "2022-10-17",
+   "tgl_berlaku": "2022-10-17"
   },
   {
    "id": "Q-013",
@@ -250,7 +256,8 @@
    "saran": "Pantau RUU Pelindungan Ketenagakerjaan yang sedang dibahas DPR (Pembicaraan Tingkat I, 14 Sep 2026). Belum terbit; UU 13/2003 jo. UU 6/2023 tetap menjadi acuan.",
    "cek": "2026-10-07",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "2003-03-25"
   },
   {
    "id": "S-001",
@@ -355,7 +362,8 @@
    "saran": "Pantau RUU Pelindungan Ketenagakerjaan yang sedang dibahas DPR (Pembicaraan Tingkat I, 14 Sep 2026). Belum terbit; UU 13/2003 jo. UU 6/2023 tetap menjadi acuan.",
    "cek": "2026-10-07",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "2003-03-25"
   },
   {
    "id": "S-006",
@@ -1521,7 +1529,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "2002-09-23"
   },
   {
    "id": "S-062",
@@ -1542,7 +1551,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2009-09-23"
   },
   {
    "id": "S-063",
@@ -1750,7 +1760,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2021-02-02"
   },
   {
    "id": "S-073",
@@ -2481,7 +2492,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "2004-10-06"
   },
   {
    "id": "H-003",
@@ -2502,7 +2514,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2009-10-12"
   },
   {
    "id": "H-004",
@@ -2523,7 +2536,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2011-11-25"
   },
   {
    "id": "H-005",
@@ -2583,7 +2597,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "1993-03-04"
   },
   {
    "id": "H-008",
@@ -2976,7 +2991,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2024-07-26"
   },
   {
    "id": "H-027",
@@ -3060,7 +3076,9 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2023-08-08",
+   "tgl_berlaku": "2023-08-08"
   },
   {
    "id": "H-033",
@@ -3102,7 +3120,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2019-01-25"
   },
   {
    "id": "H-035",
@@ -3398,7 +3417,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2002-12-16"
   },
   {
    "id": "E-002",
@@ -3419,7 +3439,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2004-07-28"
   },
   {
    "id": "E-003",
@@ -3440,7 +3461,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2007-08-10"
   },
   {
    "id": "E-004",
@@ -3483,7 +3505,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2009-10-03"
   },
   {
    "id": "E-006",
@@ -3525,7 +3548,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2001-11-26"
   },
   {
    "id": "E-008",
@@ -3545,7 +3569,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "2001-12-14"
   },
   {
    "id": "E-009",
@@ -3606,7 +3631,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2012-11-27"
   },
   {
    "id": "E-012",
@@ -4314,7 +4340,9 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2020-06-08",
+   "tgl_berlaku": "2020-06-09"
   },
   {
    "id": "E-051",
@@ -4567,7 +4595,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2009-10-03"
   },
   {
    "id": "E-064",
@@ -4964,7 +4993,8 @@
    "src": "",
    "saran": "",
    "cek": "2026-09-16",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "2021-10-29"
   },
   {
    "id": "E-098",
@@ -5005,7 +5035,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "2021-02-02"
   },
   {
    "id": "E-084",
@@ -5068,7 +5099,9 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2023-06-16",
+   "tgl_berlaku": "2023-06-16"
   },
   {
    "id": "E-087",
@@ -5457,7 +5490,8 @@
    "src": "",
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2009-01-12"
   },
   {
    "id": "S-118",
@@ -5497,7 +5531,8 @@
    "src": "",
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2021-02-02"
   },
   {
    "id": "S-120",
@@ -5578,7 +5613,8 @@
    "src": "",
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2007-04-26"
   },
   {
    "id": "S-124",
@@ -5719,7 +5755,8 @@
    "src": "",
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2019-10-15"
   },
   {
    "id": "E-107",
