@@ -152,24 +152,24 @@ def ambil(url, sesi):
         DILEWATI[host] = DILEWATI.get(host, 0) + 1
         raise HostDiblokir(host)
     galat = "?"
-    for coba in range(2):
+    for coba in range(3):
         if sisa_waktu() <= 0:
             raise HabisWaktu()
         try:
-            r = sesi.get(url, timeout=(10, 25))
+            r = sesi.get(url, timeout=(15, 40))   # beberapa situs JDIH lambat; jangan dipersingkat
             if r.status_code == 200 and len(r.text) > 500:
                 GAGAL_BERUNTUN[host] = 0
                 return r.text
             galat = f"HTTP {r.status_code}"
             if r.status_code in TOLAK_LANGSUNG:   # jangan diulang: hanya membuang waktu
-                if r.status_code in (401, 403):
-                    GAGAL_BERUNTUN[host] = GAGAL_BERUNTUN.get(host, 0) + 1
-                    if GAGAL_BERUNTUN[host] >= 3:
-                        HOST_BLOKIR.add(host)
                 break
         except Exception as e:  # jaringan, TLS, batas waktu
             galat = type(e).__name__
-        time.sleep(2 + coba * 2)
+        time.sleep(2 + coba * 3)
+    if galat not in ("HTTP 404", "HTTP 410"):     # halaman yang hilang bukan tanda host bermasalah
+        GAGAL_BERUNTUN[host] = GAGAL_BERUNTUN.get(host, 0) + 1
+        if GAGAL_BERUNTUN[host] >= 3:             # 3 URL berturut-turut gagal total: lewati host ini sampai run berikutnya
+            HOST_BLOKIR.add(host)
     raise RuntimeError(galat)
 
 
@@ -400,7 +400,7 @@ def jalankan():
         reg["versi"] = HARI_INI
         simpan(DATA / "register.json", reg)
     for host, n in DILEWATI.items():   # satu baris ringkas per host, bukan puluhan baris galat yang sama
-        gagal.append(dict(id="dilewati", url=host, galat=f"{n} URL dilewati: server menolak akses (HTTP 401/403) 3x berturut-turut dari GitHub Actions"))
+        gagal.append(dict(id="dilewati", url=host, galat=f"{n} URL dilewati: host gagal 3 URL berturut-turut (ditolak 401/403 atau tidak merespons) dari GitHub Actions"))
     kesehatan = dict(selesai=not habis, detik=int(time.time() - MULAI), batas_detik=BATAS_DETIK, host_diblokir=sorted(HOST_BLOKIR))
     simpan(DATA / "kandidat.json", dict(diperbarui=HARI_INI, sumber_ok=ok, sumber_gagal=gagal[:80], provinsi_dicek=prov_kini, kandidat=kandidat[:200], perubahan_status=berubah, disaring=disaring[:60], kesehatan=kesehatan))
     print(f"Selesai {HARI_INI} dalam {kesehatan['detik']} detik{' (DIHENTIKAN batas waktu)' if habis else ''}: {len(kandidat)} kandidat, {len(berubah)} perubahan status, {len(ok)} sumber terbaca, {len(gagal)} catatan gagal.")
