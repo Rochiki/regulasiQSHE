@@ -316,6 +316,7 @@ h2{font-family:var(--judul);font-weight:400;font-stretch:condensed;text-transfor
   <button role="tab" data-v="register" aria-selected="true">Register aktif</button>
   <button role="tab" data-v="kandidat" aria-selected="false">Kandidat baru<span class="ct" id="ctK">0</span></button>
   <button role="tab" data-v="arsip" aria-selected="false">Arsip tidak berlaku<span class="ct" id="ctA">0</span></button>
+  <button role="tab" data-v="cek" aria-selected="false">Cek database saya</button>
   <button role="tab" data-v="wilayah" aria-selected="false">Cakupan wilayah</button>
   <button role="tab" data-v="log" aria-selected="false">Log pembaruan</button>
   <button role="tab" data-v="metode" aria-selected="false">Sumber dan metode</button>
@@ -369,6 +370,12 @@ h2{font-family:var(--judul);font-weight:400;font-stretch:condensed;text-transfor
     <div id="aList"></div>
   </section>
 
+  <section id="v-cek" hidden>
+    <div class="lead"><h2>Cek database saya</h2><p>Unggah matriks regulasi Excel Anda (format "Daftar dan Evaluasi Peraturan" dengan sheet Q, S, H, E). Aplikasi mencocokkan nomor regulasinya dengan register ini, lalu menunjukkan mana yang sudah tidak berlaku dan perlu diganti, mana yang belum ada di matriks Anda, dan mana yang tidak dikenali. File diproses di peramban Anda dan tidak diunggah ke mana pun.</p></div>
+    <div class="panel"><div class="row"><label class="btn go" style="min-height:38px;cursor:pointer">Pilih file Excel<input type="file" id="cekFile" accept=".xlsx" hidden></label><span class="cap" id="cekNama" style="margin:0"></span><button class="btn" type="button" id="cekUnduh" hidden>Unduh hasil (Excel)</button></div></div>
+    <div id="cekOut"></div>
+  </section>
+
   <section id="v-wilayah" hidden>
     <div class="lead"><h2>Cakupan wilayah</h2><p>Regulasi nasional berlaku di semua lokasi. Kartu di bawah menunjukkan provinsi tempat operasional berada dan jumlah peraturan daerah yang sudah tercatat. Pilih provinsi untuk melihat regulasinya.</p></div>
     <div class="grid" id="wGrid"></div>
@@ -412,7 +419,19 @@ const KAMUS = {
   "Undang-Undang": ["Laws (UU)", "法律（UU）"], "Peraturan Pemerintah": ["Government Regulations (PP)", "政令（PP）"], "Peraturan/Keputusan Presiden": ["Presidential Regulations/Decrees", "大統領令・大統領決定"], "Peraturan Menteri/Lembaga": ["Ministerial/Agency Regulations", "大臣令・機関規則"], "Keputusan Menteri/Dirjen": ["Ministerial/Director-General Decrees", "大臣決定・総局長決定"], "Surat Edaran & Instruksi": ["Circulars and Instructions", "通達・指示"], "Peraturan Daerah": ["Regional Regulations (Perda)", "地方条例（Perda）"], "Peraturan/Keputusan Kepala Daerah & Dinas": ["Governor/Regional Agency Regulations", "州知事令・地方機関の規則"], "SNI, ISO & standar teknis": ["SNI, ISO and technical standards", "SNI・ISO・技術規格"],
   "Lebar tiap ruas menunjukkan jumlah baris per jenis regulasi. Pilih ruas untuk menyaring; pilih lagi untuk melepas.": ["Segment width shows the number of rows per regulation type. Select a segment to filter; select again to clear.", "各区画の幅は法令種別ごとの行数を表します。区画を選ぶと絞り込み、もう一度選ぶと解除します。"],
   "Urutan: tanggal terbaru di atas": ["Sort: newest date first", "並び順：新しい日付が上"], "Urutan: tingkatan tertinggi (UU) di atas": ["Sort: highest legal rank (Law) first", "並び順：法的効力が高い順（法律が上）"], "Urutan daftar": ["List order", "一覧の並び順"],
-  "Tanggal": ["Date", "日付"], "Tanggal ditetapkan": ["Date enacted", "制定日"], "Tanggal berlaku": ["Date in force", "施行日"], "Tahun saja bila tanggal belum diisi": ["Year only if no date is filled in", "日付未入力の場合は年のみ"],
+  "Cek database saya": ["Check my database", "自社データベースの照合"],
+  "Unggah matriks regulasi Excel Anda (format \"Daftar dan Evaluasi Peraturan\" dengan sheet Q, S, H, E). Aplikasi mencocokkan nomor regulasinya dengan register ini, lalu menunjukkan mana yang sudah tidak berlaku dan perlu diganti, mana yang belum ada di matriks Anda, dan mana yang tidak dikenali. File diproses di peramban Anda dan tidak diunggah ke mana pun.": ["Upload your Excel regulation matrix (\"List and Evaluation of Regulations\" format with sheets Q, S, H, E). The app matches regulation numbers against this register and shows which are no longer in force and need replacing, which are missing from your matrix, and which are not recognised. The file is processed in your browser and is not uploaded anywhere.", "Excelの法令マトリックス（Q・S・H・Eシート形式）をアップロードしてください。法令番号を本登録簿と照合し、失効して差し替えが必要なもの、マトリックスに未掲載のもの、認識できないものを表示します。ファイルはブラウザ内で処理され、外部には送信されません。"],
+  "Pilih file Excel": ["Choose Excel file", "Excelファイルを選択"], "Unduh hasil (Excel)": ["Download results (Excel)", "結果をダウンロード（Excel）"],
+  "Belum ada file": ["No file yet", "ファイル未選択"], "Pilih file Excel matriks regulasi Anda untuk dibandingkan dengan register.": ["Choose your regulation matrix Excel file to compare with the register.", "登録簿と比較する法令マトリックスのExcelファイルを選択してください。"],
+  "Tidak ada baris regulasi yang terbaca": ["No regulation rows could be read", "読み取れる法令行がありません"], "Pastikan sheet punya kolom berjudul \"Nomor Regulasi\" (dan sebaiknya \"Jenis Regulasi\" serta \"JUDUL\").": ["Make sure the sheet has a column titled \"Nomor Regulasi\" (preferably also \"Jenis Regulasi\" and \"JUDUL\").", "「Nomor Regulasi」列（できれば「Jenis Regulasi」「JUDUL」列も）があるか確認してください。"],
+  "Cocok dan masih berlaku": ["Matched and still in force", "一致・有効"], "Perlu diganti (sudah tidak berlaku)": ["Needs replacing (no longer in force)", "差し替え要（失効）"], "Belum ada di matriks Anda": ["Missing from your matrix", "マトリックス未掲載"], "Tidak ditemukan di register": ["Not found in the register", "登録簿に該当なし"],
+  "Perlu diganti": ["Needs replacing", "差し替え要"],
+  "Regulasi di matriks Anda yang menurut register sudah dicabut atau habis berlaku. Ganti rujukan di matriks, prosedur, dan IK dengan penggantinya.": ["Regulations in your matrix that the register shows as revoked or expired. Replace the references in the matrix, procedures and work instructions with the replacement.", "登録簿上、廃止または期限切れとなっているマトリックス内の法令です。マトリックス・手順書・作業指示書の参照を後継法令に差し替えてください。"],
+  "Regulasi yang berlaku menurut register tetapi tidak ada di sheet kategori yang sama pada matriks Anda. Urutan mengikuti pilihan urutan di tab Register aktif. Tambahkan bila mengikat operasional.": ["Regulations in force per the register but absent from the same-category sheet of your matrix. Order follows the sort choice in the Active register tab. Add them if they bind operations.", "登録簿上は有効だが、マトリックスの同カテゴリのシートにない法令です。並び順は「有効な登録簿」タブの設定に従います。業務に拘束力がある場合は追加してください。"],
+  "Nomor di matriks Anda yang tidak cocok dengan register. Bisa karena penulisan nomor berbeda, regulasi belum tercatat di register, atau nomor salah ketik. Periksa manual.": ["Numbers in your matrix that do not match the register. The number may be written differently, not yet recorded in the register, or mistyped. Check manually.", "登録簿と一致しないマトリックス内の番号です。表記の違い、登録簿への未登録、入力ミスの可能性があります。手動で確認してください。"],
+  "Tidak ada regulasi di matriks Anda yang tercatat tidak berlaku": ["No regulation in your matrix is recorded as no longer in force", "マトリックス内に失効と記録された法令はありません"], "Semua regulasi aktif di register sudah ada di matriks Anda": ["All active regulations in the register are already in your matrix", "登録簿の有効な法令はすべてマトリックスに掲載されています"], "Semua nomor di matriks Anda dikenali register": ["All numbers in your matrix are recognised by the register", "マトリックスの番号はすべて登録簿で認識されました"],
+  "Sheet / baris": ["Sheet / row", "シート／行"], "Nomor di matriks Anda": ["Number in your matrix", "マトリックス上の番号"], "Dasar pencabutan dan pengganti": ["Basis of revocation and replacement", "廃止の根拠と後継"], "Pengganti di register": ["Replacement in register", "登録簿上の後継"], "Cocok dengan register": ["Matches register entry", "一致する登録簿の項目"], "Kategori": ["Category", "カテゴリ"], "Jenis": ["Type", "種別"], "Saran tindak lanjut": ["Recommended follow-up", "対応の提案"],
+  "Tanggal ditetapkan": ["Date enacted", "制定日"], "Tanggal berlaku": ["Date in force", "施行日"], "Tahun saja bila tanggal belum diisi": ["Year only if no date is filled in", "日付未入力の場合は年のみ"],
   "Semua wilayah": ["All regions", "すべての地域"], "Nasional": ["National", "全国"], "Semua peraturan daerah": ["All regional regulations", "すべての地方法令"], "Baru atau berubah": ["New or changed", "新規・変更のみ"], "Lepas semua saringan": ["Clear all filters", "絞り込みを解除"],
   "Semua QSHE": ["All QSHE", "QSHEすべて"], "Quality": ["Quality", "品質"], "Safety": ["Safety", "安全"], "Health": ["Health", "衛生"], "Environment": ["Environment", "環境"],
   "No": ["No", "No"], "Jenis Regulasi": ["Regulation Type", "法令種別"], "Nomor Regulasi": ["Regulation Number", "法令番号"], "Judul": ["Title", "名称"], "Bab / Pasal Terkait": ["Relevant Chapter / Article", "関連する章・条"], "Tautan Regulasi": ["Regulation Link", "法令リンク"], "Buka naskah resmi": ["Open official text", "公式条文を開く"], "Cari naskah": ["Find the text", "条文を検索"], "Cari nomor atau judul regulasi": ["Search regulation number or title", "法令番号・名称で検索"], "Saran Tindak Lanjut": ["Suggested Follow-up", "対応の提案"],
@@ -476,6 +495,8 @@ const POLA = [
   [/^(\d+) dari (\d+) baris ditampilkan, (tanggal terbaru|tingkatan tertinggi) di atas\.$/, m => { const t = m[3] === "tingkatan tertinggi"; return [`${m[1]} of ${m[2]} rows shown, ${t ? "highest legal rank" : "newest date"} first.`, `${m[2]}行中${m[1]}行を表示（${t ? "法的効力の高い順" : "新しい日付が上"}）。`]; }],
   [new RegExp(`^Ditetapkan ${TGL}$`), m => [`Enacted ${tglL(m[1], m[2], m[3])}`, `制定 ${tglL(m[1], m[2], m[3])}`]],
   [new RegExp(`^Berlaku ${TGL}$`), m => [`In force ${tglL(m[1], m[2], m[3])}`, `施行 ${tglL(m[1], m[2], m[3])}`]],
+  [/^Terbaca (\d+) regulasi dari (\d+) sheet\.$/, m => [`${m[1]} regulations read from ${m[2]} sheets.`, `${m[2]}シートから${m[1]}件の法令を読み取りました。`]],
+  [/^Sudah ada di sheet: (.+)$/, m => [`Already in sheet: ${m[1]}`, `掲載済みシート：${m[1]}`]],
   [/^Tahun (\d{4})$/, m => [`Year ${m[1]}`, `${m[1]}年`]],
   [/^(.+): (\d+) baris$/, m => [`${(KAMUS[m[1]] || [m[1]])[0]}: ${m[2]} rows`, `${(KAMUS[m[1]] || [0, m[1]])[1]}：${m[2]}行`]],
   [new RegExp(`^(\\d+) baris · dicek ${TGL}$`), m => [`${m[1]} rows · checked ${tglL(m[2], m[3], m[4])}`, `${m[1]}行・${tglL(m[2], m[3], m[4])}確認`]],
@@ -708,6 +729,100 @@ function drawList() {
         <td class="sr">${esc(r.saran || "")}</td></tr>`; }).join("") + `</tbody></table></div>`;
 }
 
+/* ---------------- cek database pengguna (matriks Excel) ---------------- */
+const MNT = [["ojk", /pojk|ojk/i], ["kes", /menkes|kemenkes|kesehatan/i], ["lh", /lhk|klhk|bplh|\blh\b|lingkungan|menlh|bapedal|bappedal/i], ["esdm", /esdm|pertambangan|minerba|energi/i],
+  ["pu", /permenpu|pupr|\bpu\b|pekerjaan umum/i], ["perin", /perin\b|permenperin|perindustrian|\bind\b/i], ["hub", /permenhub|perhubungan|\bhub\b/i], ["dag", /dag\b|perdagangan|pemerind/i],
+  ["tan", /pertanian|permentan/i], ["naker", /naker|kemnaker|\/men\/|tenaga kerja/i]];
+const mnt = t => { const m = MNT.find(x => x[1].test(t)); return m ? m[0] : ""; };
+/* Ambil pasangan nomor + tahun dari teks, mis. "PER.04/MEN/1980" -> 4/1980, "UU No.01 Th 1970" -> 1/1970, "PP 96/2021 jo. PP 25/2024" -> dua kunci */
+function kunciDari(txt, hint) {
+  const t = String(txt || "").replace(/\s+/g, " "), re = /(\d{1,4})(?:[\/.\-A-Za-z\s\d]{0,24}?)(?:tahun|th\.?|[\/\s:-])\s*((?:19|20)\d{2})(?!\d)/gi, out = []; let m, last = 0;
+  while ((m = re.exec(t))) { const seg = t.slice(last, m.index + m[0].length) + " " + (hint || ""); last = m.index + m[0].length;
+    out.push({ n: String(+m[1]), y: +m[2], j: jenisBaku({ hier: seg, nomor: seg }), m: mnt(seg) }); }
+  return out;
+}
+const kunciCocok = (a, b) => a.n === b.n && a.y === b.y && (a.j === b.j || a.j === "LAIN" || b.j === "LAIN") && (a.m === b.m || !a.m || !b.m);
+const cocokAny = (ka, kb) => ka.some(a => kb.some(b => kunciCocok(a, b)));
+const tekSel = c => { let v = c && c.value; if (v == null || v instanceof Date) return ""; if (typeof v === "object") v = v.richText ? v.richText.map(x => x.text).join("") : v.result != null ? v.result : v.text != null ? v.text : ""; return String(v).replace(/\s+/g, " ").trim(); };
+async function bacaMatriks(buf) {
+  const wb = new ExcelJS.Workbook(); await wb.xlsx.load(buf); const out = []; let sheets = 0;
+  wb.eachSheet(ws => {
+    const nm = String(ws.name || "").trim(), kat = /^[QSHE][\s\-_]/i.test(nm) ? KATS.find(k => k[0] === nm[0].toUpperCase()) : "";
+    let hdr = 0, cN = 0, cJ = 0, cT = 0, ada = false;
+    ws.eachRow({ includeEmpty: false }, (row, rn) => {
+      if (!hdr) { row.eachCell((c, ci) => { const t = tekSel(c).toLowerCase(); if (/^nomor regulasi/.test(t)) cN = ci; else if (/^jenis regulasi/.test(t)) cJ = ci; else if (/^judul/.test(t)) cT = ci; }); if (cN) hdr = rn; return; }
+      const nomor = tekSel(row.getCell(cN)); if (!/\d/.test(nomor)) return;      // baris tanpa angka = judul, catatan, atau header berulang
+      const jenis = cJ ? tekSel(row.getCell(cJ)) : "", judul = cT ? tekSel(row.getCell(cT)) : "";
+      let keys = kunciDari(nomor, jenis); if (!keys.length) keys = kunciDari(nomor + " " + judul, jenis);
+      out.push({ sheet: nm, baris: rn, kat: kat || "", jenis, nomor, judul, keys }); ada = true;
+    });
+    if (ada) sheets++;
+  });
+  return { entri: out, sheets };
+}
+function analisaCek(entri) {
+  const reg = S.rows.map(r => ({ r, keys: (() => { const k = kunciDari(r.nomor, r.hier); return k.length ? k : kunciDari(r.judul, r.hier); })() }));
+  const katAda = new Set(entri.map(e => e.kat).filter(Boolean));
+  const ok = [], ganti = [], asing = [], cocokId = new Map();    // cocokId: id baris register -> kategori sheet pengguna yang memuatnya
+  for (const e of entri) {
+    const hit = e.keys.length ? reg.filter(x => x.keys.length && cocokAny(e.keys, x.keys)) : [];
+    if (!hit.length) { asing.push(e); continue; }
+    hit.forEach(h => { if (!cocokId.has(h.r.id)) cocokId.set(h.r.id, new Set()); cocokId.get(h.r.id).add(e.kat || "*"); });
+    const hidup = hit.filter(h => !MATI(h.r.status));
+    if (hidup.length) ok.push({ e, r: hidup[0].r });
+    else {
+      const r0 = hit[0].r, peng = [], kc = kunciDari(r0.cat, "");
+      if (kc.length) reg.forEach(x => { if (!MATI(x.r.status) && x.keys.length && cocokAny(kc, x.keys) && !peng.some(p => norm(p.nomor) === norm(x.r.nomor))) peng.push(x.r); });
+      ganti.push({ e, r: r0, peng });
+    }
+  }
+  const sudahDi = r => { const c = cocokId.get(r.id); return c && (c.has(r.kat) || c.has("*")); };
+  const belum = ringkas(aktif().filter(r => (!katAda.size || katAda.has(r.kat)) && !sudahDi(r)))
+    .map(r => ({ r, lain: [...(cocokId.get(r.id) || [])].filter(k => k !== "*").join(", ") }))
+    .sort((a, b) => urut(a.r, b.r));
+  return { ok, ganti, asing, belum, total: entri.length };
+}
+let CEK = null;
+async function jalankanCek(file) {
+  if (typeof ExcelJS === "undefined") { toast("Pustaka Excel belum termuat. Muat ulang halaman saat tersambung internet."); return; }
+  try {
+    const { entri, sheets } = await bacaMatriks(await file.arrayBuffer());
+    CEK = entri.length ? { nama: file.name, sheets, ...analisaCek(entri) } : { kosong: true, nama: file.name };
+    drawCek();
+  } catch (e) { toast("Gagal membaca file Excel: " + (e.message || e)); }
+}
+function drawCek() {
+  const box = $("#cekOut"), C = CEK;
+  $("#cekNama").textContent = C ? C.nama : ""; $("#cekUnduh").hidden = !C || C.kosong;
+  if (!C) { box.innerHTML = `<div class="empty"><b>Belum ada file</b>Pilih file Excel matriks regulasi Anda untuk dibandingkan dengan register.</div>`; return; }
+  if (C.kosong) { box.innerHTML = `<div class="empty"><b>Tidak ada baris regulasi yang terbaca</b>Pastikan sheet punya kolom berjudul "Nomor Regulasi" (dan sebaiknya "Jenis Regulasi" serta "JUDUL").</div>`; return; }
+  const th = a => `<tr>${a.map(x => `<th>${x}</th>`).join("")}</tr>`, kt = k => k ? `<span class="asp ${k[0]}">${k}</span>` : "";
+  const tbl = (head, rows) => `<div class="lw"><table class="l cekx"><thead>${th(head)}</thead><tbody>${rows.join("")}</tbody></table></div>`;
+  const sec = (judul, ket, isi) => `<h3 style="margin:22px 0 4px">${judul}</h3><p class="cap" style="margin:0 0 8px">${ket}</p>${isi}`;
+  const kosongT = t => `<div class="empty" style="margin-bottom:6px"><b>${t}</b></div>`;
+  box.innerHTML = `<p class="cap">Terbaca ${C.total} regulasi dari ${C.sheets} sheet.</p>
+    <div class="res"><div><b class="n">${C.ok.length}</b><span>Cocok dan masih berlaku</span></div><div class="${C.ganti.length ? "hot" : ""}"><b class="n">${C.ganti.length}</b><span>Perlu diganti (sudah tidak berlaku)</span></div><div class="${C.belum.length ? "hot" : ""}"><b class="n">${C.belum.length}</b><span>Belum ada di matriks Anda</span></div><div><b class="n">${C.asing.length}</b><span>Tidak ditemukan di register</span></div></div>` +
+    sec("Perlu diganti", "Regulasi di matriks Anda yang menurut register sudah dicabut atau habis berlaku. Ganti rujukan di matriks, prosedur, dan IK dengan penggantinya.",
+      C.ganti.length ? tbl(["Sheet / baris", "Nomor di matriks Anda", "Judul", "Status", "Dasar pencabutan dan pengganti", "Pengganti di register"], C.ganti.map(g => `<tr><td>${esc(g.e.sheet)} / ${g.e.baris}</td><td class="nr">${esc(g.e.nomor)}</td><td>${esc(g.e.judul || g.r.judul)}</td><td>${chipSt(g.r.status)}</td><td>${esc(g.r.cat || "Belum ada keterangan di register")}</td><td>${g.peng.length ? g.peng.map(p => `<b>${esc(p.nomor)}</b> ${esc(p.judul)}`).join("<br>") : "–"}</td></tr>`)) : kosongT("Tidak ada regulasi di matriks Anda yang tercatat tidak berlaku")) +
+    sec("Belum ada di matriks Anda", "Regulasi yang berlaku menurut register tetapi tidak ada di sheet kategori yang sama pada matriks Anda. Urutan mengikuti pilihan urutan di tab Register aktif. Tambahkan bila mengikat operasional.",
+      C.belum.length ? tbl(["Kategori", "Jenis", "Nomor", "Tanggal", "Judul", "Saran tindak lanjut"], C.belum.map(b => { const r = b.r, j = jenisBaku(r), f = penanda(r);
+        return `<tr class="${f ? "baru" : ""}"><td>${kt(r.kat)}</td><td class="jn j-${j}">${esc(JB_NAMA[j])}</td><td class="nr">${esc(r.nomor)}${f ? "<br>" + chipFlag(f) : ""}</td><td class="tg">${tglSel(r)}</td><td>${judulHTML(r.judul)}${b.lain ? `<small class="cap" style="display:block">Sudah ada di sheet: ${esc(b.lain)}</small>` : ""}</td><td>${esc(r.saran || "")}</td></tr>`; })) : kosongT("Semua regulasi aktif di register sudah ada di matriks Anda")) +
+    sec("Tidak ditemukan di register", "Nomor di matriks Anda yang tidak cocok dengan register. Bisa karena penulisan nomor berbeda, regulasi belum tercatat di register, atau nomor salah ketik. Periksa manual.",
+      C.asing.length ? tbl(["Sheet / baris", "Jenis", "Nomor di matriks Anda", "Judul"], C.asing.map(e => `<tr><td>${esc(e.sheet)} / ${e.baris}</td><td>${esc(e.jenis)}</td><td class="nr">${esc(e.nomor)}</td><td>${esc(e.judul)}</td></tr>`)) : kosongT("Semua nomor di matriks Anda dikenali register")) +
+    `<details style="margin-top:20px"><summary><b>Cocok dan masih berlaku (${C.ok.length})</b></summary>${C.ok.length ? tbl(["Sheet / baris", "Nomor di matriks Anda", "Cocok dengan register", "Tanggal"], C.ok.map(o => `<tr><td>${esc(o.e.sheet)} / ${o.e.baris}</td><td class="nr">${esc(o.e.nomor)}</td><td>${esc(o.r.nomor)}</td><td class="tg">${tglSel(o.r)}</td></tr>`)) : ""}</details>`;
+}
+async function unduhCek() {
+  const C = CEK; if (!C || C.kosong || typeof ExcelJS === "undefined") return;
+  const wb = new ExcelJS.Workbook(); wb.creator = "Radar Regulasi QHSE";
+  const lembar = (nama, head, rows) => { const ws = wb.addWorksheet(nama); ws.addRow(head).font = { bold: true }; rows.forEach(r => ws.addRow(r)); ws.columns.forEach((c, i) => (c.width = [16, 28, 52, 20, 52, 40][i] || 24)); ws.views = [{ state: "frozen", ySplit: 1 }]; ws.eachRow(r => r.eachCell(c => (c.alignment = { wrapText: true, vertical: "top" }))); };
+  const tg = r => [r.tgl_tetap ? "Ditetapkan " + tglDMY(r.tgl_tetap) : "", r.tgl_berlaku ? "Berlaku " + tglDMY(r.tgl_berlaku) : ""].filter(Boolean).join("; ") || (tahunReg(r) ? "Tahun " + tahunReg(r) : "");
+  lembar("Perlu diganti", ["Sheet", "Baris", "Nomor di matriks Anda", "Judul", "Status di register", "Dasar pencabutan dan pengganti", "Pengganti di register"], C.ganti.map(g => [g.e.sheet, g.e.baris, g.e.nomor, g.e.judul || g.r.judul, g.r.status, g.r.cat || "", g.peng.map(p => p.nomor + " " + p.judul).join("\n")]));
+  lembar("Belum ada di matriks", ["Kategori", "Jenis", "Nomor", "Tanggal", "Judul", "Saran tindak lanjut", "Sudah ada di sheet"], C.belum.map(b => [b.r.kat, JB_NAMA[jenisBaku(b.r)], b.r.nomor, tg(b.r), b.r.judul, b.r.saran || "", b.lain]));
+  lembar("Tidak ditemukan di register", ["Sheet", "Baris", "Jenis", "Nomor di matriks Anda", "Judul"], C.asing.map(e => [e.sheet, e.baris, e.jenis, e.nomor, e.judul]));
+  lembar("Cocok", ["Sheet", "Baris", "Nomor di matriks Anda", "Nomor di register", "Tanggal"], C.ok.map(o => [o.e.sheet, o.e.baris, o.e.nomor, o.r.nomor, tg(o.r)]));
+  unduh(`Hasil_cek_database_${today()}.xlsx`, new Blob([await wb.xlsx.writeBuffer()], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" }));
+}
+
 /* ---------------- tampilan: tab lain ---------------- */
 function drawKandidat() {
   const b = $("#kList");
@@ -745,9 +860,9 @@ function drawAll() {
   const tk = document.querySelector('#tabs button[data-v="kandidat"]'); tk.hidden = !S.kandidat.length;     // tab kandidat hanya muncul bila ada yang perlu dicek
   if (!S.kandidat.length && view === "kandidat") view = "register";
   drawHead();
-  ["register", "kandidat", "arsip", "wilayah", "log", "metode"].forEach(v => ($("#v-" + v).hidden = v !== view));
+  ["register", "kandidat", "arsip", "cek", "wilayah", "log", "metode"].forEach(v => ($("#v-" + v).hidden = v !== view));
   document.querySelectorAll("#tabs button").forEach(b => b.setAttribute("aria-selected", String(b.dataset.v === view)));
-  ({ register: drawList, kandidat: drawKandidat, arsip: drawArsip, wilayah: drawWilayah, log: drawLog, metode: drawMetode })[view]();
+  ({ register: drawList, kandidat: drawKandidat, arsip: drawArsip, cek: drawCek, wilayah: drawWilayah, log: drawLog, metode: drawMetode })[view]();
 }
 
 /* ---------------- dialog ---------------- */
@@ -940,6 +1055,8 @@ function wire() {
   $("#fNew").onclick = () => { F.baru = !F.baru; drawHead(); drawList(); };
   $("#fQ").oninput = e => { F.q = e.target.value; drawList(); };
   $("#fQ").onchange = () => drawHead();
+  $("#cekFile").onchange = e => { const f = e.target.files[0]; if (f) jalankanCek(f); e.target.value = ""; };
+  $("#cekUnduh").onclick = () => unduhCek().catch(x => toast("Gagal menyusun Excel: " + (x.message || x)));
   $("#fUrut").onchange = e => { F.urut = e.target.value; try { localStorage.setItem("radar-regulasi.urut", F.urut); } catch (x) { } drawHead(); drawList(); };
   $("#fWil").onchange = e => { F.wil = e.target.value; drawHead(); drawList(); };
   $("#fReset").onclick = () => { Object.assign(F, { q: "", kat: "", wil: "", baru: false }); F.jb.clear(); $("#fQ").value = ""; drawHead(); drawList(); };
