@@ -30,12 +30,12 @@
   {
    "id": "dki",
    "url": "https://jdih.jakarta.go.id/",
-   "galat": "ReadTimeout"
+   "galat": "ConnectionError"
   },
   {
    "id": "dilewati",
    "url": "peraturan.bpk.go.id",
-   "galat": "88 URL dilewati: server menolak akses (HTTP 401/403) 3x berturut-turut dari GitHub Actions"
+   "galat": "91 URL dilewati: host gagal 3 URL berturut-turut (ditolak 401/403 atau tidak merespons) dari GitHub Actions"
   }
  ],
  "provinsi_dicek": [
@@ -352,7 +352,7 @@
  ],
  "kesehatan": {
   "selesai": true,
-  "detik": 107,
+  "detik": 162,
   "batas_detik": 1020,
   "host_diblokir": [
    "peraturan.bpk.go.id"
