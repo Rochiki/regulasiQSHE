@@ -270,7 +270,8 @@
    "src": "https://peraturan.go.id/files/UU0011970.pdf",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "1970-01-12"
   },
   {
    "id": "S-002",
@@ -290,7 +291,8 @@
    "src": "https://peraturan.go.id/files/UU0011970.pdf",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "1970-01-12"
   },
   {
    "id": "S-003",
@@ -310,7 +312,8 @@
    "src": "https://peraturan.go.id/files/UU0011970.pdf",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "1970-01-12"
   },
   {
    "id": "S-004",
@@ -330,7 +333,8 @@
    "src": "https://peraturan.go.id/files/UU0011970.pdf",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "1970-01-12"
   },
   {
    "id": "S-005",
@@ -372,7 +376,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "2009-06-22"
   },
   {
    "id": "S-007",
@@ -393,7 +398,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "2009-06-22"
   },
   {
    "id": "S-008",
@@ -414,7 +420,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "2009-06-22"
   },
   {
    "id": "S-009",
@@ -476,7 +483,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "2012-04-12"
   },
   {
    "id": "S-012",
@@ -497,7 +505,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "2012-04-12"
   },
   {
    "id": "S-013",
@@ -518,7 +527,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "2012-04-12"
   },
   {
    "id": "S-014",
@@ -3154,7 +3164,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2024-07-26"
   },
   {
    "id": "H-038",
@@ -3175,7 +3186,9 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2023-08-08",
+   "tgl_berlaku": "2023-08-08"
   },
   {
    "id": "H-039",
@@ -3279,7 +3292,8 @@
    "src": "https://peraturan.go.id/files/UU0011970.pdf",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "1970-01-12"
   },
   {
    "id": "H-045",
@@ -3447,7 +3461,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2008-05-07"
   },
   {
    "id": "E-005",
@@ -4466,7 +4481,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2021-02-02"
   },
   {
    "id": "E-059",
@@ -4487,7 +4503,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2021-02-02"
   },
   {
    "id": "E-060",
@@ -6202,7 +6219,8 @@
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3102/keputusan-menteri-ketenagakerjaan-nomor-277-tahun-2026",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-11-09",
-   "masuk": "2026-11-09"
+   "masuk": "2026-11-09",
+   "tgl_tetap": "2026-10-08"
   },
   {
    "id": "S-204",
@@ -6222,7 +6240,8 @@
    "src": "https://peraturan.go.id/files/permenaker-no-14-tahun-2025.pdf",
    "saran": "Regulasi baru masuk daftar: pastikan penyedia jasa K3 yang dipakai (riksa uji, inspeksi periodik, sertifikasi SMK3) memiliki perizinan berusaha sesuai standar ini, lalu selaraskan prosedur riksa uji lifting gear.",
    "cek": "2026-11-09",
-   "masuk": "2026-11-09"
+   "masuk": "2026-11-09",
+   "tgl_tetap": "2025-11-18"
   },
   {
    "id": "S-205",
@@ -6242,7 +6261,8 @@
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/2645/keputusan-menteri-ketenagakerjaan-nomor-46-tahun-2025",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-11-09",
-   "masuk": "2026-11-09"
+   "masuk": "2026-11-09",
+   "tgl_tetap": "2025-03-10"
   },
   {
    "id": "H-051",
@@ -6282,7 +6302,8 @@
    "src": "https://jdih.kemkes.go.id/documents/peraturan-menteri-kesehatan-nomor-11-tahun-2025",
    "saran": "Regulasi baru masuk daftar: cek kesesuaian perizinan dan standar klinik perusahaan terhadap standar ini, lalu selaraskan prosedur/IK.",
    "cek": "2026-11-09",
-   "masuk": "2026-11-09"
+   "masuk": "2026-11-09",
+   "tgl_tetap": "2025-10-03"
   },
   {
    "id": "E-207",
@@ -6302,7 +6323,9 @@
    "src": "https://pasal.id/peraturan/permen/permenklhbph-12-2026",
    "saran": "Regulasi baru masuk daftar: dugaan pidana ditangani dari laporan hasil pengawasan LH dan korporasi beserta penanggung jawabnya dapat dimintai pertanggungjawaban pidana. Selaraskan IK respons pengawasan LH (bersama Permen LH/BPLH 6/2026) dan ganti rujukan Permen LH 11/2012.",
    "cek": "2026-11-09",
-   "masuk": "2026-11-09"
+   "masuk": "2026-11-09",
+   "tgl_tetap": "2026-09-21",
+   "tgl_berlaku": "2026-09-29"
   },
   {
    "id": "E-208",
@@ -6322,7 +6345,9 @@
    "src": "https://peraturan.bpk.go.id/Details/348174/permenperin-no-2-tahun-2026",
    "saran": "Regulasi baru masuk daftar: untuk lokasi di kawasan industri, pastikan RKL-RPL Rinci/persetujuan dari pengelola kawasan, laporan 6 bulanan, dan reviu dokumen lingkungan lama oleh perusahaan kawasan industri.",
    "cek": "2026-11-09",
-   "masuk": "2026-11-09"
+   "masuk": "2026-11-09",
+   "tgl_tetap": "2026-02-06",
+   "tgl_berlaku": "2026-04-03"
   },
   {
    "id": "E-209",

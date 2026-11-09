@@ -2,7 +2,7 @@
    Menyimpan cangkang aplikasi agar tetap bisa dibuka tanpa sinyal.
    Berkas register.json dan kandidat.json selalu diambil dari jaringan (tombol Perbarui), tidak disimpan di sini.
    Naikkan angka versi CACHE setiap kali index.html diganti. */
-const CACHE = "radar-regulasi-v12";
+const CACHE = "radar-regulasi-v13";
 const SHELL = ["./", "./index.html", "./exceljs.min.js", "./manifest.json", "./icon.svg"];
 self.addEventListener("install", e => e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())));
 self.addEventListener("activate", e => e.waitUntil(caches.keys().then(k => Promise.all(k.filter(x => x !== CACHE).map(x => caches.delete(x)))).then(() => self.clients.claim())));

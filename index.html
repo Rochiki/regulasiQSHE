@@ -132,7 +132,8 @@ main{max-width:1320px;margin:0 auto;padding:22px 18px calc(60px + env(safe-area-
 .katbar .all{background:var(--ink)} .katbar .Q{background:var(--Q)} .katbar .S{background:var(--S)} .katbar .H{background:var(--H)} .katbar .E{background:var(--E)}
 .lw{overflow:auto;border:1px solid var(--line);border-top:4px solid var(--ink);border-radius:0 6px 6px 6px;background:#fff}
 .lw.Q{border-top-color:var(--Q)} .lw.S{border-top-color:var(--S)} .lw.H{border-top-color:var(--H)} .lw.E{border-top-color:var(--E)}
-table.l{border-collapse:collapse;width:100%;min-width:900px;font-size:14px}
+table.l{border-collapse:collapse;width:100%;min-width:1000px;font-size:14px}
+.l td.tg{width:120px;font-size:13px;text-align:center;color:var(--ink2)}.l td.tg .kira{opacity:.7;font-style:italic}
 .l th{background:var(--arang);box-shadow:inset 0 -3px 0 var(--go);color:#fff;text-align:center;padding:10px 8px;font-weight:700;position:sticky;top:0;z-index:2}
 .l td{padding:9px 10px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);vertical-align:top}
 .l td:last-child{border-right:0}
@@ -348,6 +349,7 @@ h2{font-family:var(--judul);font-weight:400;font-stretch:condensed;text-transfor
     <div class="filters">
       <input type="search" id="fQ" placeholder="Cari nomor atau judul regulasi" aria-label="Cari regulasi">
       <select id="fWil" aria-label="Wilayah berlaku"></select>
+      <select id="fUrut" aria-label="Urutan daftar"></select>
       <button class="chip new" id="fNew" type="button" aria-pressed="false">Baru atau berubah</button>
       <button class="btn sm" id="fReset" type="button">Lepas semua saringan</button>
     </div>
@@ -409,6 +411,8 @@ const KAMUS = {
   "UU": ["Law", "法律"], "PP": ["Gov. Regulation", "政令"], "Perpres": ["Presidential Reg.", "大統領令"], "Permen": ["Ministerial Reg.", "大臣令"], "Kepmen": ["Ministerial Decree", "大臣決定"], "SE": ["Circular", "通達"], "Perda": ["Regional Reg.", "地方条例"], "Pergub": ["Governor Reg.", "州知事令"], "Standar": ["Standard", "規格"], "Lainnya": ["Other", "その他"],
   "Undang-Undang": ["Laws (UU)", "法律（UU）"], "Peraturan Pemerintah": ["Government Regulations (PP)", "政令（PP）"], "Peraturan/Keputusan Presiden": ["Presidential Regulations/Decrees", "大統領令・大統領決定"], "Peraturan Menteri/Lembaga": ["Ministerial/Agency Regulations", "大臣令・機関規則"], "Keputusan Menteri/Dirjen": ["Ministerial/Director-General Decrees", "大臣決定・総局長決定"], "Surat Edaran & Instruksi": ["Circulars and Instructions", "通達・指示"], "Peraturan Daerah": ["Regional Regulations (Perda)", "地方条例（Perda）"], "Peraturan/Keputusan Kepala Daerah & Dinas": ["Governor/Regional Agency Regulations", "州知事令・地方機関の規則"], "SNI, ISO & standar teknis": ["SNI, ISO and technical standards", "SNI・ISO・技術規格"],
   "Lebar tiap ruas menunjukkan jumlah baris per jenis regulasi. Pilih ruas untuk menyaring; pilih lagi untuk melepas.": ["Segment width shows the number of rows per regulation type. Select a segment to filter; select again to clear.", "各区画の幅は法令種別ごとの行数を表します。区画を選ぶと絞り込み、もう一度選ぶと解除します。"],
+  "Urutan: tanggal terbaru di atas": ["Sort: newest date first", "並び順：新しい日付が上"], "Urutan: tingkatan tertinggi (UU) di atas": ["Sort: highest legal rank (Law) first", "並び順：法的効力が高い順（法律が上）"], "Urutan daftar": ["List order", "一覧の並び順"],
+  "Tanggal": ["Date", "日付"], "Tanggal ditetapkan": ["Date enacted", "制定日"], "Tanggal berlaku": ["Date in force", "施行日"], "Tahun saja bila tanggal belum diisi": ["Year only if no date is filled in", "日付未入力の場合は年のみ"],
   "Semua wilayah": ["All regions", "すべての地域"], "Nasional": ["National", "全国"], "Semua peraturan daerah": ["All regional regulations", "すべての地方法令"], "Baru atau berubah": ["New or changed", "新規・変更のみ"], "Lepas semua saringan": ["Clear all filters", "絞り込みを解除"],
   "Semua QSHE": ["All QSHE", "QSHEすべて"], "Quality": ["Quality", "品質"], "Safety": ["Safety", "安全"], "Health": ["Health", "衛生"], "Environment": ["Environment", "環境"],
   "No": ["No", "No"], "Jenis Regulasi": ["Regulation Type", "法令種別"], "Nomor Regulasi": ["Regulation Number", "法令番号"], "Judul": ["Title", "名称"], "Bab / Pasal Terkait": ["Relevant Chapter / Article", "関連する章・条"], "Tautan Regulasi": ["Regulation Link", "法令リンク"], "Buka naskah resmi": ["Open official text", "公式条文を開く"], "Cari naskah": ["Find the text", "条文を検索"], "Cari nomor atau judul regulasi": ["Search regulation number or title", "法令番号・名称で検索"], "Saran Tindak Lanjut": ["Suggested Follow-up", "対応の提案"],
@@ -468,8 +472,11 @@ const POLA = [
   [new RegExp(`^Daftar per ${TGL} · dicek ${TGL}$`), m => [`List as of ${tglL(m[1], m[2], m[3])} · checked ${tglL(m[4], m[5], m[6])}`, `${tglL(m[1], m[2], m[3])}時点のリスト・${tglL(m[4], m[5], m[6])}確認`]],
   [new RegExp(`^Daftar per ${TGL} · belum pernah diperbarui di perangkat ini$`), m => [`List as of ${tglL(m[1], m[2], m[3])} · never updated on this device`, `${tglL(m[1], m[2], m[3])}時点のリスト・この端末では未更新`]],
   [new RegExp(`^Robot pengecek JDIH terakhir berhasil ${TGL} \\((\\d+) hari lalu\\)\\. Cek tab Actions di GitHub\\.$`), m => [`The JDIH checker robot last succeeded on ${tglL(m[1], m[2], m[3])} (${m[4]} days ago). Check the Actions tab on GitHub.`, `JDIHチェックロボットの最終成功は${tglL(m[1], m[2], m[3])}（${m[4]}日前）。GitHubのActionsタブを確認してください。`]],
-  [/^Seluruh (\d+) baris ditampilkan, tahun terbaru di atas\.$/, m => [`All ${m[1]} rows shown, newest year first.`, `全${m[1]}行を表示（新しい年が上）。`]],
-  [/^(\d+) dari (\d+) baris ditampilkan, tahun terbaru di atas\.$/, m => [`${m[1]} of ${m[2]} rows shown, newest year first.`, `${m[2]}行中${m[1]}行を表示（新しい年が上）。`]],
+  [/^Seluruh (\d+) baris ditampilkan, (tanggal terbaru|tingkatan tertinggi) di atas\.$/, m => { const t = m[2] === "tingkatan tertinggi"; return [`All ${m[1]} rows shown, ${t ? "highest legal rank" : "newest date"} first.`, `全${m[1]}行を表示（${t ? "法的効力の高い順" : "新しい日付が上"}）。`]; }],
+  [/^(\d+) dari (\d+) baris ditampilkan, (tanggal terbaru|tingkatan tertinggi) di atas\.$/, m => { const t = m[3] === "tingkatan tertinggi"; return [`${m[1]} of ${m[2]} rows shown, ${t ? "highest legal rank" : "newest date"} first.`, `${m[2]}行中${m[1]}行を表示（${t ? "法的効力の高い順" : "新しい日付が上"}）。`]; }],
+  [new RegExp(`^Ditetapkan ${TGL}$`), m => [`Enacted ${tglL(m[1], m[2], m[3])}`, `制定 ${tglL(m[1], m[2], m[3])}`]],
+  [new RegExp(`^Berlaku ${TGL}$`), m => [`In force ${tglL(m[1], m[2], m[3])}`, `施行 ${tglL(m[1], m[2], m[3])}`]],
+  [/^Tahun (\d{4})$/, m => [`Year ${m[1]}`, `${m[1]}年`]],
   [/^(.+): (\d+) baris$/, m => [`${(KAMUS[m[1]] || [m[1]])[0]}: ${m[2]} rows`, `${(KAMUS[m[1]] || [0, m[1]])[1]}：${m[2]}行`]],
   [new RegExp(`^(\\d+) baris · dicek ${TGL}$`), m => [`${m[1]} rows · checked ${tglL(m[2], m[3], m[4])}`, `${m[1]}行・${tglL(m[2], m[3], m[4])}確認`]],
   [/^(\d+) baris$/, m => [`${m[1]} rows`, `${m[1]}行`]],
@@ -553,7 +560,13 @@ const tglDMY = s => s ? `${s.slice(8, 10)}-${s.slice(5, 7)}-${s.slice(0, 4)}` : 
 const hariSejak = s => s ? Math.round((new Date(today()) - new Date(s)) / 864e5) : 1e9;
 const norm = s => String(s || "").toLowerCase().replace(/nomor|no\.|tahun|th\b/g, "").replace(/[^a-z0-9]/g, "");
 const tahunReg = r => { const m = String(r.nomor || "").match(/(?<!\d)(19[4-9]\d|20[0-4]\d)(?!\d)/); return m ? +m[1] : 0; };
-const urut = (a, b) => tahunReg(b) - tahunReg(a) || JB.findIndex(j => j[0] === jenisBaku(a)) - JB.findIndex(j => j[0] === jenisBaku(b)) || norm(a.nomor).localeCompare(norm(b.nomor), "id", { numeric: true }) || kOrd(a) - kOrd(b);
+/* Tingkatan kekuatan menurut UU 12/2011 (UU > PP > Perpres > Perda > peraturan menteri/kepala lembaga), lalu surat edaran dan standar */
+const RANK = ["UU", "PP", "PERPRES", "PERDA", "PERMEN", "KEPMEN", "PERGUB", "SE", "SNI", "LAIN"];
+const rank = r => RANK.indexOf(jenisBaku(r));
+const tglKey = r => r.tgl_tetap || (tahunReg(r) ? tahunReg(r) + "-00-00" : "0000-00-00");   // tanggal belum ada: dipakai tahun dari nomor
+const urutBaru = (a, b) => tglKey(b).localeCompare(tglKey(a)) || rank(a) - rank(b) || norm(a.nomor).localeCompare(norm(b.nomor), "id", { numeric: true }) || kOrd(a) - kOrd(b);
+const urutTingkat = (a, b) => rank(a) - rank(b) || urutBaru(a, b);
+const urut = (a, b) => (F.urut === "tingkat" ? urutTingkat : urutBaru)(a, b);
 const kOrd = r => KATS.indexOf(r.kat) * 1e4 + (+String(r.id).split("-")[1] || 0);
 
 function jenisBaku(r) {
@@ -579,7 +592,8 @@ const cariBPK = r => "https://peraturan.bpk.go.id/Search?keywords=" + encodeURIC
 /* ---------------- keadaan & simpanan ---------------- */
 const KEY = "radar-regulasi.v1";
 let S = null, fresh = new Set();
-const F = { q: "", kat: "", jb: new Set(), wil: "", baru: false };
+const F = { q: "", kat: "", jb: new Set(), wil: "", baru: false, urut: "terbaru" };
+try { const u = localStorage.getItem("radar-regulasi.urut"); if (u === "tingkat" || u === "terbaru") F.urut = u; } catch (e) { }
 let view = "register";
 function muatAwal() {
   let s = null;
@@ -632,6 +646,7 @@ function drawHead() {
   document.querySelectorAll("#lang button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.l === lang)));
   const opt = (v, t, cur) => `<option value="${esc(v)}"${v === cur ? " selected" : ""}>${esc(t)}</option>`;
   const wils = [...new Set(a.flatMap(r => String(r.wil || "").split("; ")))].filter(w => w && w !== "Nasional").sort();
+  $("#fUrut").innerHTML = opt("terbaru", "Urutan: tanggal terbaru di atas", F.urut) + opt("tingkat", "Urutan: tingkatan tertinggi (UU) di atas", F.urut);
   $("#fWil").innerHTML = opt("", "Semua wilayah", F.wil) + opt("Nasional", "Nasional", F.wil) + opt("__daerah", "Semua peraturan daerah", F.wil) + wils.map(w => opt(w, w, F.wil)).join("");
 }
 
@@ -664,7 +679,7 @@ function ringkas(rows) {
   const m = new Map();
   for (const r of rows) { const k = r.kat + "|" + (norm(r.nomor) || r.id), x = m.get(k);
     if (!x) m.set(k, { ...r, saran: r.saran || "" });
-    else { if (!x.src && r.src) x.src = r.src; if (r.saran && !x.saran.includes(r.saran)) x.saran = (x.saran ? x.saran + " " : "") + r.saran; if (!x.ubah && r.ubah) x.ubah = r.ubah; } }
+    else { if (!x.src && r.src) x.src = r.src; if (!x.tgl_tetap && r.tgl_tetap) x.tgl_tetap = r.tgl_tetap; if (!x.tgl_berlaku && r.tgl_berlaku) x.tgl_berlaku = r.tgl_berlaku; if (r.saran && !x.saran.includes(r.saran)) x.saran = (x.saran ? x.saran + " " : "") + r.saran; if (!x.ubah && r.ubah) x.ubah = r.ubah; } }
   return [...m.values()];
 }
 function tautan(r) {
@@ -672,17 +687,22 @@ function tautan(r) {
   const j = jenisBaku(r), q = `${r.nomor} ${String(r.judul || "").split(" ").slice(0, 12).join(" ")}` + (j === "SNI" || j === "LAIN" ? "" : " site:peraturan.bpk.go.id OR site:peraturan.go.id");
   return { url: "https://www.google.com/search?q=" + encodeURIComponent(q), resmi: false };
 }
+const tglSel = r => r.tgl_tetap || r.tgl_berlaku
+  ? (r.tgl_tetap ? `<div>Ditetapkan ${tgl(r.tgl_tetap)}</div>` : "") + (r.tgl_berlaku ? `<div>Berlaku ${tgl(r.tgl_berlaku)}</div>` : "")
+  : (tahunReg(r) ? `<div class="kira">Tahun ${tahunReg(r)}</div>` : "–");
 function drawList() {
   const rows = ringkas(aktif().filter(r => lolos(r))).sort(urut), box = $("#list"), n = ringkas(aktif()).length;
-  $("#cnt").textContent = rows.length === n ? `Seluruh ${n} baris ditampilkan, tahun terbaru di atas.` : `${rows.length} dari ${n} baris ditampilkan, tahun terbaru di atas.`;
+  const ketU = F.urut === "tingkat" ? "tingkatan tertinggi" : "tanggal terbaru";
+  $("#cnt").textContent = rows.length === n ? `Seluruh ${n} baris ditampilkan, ${ketU} di atas.` : `${rows.length} dari ${n} baris ditampilkan, ${ketU} di atas.`;
   if (!rows.length) { box.innerHTML = `<div class="lw ${F.kat ? F.kat[0] : ""}"><div class="empty" style="border:0"><b>Tidak ada regulasi yang cocok</b>Longgarkan saringan atau ubah kata pencarian.</div></div>`; return; }
   const no = {};
-  box.innerHTML = `<div class="lw ${F.kat ? F.kat[0] : ""}"><table class="l"><thead><tr><th>No</th><th>Jenis Regulasi</th><th>Nomor Regulasi</th><th>Judul</th><th>Tautan Regulasi</th><th>Saran Tindak Lanjut</th></tr></thead><tbody>` +
+  box.innerHTML = `<div class="lw ${F.kat ? F.kat[0] : ""}"><table class="l"><thead><tr><th>No</th><th>Jenis Regulasi</th><th>Nomor Regulasi</th><th>Tanggal</th><th>Judul</th><th>Tautan Regulasi</th><th>Saran Tindak Lanjut</th></tr></thead><tbody>` +
     rows.map(r => { const j = jenisBaku(r), f = penanda(r), t = tautan(r); no.n = (no.n || 0) + 1;
       return `<tr class="${f ? "baru" : ""}${fresh.has(r.id) ? " fresh" : ""}" data-row="${esc(r.id)}">
         <td class="no">${F.kat ? "" : `<i class="k" style="background:var(--${r.kat[0]})" title="${r.kat}"></i>`}${no.n}${f ? "<br>" + chipFlag(f) : ""}<button class="ed" type="button" data-edit="${esc(r.id)}">ubah</button></td>
         <td class="jn j-${j}">${esc(JB_NAMA[j])}${norm(r.hier) !== norm(JB_NAMA[j]) ? `<small>${esc(r.hier)}</small>` : ""}</td>
         <td class="nr">${esc(r.nomor)}${isDaerah(r) ? "<br>" + chipWil(r.wil) : ""}</td>
+        <td class="tg">${tglSel(r)}</td>
         <td class="jd">${judulHTML(r.judul)}</td>
         <td class="tl"><a class="tb${t.resmi ? " rs" : ""}" href="${esc(t.url)}" target="_blank" rel="noopener">${t.resmi ? "Buka naskah resmi" : "Cari naskah"}</a></td>
         <td class="sr">${esc(r.saran || "")}</td></tr>`; }).join("") + `</tbody></table></div>`;
@@ -764,6 +784,7 @@ function gabung(remote) {
       hasil.cat.push(l); catat("Saran tindak lanjut diperbarui", l, x.saran, "", "");
     }
     if (x.src && !l.src) l.src = x.src;
+    for (const k of ["tgl_tetap", "tgl_berlaku"]) if (x[k] && (!l.ed || !l[k])) l[k] = x[k];
     if (!l.ed) for (const k of ["hier", "nomor", "judul", "pasal", "kew", "jenis", "bukti", "frek", "pic", "wil"]) if (x[k] != null && x[k] !== "") l[k] = x[k];
   }
   return hasil;
@@ -774,7 +795,7 @@ function otoTerima(h) {
     if (!k.nomor || !k.judul || /perlu dicek/i.test(k.nomor + " " + k.judul)) { sisa.push(k); continue; }
     if (reg.has(norm(k.nomor))) continue;
     const kat = KATS.includes(k.kat) ? k.kat : "Safety";
-    const r = { id: idBaru(kat), kat, hier: k.hier || "", nomor: k.nomor, judul: k.judul, status: "Berlaku", pasal: "", kew: "", jenis: "", bukti: "", frek: "", pic: "", cat: "", wil: k.wil || "Nasional", src: k.src || "", saran: "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.", cek: today(), masuk: today() };
+    const r = { id: idBaru(kat), kat, hier: k.hier || "", nomor: k.nomor, judul: k.judul, status: "Berlaku", pasal: "", kew: "", jenis: "", bukti: "", frek: "", pic: "", cat: "", wil: k.wil || "Nasional", src: k.src || "", tgl_tetap: k.tgl || "", saran: "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.", cek: today(), masuk: today() };
     S.rows.push(r); reg.add(norm(r.nomor)); fresh.add(r.id); h.baru.push(r); catat("Kandidat masuk otomatis", r, k.alasan || "", "", r.status);
   }
   S.kandidat = sisa;
@@ -835,6 +856,7 @@ function formulir(mode, r, kid) {
     `<div class="two"><label class="fld"><span>Kategori</span>${sel("xKat", KATS, r.kat || "Safety")}</label><label class="fld"><span>Jenis regulasi (seperti tertulis)</span>${inp("xHier", r.hier, "mis. Permenaker, Perda Provinsi, Pergub")}</label></div>
      <label class="fld"><span>Nomor regulasi</span>${inp("xNomor", r.nomor, "mis. Permenaker 11/2026")}</label>
      <label class="fld"><span>Judul</span>${inp("xJudul", r.judul)}</label>
+     <div class="two"><label class="fld"><span>Tanggal ditetapkan</span><input type="date" id="xTgl" value="${esc(r.tgl_tetap || "")}"></label><label class="fld"><span>Tanggal berlaku</span><input type="date" id="xBrl" value="${esc(r.tgl_berlaku || "")}"></label></div>
      <label class="fld"><span>Bab / pasal terkait</span>${inp("xPasal", r.pasal, "mis. Pasal 5 ayat (1); Pasal 12")}</label>
      <label class="fld"><span>Isi pasal atau kewajiban</span><textarea id="xKew">${esc(r.kew || "")}</textarea></label>
      <label class="fld"><span>Saran tindak lanjut</span><textarea id="xSaran" style="min-height:54px">${esc(r.saran || "")}</textarea></label>
@@ -846,7 +868,7 @@ function formulir(mode, r, kid) {
 }
 function simpanForm(mode, id, kid) {
   const v = k => $("#" + k).value.trim();
-  const d = { kat: v("xKat"), hier: v("xHier"), nomor: v("xNomor"), judul: v("xJudul"), status: v("xSt"), wil: v("xWil") || "Nasional", pasal: v("xPasal"), kew: v("xKew"), saran: v("xSaran"), cat: v("xCat"), src: v("xSrc") };
+  const d = { kat: v("xKat"), hier: v("xHier"), nomor: v("xNomor"), judul: v("xJudul"), status: v("xSt"), wil: v("xWil") || "Nasional", pasal: v("xPasal"), kew: v("xKew"), saran: v("xSaran"), cat: v("xCat"), src: v("xSrc"), tgl_tetap: v("xTgl"), tgl_berlaku: v("xBrl") };
   if (!d.nomor || !d.judul) { toast("Nomor dan judul regulasi wajib diisi."); return; }
   if (mode === "ubah") {
     const r = S.rows.find(x => x.id === id); if (!r) return;
@@ -918,6 +940,7 @@ function wire() {
   $("#fNew").onclick = () => { F.baru = !F.baru; drawHead(); drawList(); };
   $("#fQ").oninput = e => { F.q = e.target.value; drawList(); };
   $("#fQ").onchange = () => drawHead();
+  $("#fUrut").onchange = e => { F.urut = e.target.value; try { localStorage.setItem("radar-regulasi.urut", F.urut); } catch (x) { } drawHead(); drawList(); };
   $("#fWil").onchange = e => { F.wil = e.target.value; drawHead(); drawList(); };
   $("#fReset").onclick = () => { Object.assign(F, { q: "", kat: "", wil: "", baru: false }); F.jb.clear(); $("#fQ").value = ""; drawHead(); drawList(); };
   $("#wGrid").onclick = e => { const b = e.target.closest("[data-p]"); if (!b) return; F.wil = b.dataset.p; view = "register"; drawAll(); scrollTo(0, 0); F.kat = ""; drawAll(); if (!aktif().some(r => lolos(r))) toast("Belum ada peraturan daerah " + b.dataset.p + " yang tercatat. Regulasi nasional tetap berlaku."); };
@@ -925,7 +948,7 @@ function wire() {
     const mo = e.target.closest("[data-more]"); if (mo) { const k = mo.dataset.more; openSet.has(k) ? openSet.delete(k) : openSet.add(k); drawList(); return; }
     const t = e.target.closest(".tog"); if (t) { const k = t.closest(".reg").dataset.key; openSet.has(k) ? openSet.delete(k) : openSet.add(k); view === "arsip" ? drawArsip() : drawList(); return; }
     const ed = e.target.closest("[data-edit]"); if (ed) { const r = S.rows.find(x => x.id === ed.dataset.edit); if (r) formulir("ubah", r); return; }
-    const tr = e.target.closest("[data-terima]"); if (tr) { const k = S.kandidat.find(x => x.kid === tr.dataset.terima); if (k) formulir("terima", { kat: k.kat, hier: k.hier, nomor: k.nomor, judul: k.judul, status: "Berlaku", wil: k.wil, src: k.src, saran: "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK." }, k.kid); return; }
+    const tr = e.target.closest("[data-terima]"); if (tr) { const k = S.kandidat.find(x => x.kid === tr.dataset.terima); if (k) formulir("terima", { kat: k.kat, hier: k.hier, nomor: k.nomor, judul: k.judul, status: "Berlaku", wil: k.wil, src: k.src, tgl_tetap: k.tgl || "", saran: "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK." }, k.kid); return; }
     const tl = e.target.closest("[data-tolak]"); if (tl) { const k = S.kandidat.find(x => x.kid === tl.dataset.tolak); if (!k) return; S.kandidat = S.kandidat.filter(x => x !== k); S.ditolak.push({ kid: k.kid, nomor: k.nomor, t: today() }); catat("Kandidat ditolak", k, "Dinilai tidak terkait operasional."); simpan(); drawAll(); toast(k.nomor + " ditolak dan tidak akan diusulkan lagi."); }
   });
   dlg().addEventListener("click", e => {
@@ -953,9 +976,9 @@ function wire() {
 const X = { navy: "213F75", gold: "FFC000", cream: "FFF8E7", line: "8A93A0", ink: "1F2937", or: "F26522", biru: "DCE8F7", Quality: "2F6DB5", Safety: "F26522", Health: "1A9E8F", Environment: "4C9A2A" };
 const argb = h => ({ argb: "FF" + h });
 const XL = {
-  id: { judul: "DAFTAR DAN EVALUASI PERUNDANGAN YANG BERLAKU (QSHE) NASIONAL", upd: (b, y) => `Update : ${b} ${y}`, head: ["No", "Jenis Regulasi", "Nomor Regulasi", "JUDUL", "TAUTAN REGULASI", "Saran Tindak Lanjut"], resmi: "Buka naskah resmi", cari: "Cari naskah", warna: "Warna jenis regulasi:  ", baru: "BARU", ubah: "BERUBAH", ket: `BARU = terbit pada tahun pengecekan (${today().slice(0, 4)})`, kosong: "Belum ada regulasi pada kategori ini.", berkas: (b, y) => `01_Daftar_dan_Evaluasi_Peraturan_Terbaru_${b}_${y}`, bln: ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"], kat: k => k.toUpperCase() },
-  en: { judul: "LIST AND EVALUATION OF APPLICABLE REGULATIONS (QSHE) – NATIONAL", upd: (b, y) => `Update: ${b} ${y}`, head: ["No", "Regulation Type", "Regulation Number", "TITLE", "REGULATION LINK", "Suggested Follow-up"], resmi: "Open official text", cari: "Find the text", warna: "Regulation type colours:  ", baru: "NEW", ubah: "CHANGED", ket: `NEW = issued in the year of checking (${today().slice(0, 4)})`, kosong: "No regulations in this category yet.", berkas: (b, y) => `01_List_and_Evaluation_of_Applicable_Regulations_${b}_${y}`, bln: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], kat: k => k.toUpperCase() },
-  ja: { judul: "適用法令一覧および評価（QSHE）全国", upd: (b, y) => `更新：${y}年${b}`, head: ["No", "法令種別", "法令番号", "名称", "法令リンク", "対応の提案"], resmi: "公式条文を開く", cari: "条文を検索", warna: "法令種別の色：  ", baru: "新規", ubah: "変更", ket: `新規 = 確認年（${today().slice(0, 4)}年）に公布`, kosong: "このカテゴリの法令はまだありません。", berkas: (b, y) => `01_適用法令一覧_${y}年${b}`, bln: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"], kat: k => ({ Quality: "品質", Safety: "安全", Health: "衛生", Environment: "環境" })[k] + "（" + k + "）" },
+  id: { tetap: "Ditetapkan", brl: "Berlaku", judul: "DAFTAR DAN EVALUASI PERUNDANGAN YANG BERLAKU (QSHE) NASIONAL", upd: (b, y) => `Update : ${b} ${y}`, head: ["No", "Jenis Regulasi", "Nomor Regulasi", "JUDUL", "TAUTAN REGULASI", "Saran Tindak Lanjut"], resmi: "Buka naskah resmi", cari: "Cari naskah", warna: "Warna jenis regulasi:  ", baru: "BARU", ubah: "BERUBAH", ket: `BARU = terbit pada tahun pengecekan (${today().slice(0, 4)})`, kosong: "Belum ada regulasi pada kategori ini.", berkas: (b, y) => `01_Daftar_dan_Evaluasi_Peraturan_Terbaru_${b}_${y}`, bln: ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"], kat: k => k.toUpperCase() },
+  en: { tetap: "Enacted", brl: "In force", judul: "LIST AND EVALUATION OF APPLICABLE REGULATIONS (QSHE) – NATIONAL", upd: (b, y) => `Update: ${b} ${y}`, head: ["No", "Regulation Type", "Regulation Number", "TITLE", "REGULATION LINK", "Suggested Follow-up"], resmi: "Open official text", cari: "Find the text", warna: "Regulation type colours:  ", baru: "NEW", ubah: "CHANGED", ket: `NEW = issued in the year of checking (${today().slice(0, 4)})`, kosong: "No regulations in this category yet.", berkas: (b, y) => `01_List_and_Evaluation_of_Applicable_Regulations_${b}_${y}`, bln: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], kat: k => k.toUpperCase() },
+  ja: { tetap: "制定", brl: "施行", judul: "適用法令一覧および評価（QSHE）全国", upd: (b, y) => `更新：${y}年${b}`, head: ["No", "法令種別", "法令番号", "名称", "法令リンク", "対応の提案"], resmi: "公式条文を開く", cari: "条文を検索", warna: "法令種別の色：  ", baru: "新規", ubah: "変更", ket: `新規 = 確認年（${today().slice(0, 4)}年）に公布`, kosong: "このカテゴリの法令はまだありません。", berkas: (b, y) => `01_適用法令一覧_${y}年${b}`, bln: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"], kat: k => ({ Quality: "品質", Safety: "安全", Health: "衛生", Environment: "環境" })[k] + "（" + k + "）" },
 };
 const BLN_PJG = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
 function sel_(c, o = {}) {
@@ -991,11 +1014,12 @@ async function unduhExcel() {
       const n = 7 + i, jb = jenisBaku(r), pn = penanda(r), tl = tautan(r), krem = pn ? X.cream : undefined;
       sel_(ws.getCell(n, 1), { bold: true, h: "center", color: pn === "baru" ? "FFFFFF" : X.ink, fill: pn === "baru" ? X.or : pn === "ubah" ? X.biru : undefined }).value = pn ? `${i + 1}\n${pn === "baru" ? x.baru : x.ubah}` : i + 1;
       sel_(ws.getCell(n, 2), { bold: true, h: "center", color: "FFFFFF", fill: JB_HEX[jb] }).value = lang === "id" ? (r.hier || JB_NAMA[jb]) : `${r.hier || JB_NAMA[jb]}\n(${trs(JB_NAMA[jb])})`;
-      sel_(ws.getCell(n, 3), { bold: true, h: "center", fill: krem }).value = r.nomor;
+      const tg2 = [r.tgl_tetap ? `${x.tetap} ${tglDMY(r.tgl_tetap)}` : "", r.tgl_berlaku ? `${x.brl} ${tglDMY(r.tgl_berlaku)}` : ""].filter(Boolean).join("\n");
+      sel_(ws.getCell(n, 3), { bold: true, h: "center", fill: krem }).value = tg2 ? `${r.nomor}\n${tg2}` : r.nomor;
       const tj = judulTj(r.judul), jd = tj ? `${tj}\n(${r.judul})` : r.judul; sel_(ws.getCell(n, 4), { h: "center", fill: krem }).value = jd;
       sel_(ws.getCell(n, 5), { fill: krem, h: "center", color: "0563C1", bold: tl.resmi }).value = { text: (tl.resmi ? x.resmi : x.cari) + (tl.resmi ? "\n" + tl.url : ""), hyperlink: tl.url };
       const sr = r.saran ? trs(r.saran) : ""; sel_(ws.getCell(n, 6), { fill: krem }).value = sr || null;
-      const ln = Math.max(tl.resmi ? 1 + baris_(tl.url, 44) : 1, baris_(jd, lang === "ja" ? 26 : 44), baris_(sr, lang === "ja" ? 24 : 43), baris_(r.nomor, 26), baris_(r.hier, 22) + (lang === "id" ? 0 : 1), pn ? 2 : 1);
+      const ln = Math.max(tl.resmi ? 1 + baris_(tl.url, 44) : 1, baris_(jd, lang === "ja" ? 26 : 44), baris_(sr, lang === "ja" ? 24 : 43), baris_(r.nomor, 26) + (r.tgl_tetap ? 1 : 0) + (r.tgl_berlaku ? 1 : 0), baris_(r.hier, 22) + (lang === "id" ? 0 : 1), pn ? 2 : 1);
       ws.getRow(n).height = Math.min(409, Math.max(30, ln * 13 + 8));
     });
     if (!rows.length) { ws.mergeCells("A7:F7"); sel_(ws.getCell("A7"), { h: "center", color: "5B6675" }).value = x.kosong; }
