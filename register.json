@@ -34,13 +34,14 @@
    "bukti": "Laporan & bukti penyampaian ke instansi (tanda terima)",
    "frek": "Sesuai ketentuan pasal",
    "pic": "Parts & Warehouse",
-   "cat": "Identitas perlu dikoreksi: Permendag 86/M-DAG/PER/12/2016 mengatur pelayanan perizinan perdagangan online & tanda tangan elektronik, sedangkan judul 'Pertimbangan Teknis Impor Besi/Baja' adalah Permenperin 86/M-IND/PER/12/2016. Cek status Permenperin tsb di JDIH Kemenperin.",
+   "cat": "Identitas perlu dikoreksi: Permendag 86/M-DAG/PER/12/2016 mengatur pelayanan perizinan perdagangan online & tanda tangan elektronik, sedangkan judul 'Pertimbangan Teknis Impor Besi/Baja' adalah Permenperin 86/M-IND/PER/12/2016. Cek status Permenperin tsb di JDIH Kemenperin. Database pengguna 10/11/2026 mencatat peraturan ini Permenperin 86/M-IND/PER/12/2016 (bukan Permendag), ditetapkan 30-12-2016; kolom nomor belum diubah, tanggal diisi dari database.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "2016-12-30"
   },
   {
    "id": "Q-003",
@@ -61,7 +62,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-09"
+   "tautan_dicoba": "2026-11-09",
+   "tgl_tetap": "2015-12-16"
   },
   {
    "id": "Q-005",
@@ -82,7 +84,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "2009-03-25"
   },
   {
    "id": "Q-007",
@@ -191,7 +194,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-09"
+   "tautan_dicoba": "2026-11-09",
+   "tgl_tetap": "2026-09-16"
   },
   {
    "id": "Q-012",
@@ -235,7 +239,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-09"
+   "tautan_dicoba": "2026-11-09",
+   "tgl_tetap": "2017-07-18"
   },
   {
    "id": "Q-014",
@@ -470,7 +475,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "2021-05-20"
   },
   {
    "id": "S-011",
@@ -557,7 +563,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "2012-10-12"
   },
   {
    "id": "S-015",
@@ -592,7 +599,7 @@
    "bukti": "Laporan inspeksi/pemantauan, foto kondisi, prosedur/IK terkait",
    "frek": "Sesuai ketentuan pasal",
    "pic": "QSHE",
-   "cat": "Substansi P2K3 di tempat kerja kini diatur Permenaker 13/2025; bagian DK3N/DK3W perlu dicek di JDIH Kemnaker.",
+   "cat": "Substansi P2K3 di tempat kerja kini diatur Permenaker 13/2025; bagian DK3N/DK3W perlu dicek di JDIH Kemnaker. Database pengguna 10/11/2026 mencatat KEP.155/MEN/1984 tidak berlaku (disempurnakan) tanpa menyebut peraturan pengganti; status tidak diubah.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
@@ -619,7 +626,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-09"
+   "tautan_dicoba": "2026-11-09",
+   "tgl_tetap": "1987-08-03"
   },
   {
    "id": "S-018",
@@ -640,7 +648,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-09"
+   "tautan_dicoba": "2026-11-09",
+   "tgl_tetap": "1990-05-07"
   },
   {
    "id": "S-019",
@@ -661,7 +670,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-10"
+   "tautan_dicoba": "2026-11-10",
+   "tgl_tetap": "1999-09-29"
   },
   {
    "id": "S-020",
@@ -682,7 +692,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-10"
+   "tautan_dicoba": "2026-11-10",
+   "tgl_tetap": "1999-08-25"
   },
   {
    "id": "S-021",
@@ -724,7 +735,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "2003-10-31"
   },
   {
    "id": "S-023",
@@ -765,7 +777,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "2008-12-18"
   },
   {
    "id": "S-025",
@@ -807,7 +820,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "1979-02-28"
   },
   {
    "id": "S-027",
@@ -827,7 +841,8 @@
    "src": "https://peraturan.go.id/files/bn567-2018.pdf",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "2018-04-27"
   },
   {
    "id": "S-028",
@@ -848,7 +863,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "1992-12-30"
   },
   {
    "id": "S-029",
@@ -869,7 +885,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "1980-03-06"
   },
   {
    "id": "S-030",
@@ -890,7 +907,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "1980-03-14"
   },
   {
    "id": "S-031",
@@ -932,7 +950,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "1982-03-08"
   },
   {
    "id": "S-033",
@@ -953,7 +972,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "1983-08-10"
   },
   {
    "id": "S-034",
@@ -994,7 +1014,8 @@
    "saran": "",
    "cek": "2026-09-16",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "2015-10-16"
   },
   {
    "id": "S-036",
@@ -1015,7 +1036,8 @@
    "saran": "",
    "cek": "2026-09-16",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "1992-12-30"
   },
   {
    "id": "S-037",
@@ -1056,7 +1078,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "1995-10-12"
   },
   {
    "id": "S-039",
@@ -1077,7 +1100,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "1998-02-26"
   },
   {
    "id": "S-040",
@@ -1098,7 +1122,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2008-08-13"
   },
   {
    "id": "S-041",
@@ -1119,7 +1144,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2010-07-06"
   },
   {
    "id": "S-042",
@@ -1140,7 +1166,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2012-04-12"
   },
   {
    "id": "S-043",
@@ -1161,7 +1188,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2015-04-09"
   },
   {
    "id": "S-044",
@@ -1182,7 +1210,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2016-03-10"
   },
   {
    "id": "S-045",
@@ -1203,7 +1232,8 @@
    "saran": "",
    "cek": "2026-09-16",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2016-03-10"
   },
   {
    "id": "S-046",
@@ -1224,7 +1254,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "1997-10-21"
   },
   {
    "id": "S-047",
@@ -1325,7 +1356,8 @@
    "saran": "",
    "cek": "2026-09-16",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2008-12-30"
   },
   {
    "id": "S-052",
@@ -1346,7 +1378,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2008-05-12"
   },
   {
    "id": "S-053",
@@ -1367,7 +1400,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2009-08-11"
   },
   {
    "id": "S-054",
@@ -1489,7 +1523,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2008-10-21"
   },
   {
    "id": "S-060",
@@ -1573,7 +1608,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2012-01-24"
   },
   {
    "id": "S-064",
@@ -1782,7 +1818,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2015-12-11"
   },
   {
    "id": "S-074",
@@ -1803,7 +1840,8 @@
    "saran": "",
    "cek": "2026-09-16",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2016-07-14"
   },
   {
    "id": "S-075",
@@ -1824,7 +1862,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2016-04-13"
   },
   {
    "id": "S-076",
@@ -1839,13 +1878,14 @@
    "bukti": "Surat keterangan riksa uji bejana tekanan, inventaris per lokasi",
    "frek": "Tahunan",
    "pic": "GA",
-   "cat": "",
+   "cat": "Database pengguna 10/11/2026 menyebut dicabut sebagian oleh Permenaker 11/2026; BELUM diverifikasi pada naskah (keterangan S-116 menyebut peraturan lain yang dicabut). Status tetap Berlaku; cek pasal pencabutan.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2016-12-27"
   },
   {
    "id": "S-077",
@@ -1860,13 +1900,14 @@
    "bukti": "Laporan riksa uji PTP, inspeksi pengaman mesin",
    "frek": "Tahunan",
    "pic": "GA",
-   "cat": "",
+   "cat": "Database pengguna 10/11/2026 menyebut dicabut sebagian oleh Permenaker 11/2026; BELUM diverifikasi pada naskah (keterangan S-116 menyebut peraturan lain yang dicabut). Status tetap Berlaku; cek pasal pencabutan.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2016-12-27"
   },
   {
    "id": "S-078",
@@ -1887,7 +1928,8 @@
    "saran": "",
    "cek": "2026-09-16",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2016-03-10"
   },
   {
    "id": "S-079",
@@ -1908,7 +1950,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2017-06-22"
   },
   {
    "id": "S-080",
@@ -2012,7 +2055,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2006-09-11"
   },
   {
    "id": "S-094",
@@ -2033,7 +2077,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2012-07-06"
   },
   {
    "id": "S-095",
@@ -2048,13 +2093,14 @@
    "bukti": "Inventaris PAPA & ABAA, inspeksi pra-operasi, SWL tertera, tag status",
    "frek": "Harian (pra-operasi)",
    "pic": "Service (SSD/TSD)",
-   "cat": "",
+   "cat": "Database pengguna 10/11/2026 menyebut dicabut sebagian oleh Permenaker 11/2026; BELUM diverifikasi pada naskah (keterangan S-116 menyebut peraturan lain yang dicabut). Status tetap Berlaku; cek pasal pencabutan.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2020-06-08"
   },
   {
    "id": "S-096",
@@ -2069,13 +2115,14 @@
    "bukti": "Surat Keterangan Memenuhi Syarat K3, laporan riksa uji PJK3, jadwal riksa uji per aset",
    "frek": "Tahunan",
    "pic": "QSHE",
-   "cat": "",
+   "cat": "Database pengguna 10/11/2026 menyebut dicabut sebagian oleh Permenaker 11/2026; BELUM diverifikasi pada naskah (keterangan S-116 menyebut peraturan lain yang dicabut). Status tetap Berlaku; cek pasal pencabutan.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2020-06-08"
   },
   {
    "id": "S-097",
@@ -2090,13 +2137,14 @@
    "bukti": "Database lisensi K3 (operator forklift/crane, rigger), reminder masa berlaku",
    "frek": "Bulanan",
    "pic": "QSHE",
-   "cat": "",
+   "cat": "Database pengguna 10/11/2026 menyebut dicabut sebagian oleh Permenaker 11/2026; BELUM diverifikasi pada naskah (keterangan S-116 menyebut peraturan lain yang dicabut). Status tetap Berlaku; cek pasal pencabutan.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2020-06-08"
   },
   {
    "id": "S-099",
@@ -2117,7 +2165,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2019-09-06"
   },
   {
    "id": "S-100",
@@ -2132,13 +2181,14 @@
    "bukti": "Laporan inspeksi/pemantauan, foto kondisi, prosedur/IK terkait",
    "frek": "Sesuai ketentuan pasal",
    "pic": "QSHE",
-   "cat": "Dasar hukumnya (UU 3/1992, PP 14/1993, Keppres 22/1993, PER.04/MEN/1993) sudah diganti; tidak ditemukan pencabutan formal. Penyelesaian kasus KK/PAK kini mengacu Permenaker 5/2021 jo. 1/2025.",
+   "cat": "Dasar hukumnya (UU 3/1992, PP 14/1993, Keppres 22/1993, PER.04/MEN/1993) sudah diganti; tidak ditemukan pencabutan formal. Penyelesaian kasus KK/PAK kini mengacu Permenaker 5/2021 jo. 1/2025. Database pengguna 10/11/2026 menyebut dicabut Kepmenaker 136/2021 (8-10-2021); BELUM diverifikasi pada naskah, status tidak diubah. Konfirmasi di JDIH Kemnaker.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2012-09-27"
   },
   {
    "id": "S-101",
@@ -2159,7 +2209,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "2015-07-14"
   },
   {
    "id": "S-102",
@@ -2180,7 +2231,8 @@
    "saran": "",
    "cek": "2026-09-16",
    "masuk": "",
-   "tautan_dicoba": "2026-10-10"
+   "tautan_dicoba": "2026-10-10",
+   "tgl_tetap": "1989-02-21"
   },
   {
    "id": "S-103",
@@ -2201,7 +2253,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2015-04-09"
   },
   {
    "id": "S-104",
@@ -2222,7 +2275,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2021-05-18"
   },
   {
    "id": "S-105",
@@ -2243,7 +2297,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2021-04-01"
   },
   {
    "id": "S-106",
@@ -2305,7 +2360,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2018-05-02"
   },
   {
    "id": "S-109",
@@ -2326,7 +2382,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2019-08-01"
   },
   {
    "id": "S-111",
@@ -2368,7 +2425,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2020-01-30"
   },
   {
    "id": "S-113",
@@ -2383,13 +2441,14 @@
    "bukti": "Laporan tahap I & II ke BPJS TK, rekap klaim JKK",
    "frek": "Saat terjadi",
    "pic": "HR",
-   "cat": "",
+   "cat": "Database pengguna 10/11/2026 menyebut diubah Permenaker 1/2025 (18-02-2025); lihat S-206.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2021-03-31"
   },
   {
    "id": "S-114",
@@ -2410,7 +2469,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2023-11-21"
   },
   {
    "id": "S-115",
@@ -2431,7 +2491,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2025-11-17"
   },
   {
    "id": "S-116",
@@ -2451,7 +2512,8 @@
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3070/peraturan-menteri-ketenagakerjaan-nomor-11-tahun-2026",
    "saran": "",
    "cek": "2026-11-10",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "2026-07-03"
   },
   {
    "id": "H-001",
@@ -2472,7 +2534,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "1981-01-26"
   },
   {
    "id": "H-002",
@@ -2619,7 +2682,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "1989-06-13"
   },
   {
    "id": "H-009",
@@ -2640,7 +2704,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2004-04-26"
   },
   {
    "id": "H-010",
@@ -2682,7 +2747,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "1980-03-13"
   },
   {
    "id": "H-012",
@@ -2702,7 +2768,8 @@
    "src": "https://peraturan.go.id/files/bn567-2018.pdf",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "2018-04-27"
   },
   {
    "id": "H-013",
@@ -2744,7 +2811,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "1982-04-23"
   },
   {
    "id": "H-015",
@@ -2765,7 +2833,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "1998-02-26"
   },
   {
    "id": "H-016",
@@ -2786,7 +2855,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "1979-01-12"
   },
   {
    "id": "H-017",
@@ -2807,7 +2877,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2016-01-26"
   },
   {
    "id": "H-018",
@@ -2868,7 +2939,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2022-08-31"
   },
   {
    "id": "H-021",
@@ -2949,7 +3021,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2007-07-06"
   },
   {
    "id": "H-025",
@@ -2970,7 +3043,8 @@
    "saran": "",
    "cek": "2026-09-16",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2014-02-11"
   },
   {
    "id": "H-026",
@@ -3013,7 +3087,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2016-10-26"
   },
   {
    "id": "H-028",
@@ -3028,13 +3103,14 @@
    "bukti": "Laporan inspeksi/pemantauan, foto kondisi, prosedur/IK terkait",
    "frek": "Sesuai ketentuan pasal",
    "pic": "HR",
-   "cat": "Tidak ditemukan info pencabutan; konfirmasi JDIH Kemenkes.",
+   "cat": "Tidak ditemukan info pencabutan; konfirmasi JDIH Kemenkes. Database pengguna 10/11/2026 menyebut dicabut Permenkes 11/2022; BELUM diverifikasi pada naskah, status tidak diubah. Konfirmasi di JDIH Kemkes.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2016-11-17"
   },
   {
    "id": "H-029",
@@ -3055,7 +3131,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2016-12-23"
   },
   {
    "id": "H-032",
@@ -3099,7 +3176,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2013-02-18"
   },
   {
    "id": "H-034",
@@ -3228,7 +3306,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2023-05-29"
   },
   {
    "id": "H-040",
@@ -3249,7 +3328,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2022-09-21"
   },
   {
    "id": "H-041",
@@ -3270,7 +3350,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2023-01-04"
   },
   {
    "id": "H-042",
@@ -3291,7 +3372,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-11"
+   "tautan_dicoba": "2026-10-11",
+   "tgl_tetap": "2015-07-24"
   },
   {
    "id": "H-044",
@@ -3527,7 +3609,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "1998-07-03"
   },
   {
    "id": "E-007",
@@ -3653,7 +3736,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "1996-11-25"
   },
   {
    "id": "E-013",
@@ -3674,7 +3758,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2009-04-15"
   },
   {
    "id": "E-014",
@@ -3695,7 +3780,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2012-11-23"
   },
   {
    "id": "E-015",
@@ -3716,7 +3802,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2006-08-01"
   },
   {
    "id": "E-016",
@@ -3757,7 +3844,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2008-03-05"
   },
   {
    "id": "E-018",
@@ -3839,7 +3927,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "1999-08-25"
   },
   {
    "id": "E-022",
@@ -3860,7 +3949,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "1997-02-20"
   },
   {
    "id": "E-023",
@@ -3881,7 +3971,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2008-01-15"
   },
   {
    "id": "E-024",
@@ -3902,7 +3993,8 @@
    "saran": "",
    "cek": "2026-09-16",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2001-04-05"
   },
   {
    "id": "E-025",
@@ -3923,7 +4015,8 @@
    "saran": "",
    "cek": "2026-09-16",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2005-09-13"
   },
   {
    "id": "E-026",
@@ -3965,7 +4058,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2010-06-01"
   },
   {
    "id": "E-028",
@@ -4007,7 +4101,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2013-04-01"
   },
   {
    "id": "E-030",
@@ -4028,7 +4123,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2014-04-03"
   },
   {
    "id": "E-032",
@@ -4049,7 +4145,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2025-06-05"
   },
   {
    "id": "E-033",
@@ -4070,7 +4167,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2009-05-26"
   },
   {
    "id": "E-034",
@@ -4111,7 +4209,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2010-03-29"
   },
   {
    "id": "E-036",
@@ -4132,7 +4231,8 @@
    "saran": "",
    "cek": "2026-09-16",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2015-06-17"
   },
   {
    "id": "E-037",
@@ -4256,7 +4356,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2013-04-04"
   },
   {
    "id": "E-047",
@@ -4277,7 +4378,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2007-01-05"
   },
   {
    "id": "E-048",
@@ -4298,7 +4400,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2014-09-22"
   },
   {
    "id": "E-049",
@@ -4405,7 +4508,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2020-07-24"
   },
   {
    "id": "E-054",
@@ -4553,7 +4657,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2021-02-02"
   },
   {
    "id": "E-061",
@@ -4617,7 +4722,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2021-04-01"
   },
   {
    "id": "E-065",
@@ -4638,7 +4744,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2021-04-01"
   },
   {
    "id": "E-066",
@@ -4659,7 +4766,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2021-04-01"
   },
   {
    "id": "E-067",
@@ -4680,7 +4788,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2021-04-01"
   },
   {
    "id": "E-068",
@@ -4743,7 +4852,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2018-01-24"
   },
   {
    "id": "E-071",
@@ -4764,7 +4874,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2019-06-27"
   },
   {
    "id": "E-072",
@@ -4785,7 +4896,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2018-01-05"
   },
   {
    "id": "E-073",
@@ -4806,7 +4918,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2013-06-10"
   },
   {
    "id": "E-074",
@@ -4869,7 +4982,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2013-04-04"
   },
   {
    "id": "E-077",
@@ -5015,7 +5129,8 @@
    "saran": "",
    "cek": "2026-09-16",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2025-10-10"
   },
   {
    "id": "E-083",
@@ -5122,7 +5237,8 @@
    "saran": "",
    "cek": "2026-09-16",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2022-09-21"
   },
   {
    "id": "E-088",
@@ -5164,7 +5280,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2024-07-01"
   },
   {
    "id": "E-090",
@@ -5247,7 +5364,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2025-06-05"
   },
   {
    "id": "E-094",
@@ -5268,7 +5386,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2025-09-04"
   },
   {
    "id": "E-095",
@@ -5289,7 +5408,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2025-10-22"
   },
   {
    "id": "E-096",
@@ -5309,7 +5429,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "2025-08-19"
   },
   {
    "id": "E-097",
@@ -5329,7 +5450,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "2026-05-25"
   },
   {
    "id": "Q-017",
@@ -5349,7 +5471,8 @@
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3072/keputusan-menteri-ketenagakerjaan-nomor-199-tahun-2026",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-11-10",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2026-07-14"
   },
   {
    "id": "E-099",
@@ -5369,7 +5492,8 @@
    "src": "https://peraturan.bpk.go.id/Download/22011/PERDA_prov_kaltim_2_2011_PPA_PPK.pdf",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2011-04-04"
   },
   {
    "id": "E-100",
@@ -5389,7 +5513,8 @@
    "src": "https://peraturan.bpk.go.id/Details/35507",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2016-12-22"
   },
   {
    "id": "E-101",
@@ -5409,7 +5534,8 @@
    "src": "https://peraturan.bpk.go.id/Download/160090/perda-nomor-1-tahun-2019-tentang-pengendalian-kebakaran-hutan-danatau-lahan.pdf",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2019-02-25"
   },
   {
    "id": "E-102",
@@ -5429,7 +5555,8 @@
    "src": "https://kalteng.bpk.go.id/wp-content/uploads/2020/10/Matriks-Perbandingan-Perubahan-Perda-Prov-Pengendalian-Kebakaran-Hutan-atau-Lahan-ok.pdf",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2020-04-27"
   },
   {
    "id": "Q-018",
@@ -5449,7 +5576,8 @@
    "src": "",
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "1981-07-31"
   },
   {
    "id": "Q-019",
@@ -5470,7 +5598,8 @@
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tautan_dicoba": "2026-11-09"
+   "tautan_dicoba": "2026-11-09",
+   "tgl_tetap": "2017-11-06"
   },
   {
    "id": "S-117",
@@ -5511,7 +5640,8 @@
    "src": "https://peraturan.bpk.go.id/Details/177410",
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2021-09-09"
   },
   {
    "id": "S-119",
@@ -5553,7 +5683,8 @@
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tautan_dicoba": "2026-11-09"
+   "tautan_dicoba": "2026-11-09",
+   "tgl_tetap": "2005-07-26"
   },
   {
    "id": "S-121",
@@ -5573,7 +5704,8 @@
    "src": "",
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2012-05-15"
   },
   {
    "id": "S-122",
@@ -5593,7 +5725,8 @@
    "src": "",
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2021-02-02"
   },
   {
    "id": "S-123",
@@ -5634,7 +5767,8 @@
    "src": "",
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2015-06-30"
   },
   {
    "id": "H-049",
@@ -5675,7 +5809,8 @@
    "src": "",
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2024-07-02"
   },
   {
    "id": "E-103",
@@ -5715,7 +5850,8 @@
    "src": "",
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2020-07-17"
   },
   {
    "id": "E-105",
@@ -5735,7 +5871,8 @@
    "src": "",
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2020-07-16"
   },
   {
    "id": "E-106",
@@ -5776,7 +5913,8 @@
    "src": "",
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2024-12-02"
   },
   {
    "id": "E-108",
@@ -5796,7 +5934,8 @@
    "src": "",
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "1996-11-25"
   },
   {
    "id": "E-109",
@@ -5816,7 +5955,8 @@
    "src": "https://peraturan.bpk.go.id/Download/39411/8129PERDANO.2pdf.pdf",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2016-04-18"
   },
   {
    "id": "E-110",
@@ -5836,7 +5976,8 @@
    "src": "",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2008-01-14"
   },
   {
    "id": "E-111",
@@ -5856,7 +5997,8 @@
    "src": "https://peraturan.bpk.go.id/Download/271574/2022perda002%20ocr.pdf",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2022-04-12"
   },
   {
    "id": "E-112",
@@ -5876,7 +6018,8 @@
    "src": "https://peraturan.bpk.go.id/Download/275637/Pergub%20No%2039%20tahun%202019%20ocr.pdf",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2019-08-13"
   },
   {
    "id": "E-113",
@@ -5896,7 +6039,8 @@
    "src": "",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2014-05-20"
   },
   {
    "id": "E-114",
@@ -5916,7 +6060,8 @@
    "src": "https://peraturan.bpk.go.id/Download/207163/Perda%20No.1%20Tahun%202012.pdf",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2012-02-13"
   },
   {
    "id": "E-115",
@@ -5936,7 +6081,8 @@
    "src": "https://aceh.bpk.go.id/wp-content/uploads/2014/12/Qanun-2011-2-Pengelolaan-Lingkungan-Hid2.pdf",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2011-03-14"
   },
   {
    "id": "E-116",
@@ -5956,7 +6102,8 @@
    "src": "https://jdih.sumutprov.go.id/assets/regkab/1688616723-1219-PERDA-NOMOR-2-TAHUN-2022.pdf",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2022-06-17"
   },
   {
    "id": "E-117",
@@ -5976,7 +6123,8 @@
    "src": "https://peraturan.bpk.go.id/Download/12168/PERDA-Nomor-3-Tahun-2014-ttg-LINGKUNGAN-HIDUP.pdf",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2014-04-14"
   },
   {
    "id": "E-118",
@@ -5996,7 +6144,8 @@
    "src": "https://jdih.jatengprov.go.id/produk_hukum/abstrak/abstrak_perda_4_th_2023.pdf",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2023-12-29"
   },
   {
    "id": "E-119",
@@ -6016,7 +6165,8 @@
    "src": "https://peraturan.bpk.go.id/Download/288/PERDA%20NO%204%20TH%202016%20TTG%20PERLINDUNGAN%20DAN%20PENGELOLAAN%20LINGKUNGAN%20HIDUP.pdf",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2016-04-26"
   },
   {
    "id": "E-120",
@@ -6036,7 +6186,8 @@
    "src": "https://peraturan.bpk.go.id/Download/20524/15%20PERDA%20LINGKUNGAN%20HIDUP.pdf",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2014-12-29"
   },
   {
    "id": "E-121",
@@ -6056,7 +6207,8 @@
    "src": "https://storage.ntbprov.go.id/jdih/produk-hukum/Perda%20No.%205%20Tahun%202019%20Pengelolaan%20Sampah.pdf",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2019-07-29"
   },
   {
    "id": "E-122",
@@ -6076,7 +6228,8 @@
    "src": "https://peraturan.bpk.go.id/Download/239382/PERDA.01.2014.pdf",
    "saran": "Pantau rancangan perda pengganti (Penyelenggaraan PPLH Kaltim) yang akan mencabut Perda 1/2014 dan Perda 02/2011. Sampai terbit, kedua perda ini tetap menjadi acuan.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2014-01-22"
   },
   {
    "id": "S-201",
@@ -6096,7 +6249,8 @@
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3059/keputusan-menteri-ketenagakerjaan-nomor-157-tahun-2026",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-11-10",
-   "masuk": "2026-10-08"
+   "masuk": "2026-10-08",
+   "tgl_tetap": "2026-06-15"
   },
   {
    "id": "S-202",
@@ -6116,7 +6270,8 @@
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3054/keputusan-menteri-ketenagakerjaan-nomor-151-tahun-2026",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-11-10",
-   "masuk": "2026-10-08"
+   "masuk": "2026-10-08",
+   "tgl_tetap": "2026-06-08"
   },
   {
    "id": "E-201",
@@ -6136,7 +6291,8 @@
    "src": "https://peraturan.bpk.go.id/Download/12413/perda_759.pdf",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-08",
-   "masuk": "2026-10-08"
+   "masuk": "2026-10-08",
+   "tgl_tetap": "2008-05-12"
   },
   {
    "id": "E-202",
@@ -6156,7 +6312,8 @@
    "src": "",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-08",
-   "masuk": "2026-10-08"
+   "masuk": "2026-10-08",
+   "tgl_tetap": "2013-10-16"
   },
   {
    "id": "E-203",
@@ -6176,7 +6333,8 @@
    "src": "https://peraturan.bpk.go.id/Details/323942",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-08",
-   "masuk": "2026-10-08"
+   "masuk": "2026-10-08",
+   "tgl_tetap": "2024-11-15"
   },
   {
    "id": "E-204",
@@ -6196,7 +6354,8 @@
    "src": "",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-08",
-   "masuk": "2026-10-08"
+   "masuk": "2026-10-08",
+   "tgl_tetap": "2012-11-26"
   },
   {
    "id": "E-205",
@@ -6216,7 +6375,8 @@
    "src": "https://peraturan.bpk.go.id/Download/278587/Peraturan%20Daerah%20(PERDA)%20Provinsi%20Lampung%20No%2011%20Tahun%202012.pdf",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-08",
-   "masuk": "2026-10-08"
+   "masuk": "2026-10-08",
+   "tgl_tetap": "2012-08-30"
   },
   {
    "id": "E-206",
@@ -6236,7 +6396,8 @@
    "src": "https://jdih.nttprov.go.id/dokumen/view-abstrak?id=121",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-08",
-   "masuk": "2026-10-08"
+   "masuk": "2026-10-08",
+   "tgl_tetap": "2016-07-26"
   },
   {
    "id": "S-203",
@@ -6319,7 +6480,8 @@
    "src": "https://www.peraturan.go.id/files/permenkes-no-3-tahun-2026.pdf",
    "saran": "Regulasi baru masuk daftar: ganti rujukan Permenkes 67/2016 (TB), 82/2014, dan 71/2015 pada IK/prosedur kesehatan kerja bila masih dipakai, dan petakan kewajiban tempat kerja (kesehatan lingkungan, Pasal 57) dari naskah resmi.",
    "cek": "2026-11-09",
-   "masuk": "2026-11-09"
+   "masuk": "2026-11-09",
+   "tgl_tetap": "2026-02-27"
   },
   {
    "id": "H-052",
@@ -6404,7 +6566,8 @@
    "src": "https://peraturan.bpk.go.id/Details/351289/permen-lhbplh-no-5-tahun-2026",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC lingkungan, petakan kewajiban pelaku usaha dari naskah resmi, lalu selaraskan prosedur emisi dan pemantauan udara.",
    "cek": "2026-11-09",
-   "masuk": "2026-11-09"
+   "masuk": "2026-11-09",
+   "tgl_tetap": "2026-05-12"
   },
   {
    "id": "E-210",
@@ -6425,6 +6588,126 @@
    "saran": "Regulasi baru masuk daftar (judul dari naskah, tanggal ditetapkan/berlaku belum terverifikasi): berlaku bagi usaha di dalam kawasan (mis. kawasan industri). Cabang/site yang berada di kawasan: cek RKL-RPL rinci, kewajiban pelaporan ke pengelola kawasan, dan risiko sanksi administratif; petakan pasal dari naskah resmi lalu selaraskan prosedur.",
    "cek": "2026-11-09",
    "masuk": "2026-11-09"
+  },
+  {
+   "id": "S-206",
+   "kat": "Safety",
+   "hier": "Permenaker",
+   "nomor": "Permenaker 1/2025",
+   "judul": "Perubahan atas Permenaker 5/2021 tentang Penyelenggaraan Program JKK, JKM & JHT",
+   "status": "Berlaku",
+   "pasal": "",
+   "kew": "",
+   "jenis": "",
+   "bukti": "",
+   "frek": "",
+   "pic": "",
+   "cat": "Sumber data: Database pengguna 10/11/2026; judul dan tanggal belum dicocokkan dengan naskah resmi.",
+   "wil": "Nasional",
+   "src": "",
+   "saran": "Regulasi perubahan masuk dari database: HR/QSHE selaraskan prosedur pelaporan dan klaim kecelakaan kerja/PAK dengan Permenaker 5/2021 sebagaimana diubah; telaah naskah untuk mengetahui pasal yang berubah (tenggat pelaporan, pihak pelapor) sebelum IK pelaporan kecelakaan direvisi.",
+   "cek": "2026-11-10",
+   "masuk": "2026-11-10"
+  },
+  {
+   "id": "S-207",
+   "kat": "Safety",
+   "hier": "Permentan",
+   "nomor": "Permentan 43/2019",
+   "judul": "Pendaftaran Pestisida",
+   "status": "Berlaku",
+   "pasal": "",
+   "kew": "",
+   "jenis": "",
+   "bukti": "",
+   "frek": "",
+   "pic": "",
+   "cat": "Sumber data: Database pengguna 10/11/2026; judul dan tanggal belum dicocokkan dengan naskah resmi.",
+   "wil": "Nasional",
+   "src": "",
+   "saran": "Masuk dari database: relevan bila cabang/workshop mengelola pestisida (mis. pemeliharaan lahan site). Safety manager: pastikan hanya pestisida terdaftar yang dipakai kontraktor, simpan SDS, dan masukkan ke daftar bahan kimia berbahaya; bila tidak ada penggunaan, tandai tidak berlaku bagi operasional.",
+   "cek": "2026-11-10",
+   "masuk": "2026-11-10"
+  },
+  {
+   "id": "S-208",
+   "kat": "Safety",
+   "hier": "Instruksi Gubernur DKI",
+   "nomor": "Instruksi Gubernur DKI 30/2014",
+   "judul": "Jaminan Sosial Tenaga Kerja",
+   "status": "Berlaku",
+   "pasal": "",
+   "kew": "",
+   "jenis": "",
+   "bukti": "",
+   "frek": "",
+   "pic": "",
+   "cat": "Sumber data: Database pengguna 10/11/2026; judul dan tanggal belum dicocokkan dengan naskah resmi.",
+   "wil": "DKI Jakarta",
+   "src": "",
+   "saran": "Masuk dari database: berlaku untuk kantor pusat dan cabang di DKI Jakarta. HR: pastikan seluruh pekerja (termasuk kontrak/outsourcing) terdaftar di BPJS Ketenagakerjaan dan bukti kepesertaan tersedia untuk pengawas.",
+   "cek": "2026-11-10",
+   "masuk": "2026-11-10"
+  },
+  {
+   "id": "S-209",
+   "kat": "Safety",
+   "hier": "Perda DKI",
+   "nomor": "Perda DKI 7/2010",
+   "judul": "Bangunan dalam Wilayah DKI Jakarta",
+   "status": "Berlaku",
+   "pasal": "",
+   "kew": "",
+   "jenis": "",
+   "bukti": "",
+   "frek": "",
+   "pic": "",
+   "cat": "Sumber data: Database pengguna 10/11/2026; judul dan tanggal belum dicocokkan dengan naskah resmi.",
+   "wil": "DKI Jakarta",
+   "src": "",
+   "saran": "Masuk dari database: berlaku untuk gedung kantor pusat/cabang di DKI Jakarta. GA/QSHE: periksa IMB/PBG, Sertifikat Laik Fungsi, dan persyaratan keselamatan bangunan; petakan pasalnya dari naskah resmi (Perda ini perlu dicek apakah sudah diganti peraturan yang lebih baru).",
+   "cek": "2026-11-10",
+   "masuk": "2026-11-10"
+  },
+  {
+   "id": "E-211",
+   "kat": "Environment",
+   "hier": "PermenLHK",
+   "nomor": "PermenLHK P.87/2016",
+   "judul": "Sistem Pelaporan Elektronik Perizinan Lingkungan Hidup",
+   "status": "Berlaku",
+   "pasal": "",
+   "kew": "",
+   "jenis": "",
+   "bukti": "",
+   "frek": "",
+   "pic": "",
+   "cat": "Sumber data: Database pengguna 10/11/2026; hanya tercatat bulan/tahun (November 2016), tgl_tetap dikosongkan; belum dicocokkan dengan naskah resmi.",
+   "wil": "Nasional",
+   "src": "",
+   "saran": "Masuk dari database (tanggal hanya diketahui November 2016): QSHE periksa apakah pelaporan perizinan lingkungan (mis. izin/persetujuan LB3, air limbah) memakai sistem elektronik yang dimaksud; naskah dan status berlaku perlu dicek karena peraturan lingkungan sudah banyak berubah sejak 2021.",
+   "cek": "2026-11-10",
+   "masuk": "2026-11-10"
+  },
+  {
+   "id": "E-212",
+   "kat": "Environment",
+   "hier": "Kepka Bapedal",
+   "nomor": "Kepka Bapedal 205/1996",
+   "judul": "Pedoman Teknis Pengendalian Pencemaran Udara Sumber Tidak Bergerak",
+   "status": "Berlaku",
+   "pasal": "",
+   "kew": "",
+   "jenis": "",
+   "bukti": "",
+   "frek": "",
+   "pic": "",
+   "cat": "Sumber data: Database pengguna 10/11/2026; judul dan tanggal belum dicocokkan dengan naskah resmi.",
+   "wil": "Nasional",
+   "src": "",
+   "saran": "Masuk dari database: acuan teknis pengendalian emisi sumber tidak bergerak (genset, boiler, kompresor di workshop/cabang). QSHE: gunakan sebagai pelengkap baku mutu emisi terbaru saat menyusun IK pemantauan emisi; cek dahulu apakah masih berlaku.",
+   "cek": "2026-11-10",
+   "masuk": "2026-11-10"
   }
  ]
 }
