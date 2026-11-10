@@ -494,6 +494,7 @@ const POLA = [
   [/^Seluruh (\d+) baris ditampilkan, (tanggal terbaru|tingkatan tertinggi) di atas\.$/, m => { const t = m[2] === "tingkatan tertinggi"; return [`All ${m[1]} rows shown, ${t ? "highest legal rank" : "newest date"} first.`, `全${m[1]}行を表示（${t ? "法的効力の高い順" : "新しい日付が上"}）。`]; }],
   [/^(\d+) dari (\d+) baris ditampilkan, (tanggal terbaru|tingkatan tertinggi) di atas\.$/, m => { const t = m[3] === "tingkatan tertinggi"; return [`${m[1]} of ${m[2]} rows shown, ${t ? "highest legal rank" : "newest date"} first.`, `${m[2]}行中${m[1]}行を表示（${t ? "法的効力の高い順" : "新しい日付が上"}）。`]; }],
   [new RegExp(`^Ditetapkan ${TGL}$`), m => [`Enacted ${tglL(m[1], m[2], m[3])}`, `制定 ${tglL(m[1], m[2], m[3])}`]],
+  [new RegExp(`^Terbit ${TGL}$`), m => [`Issued ${tglL(m[1], m[2], m[3])}`, `発行 ${tglL(m[1], m[2], m[3])}`]],
   [new RegExp(`^Berlaku ${TGL}$`), m => [`In force ${tglL(m[1], m[2], m[3])}`, `施行 ${tglL(m[1], m[2], m[3])}`]],
   [/^Terbaca (\d+) regulasi dari (\d+) sheet\.$/, m => [`${m[1]} regulations read from ${m[2]} sheets.`, `${m[2]}シートから${m[1]}件の法令を読み取りました。`]],
   [/^Sudah ada di sheet: (.+)$/, m => [`Already in sheet: ${m[1]}`, `掲載済みシート：${m[1]}`]],
@@ -709,7 +710,7 @@ function tautan(r) {
   return { url: "https://www.google.com/search?q=" + encodeURIComponent(q), resmi: false };
 }
 const tglSel = r => r.tgl_tetap || r.tgl_berlaku
-  ? (r.tgl_tetap ? `<div>Ditetapkan ${tgl(r.tgl_tetap)}</div>` : "") + (r.tgl_berlaku ? `<div>Berlaku ${tgl(r.tgl_berlaku)}</div>` : "")
+  ? (r.tgl_tetap ? (r.tgl_asal === "db" ? `<div class="kira" title="Tanggal dari database pengguna (bisa tanggal ditetapkan atau diundangkan); belum dicocokkan dengan naskah resmi">Terbit ${tgl(r.tgl_tetap)}</div>` : `<div>Ditetapkan ${tgl(r.tgl_tetap)}</div>`) : "") + (r.tgl_berlaku ? `<div>Berlaku ${tgl(r.tgl_berlaku)}</div>` : "")
   : (tahunReg(r) ? `<div class="kira">Tahun ${tahunReg(r)}</div>` : "–");
 function drawList() {
   const rows = ringkas(aktif().filter(r => lolos(r))).sort(urut), box = $("#list"), n = ringkas(aktif()).length;
@@ -733,15 +734,16 @@ function drawList() {
 const MNT = [["ojk", /pojk|ojk/i], ["kes", /menkes|kemenkes|kesehatan/i], ["lh", /lhk|klhk|bplh|\blh\b|lingkungan|menlh|bapedal|bappedal/i], ["esdm", /esdm|pertambangan|minerba|energi/i],
   ["pu", /permenpu|pupr|\bpu\b|pekerjaan umum/i], ["perin", /perin\b|permenperin|perindustrian|\bind\b/i], ["hub", /permenhub|perhubungan|\bhub\b/i], ["dag", /dag\b|perdagangan|pemerind/i],
   ["tan", /pertanian|permentan/i], ["naker", /naker|kemnaker|\/men\/|tenaga kerja/i]];
+const daerah = t => { const s = String(t).toLowerCase().replace(/dki|jakarta/g, "dki jakarta"); const p = PROV.map(x => x[0].toLowerCase()).sort((a, b) => b.length - a.length).find(n => s.includes(n)); return p || (/\baceh\b/.test(s) ? "aceh" : ""); };
 const mnt = t => { const m = MNT.find(x => x[1].test(t)); return m ? m[0] : ""; };
 /* Ambil pasangan nomor + tahun dari teks, mis. "PER.04/MEN/1980" -> 4/1980, "UU No.01 Th 1970" -> 1/1970, "PP 96/2021 jo. PP 25/2024" -> dua kunci */
 function kunciDari(txt, hint) {
   const t = String(txt || "").replace(/\s+/g, " "), re = /(\d{1,4})(?:[\/.\-A-Za-z\s\d]{0,24}?)(?:tahun|th\.?|[\/\s:-])\s*((?:19|20)\d{2})(?!\d)/gi, out = []; let m, last = 0;
   while ((m = re.exec(t))) { const seg = t.slice(last, m.index + m[0].length) + " " + (hint || ""); last = m.index + m[0].length;
-    out.push({ n: String(+m[1]), y: +m[2], j: jenisBaku({ hier: seg, nomor: seg }), m: mnt(seg) }); }
+    out.push({ n: String(+m[1]), y: +m[2], j: jenisBaku({ hier: seg, nomor: seg }), m: mnt(seg), d: daerah(seg) }); }
   return out;
 }
-const kunciCocok = (a, b) => a.n === b.n && a.y === b.y && (a.j === b.j || a.j === "LAIN" || b.j === "LAIN") && (a.m === b.m || !a.m || !b.m);
+const kunciCocok = (a, b) => a.n === b.n && a.y === b.y && (a.j === b.j || a.j === "LAIN" || b.j === "LAIN") && (a.m === b.m || !a.m || !b.m) && (a.d === b.d || !a.d || !b.d);
 const cocokAny = (ka, kb) => ka.some(a => kb.some(b => kunciCocok(a, b)));
 const tekSel = c => { let v = c && c.value; if (v == null || v instanceof Date) return ""; if (typeof v === "object") v = v.richText ? v.richText.map(x => x.text).join("") : v.result != null ? v.result : v.text != null ? v.text : ""; return String(v).replace(/\s+/g, " ").trim(); };
 async function bacaMatriks(buf) {
@@ -772,6 +774,7 @@ function analisaCek(entri) {
     if (hidup.length) ok.push({ e, r: hidup[0].r });
     else {
       const r0 = hit[0].r, peng = [], kc = kunciDari(r0.cat, "");
+      (String(r0.cat || "").match(/\b[QSHE]-\d{3}\b/g) || []).forEach(id => { const p = S.rows.find(x => x.id === id); if (p && !MATI(p.status) && !peng.some(q => norm(q.nomor) === norm(p.nomor))) peng.push(p); });
       if (kc.length) reg.forEach(x => { if (!MATI(x.r.status) && x.keys.length && cocokAny(kc, x.keys) && !peng.some(p => norm(p.nomor) === norm(x.r.nomor))) peng.push(x.r); });
       ganti.push({ e, r: r0, peng });
     }
@@ -880,12 +883,18 @@ function terapkanPaket(baris, p) {
 var robotTgl = "";   /* tanggal robot pengecek terakhir berhasil (dari kandidat.json) */
 const DASAR_DATA = location.protocol.startsWith("http") ? new URL("./", location.href).href : "";   /* register.json dan kandidat.json dibaca dari repositori ini */
 async function ambilJSON(u) { const r = await fetch(u + "?t=" + Date.now(), { cache: "no-store" }); if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); }
-function gabung(remote) {
-  const hasil = { baru: [], ubah: [], arsip: [], cat: [] }, byId = new Map(S.rows.map(r => [r.id, r])), byNo = new Set(S.rows.map(r => norm(r.nomor) + "|" + norm(r.pasal)));
+function gabung(remote, hapus) {
+  const hasil = { baru: [], ubah: [], arsip: [], cat: [], hapus: 0 };
+  /* baris yang dihapus dari repositori (duplikat atau keliru masuk) ikut dihapus di perangkat, kecuali yang pernah diubah manual */
+  if (hapus && hapus.length) { const h = new Set(hapus), n0 = S.rows.length; S.rows = S.rows.filter(r => !h.has(r.id) || r.ed); hasil.hapus = n0 - S.rows.length; }
+  const kNo = r => r.kat + "|" + norm(r.nomor) + "|" + norm(r.pasal);
+  const byId = new Map(S.rows.map(r => [r.id, r])), byNo = new Set(S.rows.map(kNo));
   for (const x of remote) {
-    const l = byId.get(x.id);
+    let l = byId.get(x.id);
+    /* ID bentrok: baris buatan perangkat ini kebetulan memakai ID yang kini dipakai repositori untuk regulasi lain -> baris lokal diberi ID baru */
+    if (l && l.ed && l.lokal && norm(l.nomor) !== norm(x.nomor)) { l.id = idBaru(l.kat); byId.set(l.id, l); byId.delete(x.id); l = null; }
     if (!l) {
-      if (byNo.has(norm(x.nomor) + "|" + norm(x.pasal))) continue;           // sudah ada dengan ID lain (ditambah manual)
+      if (byNo.has(kNo(x))) continue;           // sudah ada dengan ID lain (ditambah manual)
       const n = { ...x, masuk: x.masuk || today() }; S.rows.push(n); hasil.baru.push(n); fresh.add(n.id);
       catat("Regulasi baru", n, "Masuk dari pembaruan sumber.", "", n.status);
       continue;
@@ -898,9 +907,12 @@ function gabung(remote) {
       l.saran = x.saran; if (x.cek) l.cek = x.cek; l.ubah = today(); fresh.add(l.id);
       hasil.cat.push(l); catat("Saran tindak lanjut diperbarui", l, x.saran, "", "");
     }
-    if (x.src && !l.src) l.src = x.src;
-    for (const k of ["tgl_tetap", "tgl_berlaku"]) if (x[k] && (!l.ed || !l[k])) l[k] = x[k];
-    if (!l.ed) for (const k of ["hier", "nomor", "judul", "pasal", "kew", "jenis", "bukti", "frek", "pic", "wil"]) if (x[k] != null && x[k] !== "") l[k] = x[k];
+    if (!l.ed) {
+      /* baris yang tidak diubah manual mengikuti repositori sepenuhnya, termasuk koreksi (tanggal, tautan, dan keterangan pencabutan yang dibetulkan atau dikosongkan) */
+      if (ST.includes(x.status) && l.status !== x.status) l.status = x.status;
+      for (const k of ["cat", "src", "tgl_tetap", "tgl_berlaku", "tgl_asal"]) if ((x[k] || "") !== (l[k] || "")) l[k] = x[k] || "";
+      for (const k of ["hier", "nomor", "judul", "pasal", "kew", "jenis", "bukti", "frek", "pic", "wil"]) if (x[k] != null && x[k] !== "") l[k] = x[k];
+    } else for (const k of ["src", "tgl_tetap", "tgl_berlaku"]) if (x[k] && !l[k]) l[k] = x[k];
   }
   return hasil;
 }
@@ -923,21 +935,22 @@ function gabungKandidat(list) {
 }
 let sibuk = false;
 const JEDA_OTOMATIS = 6 * 36e5;
-function otomatis() { if (sibuk) return; if (S.versi < PAKET.versi) { perbarui(true); return; }   /* kode baru ditempel: paket bawaan lebih baru daripada simpanan perangkat */
+function otomatis(awal) { if (sibuk) return; if (S.versi < PAKET.versi || (awal === true && S.cfg.auto !== false)) { perbarui(true); return; }   /* kode baru ditempel: paket bawaan lebih baru daripada simpanan perangkat */
   if (S.cfg.auto === false || (S.cek && Date.now() - new Date(S.cek) < JEDA_OTOMATIS)) return; perbarui(true); }
 async function perbarui(diam) {
   diam = diam === true;
   if (sibuk) return; sibuk = true;
   const b = $("#bUpd"); b.classList.add("busy"); b.disabled = true; $("#bUpdT").textContent = "Memeriksa sumber…"; terjemah($("#bUpd"));
-  const mulai = Date.now(); let remote = null, kand = null, dis = null, asal = "", versi = "";
+  const mulai = Date.now(); let remote = null, kand = null, dis = null, asal = "", versi = "", hapus = null;
   if (DASAR_DATA) {
-    try { const j = await ambilJSON(DASAR_DATA + "register.json"); remote = j.baris; versi = j.versi; asal = "repositori"; } catch (e) { remote = null; }
+    try { const j = await ambilJSON(DASAR_DATA + "register.json"); remote = j.baris; versi = j.versi; hapus = j.hapus || []; asal = "repositori"; } catch (e) { remote = null; }
     try { const k = await ambilJSON(DASAR_DATA + "kandidat.json"); kand = k.kandidat; dis = k.disaring; robotTgl = k.diperbarui || ""; if (k.diperbarui && k.diperbarui > versi) versi = k.diperbarui; } catch (e) { kand = null; }
   }
   if (!remote) { remote = terapkanPaket(BASE.baris, PAKET); kand = PAKET.kandidat; dis = PAKET.disaring; versi = PAKET.versi; asal = "paket bawaan aplikasi"; }
   if (!diam) await new Promise(r => setTimeout(r, Math.max(0, 900 - (Date.now() - mulai))));      // beri waktu agar proses terlihat
   fresh = new Set();
-  const h = gabung(remote); let nk = gabungKandidat(kand);
+  if (hapus) S.hapus = hapus;
+  const h = gabung(remote, hapus); let nk = gabungKandidat(kand);
   if (kand) { const masih = new Set((kand || []).map(k => k.kid)); S.kandidat = S.kandidat.filter(k => masih.has(k.kid)); }
   otoTerima(h); nk = Math.min(nk, S.kandidat.length);
   if (dis) S.disaring = dis;
@@ -962,7 +975,8 @@ async function perbarui(diam) {
 }
 
 /* ---------------- formulir tambah / ubah / terima ---------------- */
-function idBaru(kat) { const p = kat[0], n = Math.max(0, ...S.rows.filter(r => r.id.startsWith(p + "-")).map(r => +r.id.split("-")[1] || 0)) + 1; return p + "-" + String(n).padStart(3, "0"); }
+/* ID baris yang dibuat di perangkat mulai dari 901 agar tidak bentrok dengan ID baru dari repositori */
+function idBaru(kat) { const p = kat[0], n = Math.max(900, ...S.rows.filter(r => r.id.startsWith(p + "-")).map(r => +r.id.split("-")[1] || 0)) + 1; return p + "-" + String(n).padStart(3, "0"); }
 function formulir(mode, r, kid) {
   const sel = (id, arr, cur, kosong) => `<select id="${id}">${kosong ? `<option value="">${kosong}</option>` : ""}${arr.map(a => `<option value="${esc(a)}"${a === cur ? " selected" : ""}>${esc(a)}</option>`).join("")}</select>`;
   const inp = (id, v, ph) => `<input id="${id}" value="${esc(v || "")}" placeholder="${esc(ph || "")}">`;
@@ -990,7 +1004,7 @@ function simpanForm(mode, id, kid) {
     const dari = r.status; Object.assign(r, d, { ed: true, ubah: today() });
     catat(dari !== d.status ? (MATI(d.status) ? "Ditandai tidak berlaku (manual)" : "Dipulihkan ke daftar (manual)") : "Baris diubah (manual)", r, "", dari !== d.status ? dari : "", dari !== d.status ? d.status : "");
   } else {
-    const r = { id: idBaru(d.kat), ...d, cek: today(), masuk: today(), ed: true }; S.rows.push(r); fresh.add(r.id);
+    const r = { id: idBaru(d.kat), ...d, cek: today(), masuk: today(), ed: true, lokal: true }; S.rows.push(r); fresh.add(r.id);
     catat(mode === "terima" ? "Kandidat diterima" : "Ditambah manual", r, "", "", r.status);
     if (kid) S.kandidat = S.kandidat.filter(k => k.kid !== kid);
   }
@@ -1011,7 +1025,7 @@ function pengaturan() {
      <div class="row"><button class="btn" type="button" data-gsave>Simpan sambungan</button><button class="btn" type="button" data-gcek>Jalankan pengecekan sumber sekarang</button><button class="btn" type="button" data-gpush>Simpan register ke GitHub</button></div><p class="cap" id="gMsg" style="margin-top:10px"></p>`);
 }
 function unduh(nama, blob) { const u = URL.createObjectURL(blob), a = document.createElement("a"); a.href = u; a.download = nama; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(u), 3000); }
-const bersih = r => { const { ed, ...x } = r; return x; };
+const bersih = r => { const { ed, lokal, ...x } = r; return x; };
 function bacaCfg() { S.cfg = { auto: S.cfg.auto, owner: $("#gO").value.trim(), repo: $("#gR").value.trim(), branch: $("#gB").value.trim() || "main", token: $("#gT").value.trim() }; simpan(); return S.cfg; }
 async function gh(path, opt = {}) {
   const c = S.cfg; if (!c.owner || !c.repo || !c.token) throw new Error("Lengkapi pemilik, repositori, dan token terlebih dahulu.");
@@ -1033,7 +1047,7 @@ async function ghAksi(apa) {
       if (!r.ok) throw new Error("Workflow cek-regulasi.yml tidak ditemukan di repositori.");
       m.textContent = "Pengecekan sumber sedang berjalan di GitHub Actions. Tunggu 3 sampai 5 menit, lalu tekan Perbarui daftar.";
     } else {
-      await ghTulis("register.json", JSON.stringify({ versi: today(), baris: S.rows.map(bersih) }, null, 1), "Register diperbarui dari aplikasi " + today());
+      await ghTulis("register.json", JSON.stringify({ versi: today(), baris: S.rows.map(bersih), hapus: S.hapus || [] }, null, 1), "Register diperbarui dari aplikasi " + today());
       await ghTulis("ditolak.json", JSON.stringify({ ditolak: S.ditolak }, null, 1), "Daftar kandidat ditolak " + today());
       S.versi = today(); simpan(); drawHead();
       m.textContent = "Register tersimpan di repositori. Perangkat lain akan menerimanya saat menekan Perbarui daftar.";
@@ -1172,7 +1186,7 @@ $("#dlg").addEventListener("input", () => { });
 }
 muatAwal(); wire(); drawAll();
 /* pembaruan otomatis: saat dibuka, saat kembali ke tab ini, dan tiap enam jam */
-setTimeout(otomatis, 600); setInterval(otomatis, 30 * 60e3);
+setTimeout(() => otomatis(true), 600); setInterval(otomatis, 30 * 60e3);
 document.addEventListener("visibilitychange", () => { if (!document.hidden) otomatis(); });
 if ("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("sw.js").catch(() => { });
 

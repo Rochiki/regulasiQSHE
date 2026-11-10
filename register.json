@@ -1,5 +1,5 @@
 {
- "versi": "2026-11-10",
+ "versi": "2026-11-11",
  "baris": [
   {
    "id": "Q-001",
@@ -41,7 +41,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-09",
-   "tgl_tetap": "2016-12-30"
+   "tgl_tetap": "2016-12-30",
+   "tgl_asal": "db"
   },
   {
    "id": "Q-003",
@@ -63,7 +64,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-11-09",
-   "tgl_tetap": "2015-12-16"
+   "tgl_tetap": "2015-12-16",
+   "tgl_asal": "db"
   },
   {
    "id": "Q-005",
@@ -85,7 +87,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-09",
-   "tgl_tetap": "2009-03-25"
+   "tgl_tetap": "2009-03-25",
+   "tgl_asal": "db"
   },
   {
    "id": "Q-007",
@@ -195,7 +198,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-11-09",
-   "tgl_tetap": "2026-09-16"
+   "tgl_tetap": "2026-09-16",
+   "tgl_asal": "db"
   },
   {
    "id": "Q-012",
@@ -240,7 +244,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-11-09",
-   "tgl_tetap": "2017-07-18"
+   "tgl_tetap": "2017-07-18",
+   "tgl_asal": "db"
   },
   {
    "id": "Q-014",
@@ -477,7 +482,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-09",
-   "tgl_tetap": "2021-05-20"
+   "tgl_tetap": "2021-05-20",
+   "tgl_asal": "db"
   },
   {
    "id": "S-011",
@@ -565,7 +571,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-09",
-   "tgl_tetap": "2012-10-12"
+   "tgl_tetap": "2012-10-12",
+   "tgl_asal": "db"
   },
   {
    "id": "S-015",
@@ -630,7 +637,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-11-09",
-   "tgl_tetap": "1987-08-03"
+   "tgl_tetap": "1987-08-03",
+   "tgl_asal": "db"
   },
   {
    "id": "S-018",
@@ -652,7 +660,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-11-09",
-   "tgl_tetap": "1990-05-07"
+   "tgl_tetap": "1990-05-07",
+   "tgl_asal": "db"
   },
   {
    "id": "S-019",
@@ -674,7 +683,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-11-10",
-   "tgl_tetap": "1999-09-29"
+   "tgl_tetap": "1999-09-29",
+   "tgl_asal": "db"
   },
   {
    "id": "S-020",
@@ -696,13 +706,14 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-11-10",
-   "tgl_tetap": "1999-08-25"
+   "tgl_tetap": "1999-08-25",
+   "tgl_asal": "db"
   },
   {
    "id": "S-021",
    "kat": "Safety",
-   "hier": "Kepmenaker",
-   "nomor": "Kepmenaker No 38 Tahun 2016",
+   "hier": "Permen",
+   "nomor": "Permenaker 38/2016",
    "judul": "Keselamatan dan Kesehatan Kerja Pesawat Tenaga dan Produksi",
    "status": "Berlaku",
    "pasal": "Pasal 2 (1); Pasal 129; Pasal 2 ayat (2); Pasal 130; Pasal 129 ayat (2); Pasal 131; Pertama; Pasal 137",
@@ -711,13 +722,14 @@
    "bukti": "Laporan inspeksi/pemantauan, foto kondisi, prosedur/IK terkait",
    "frek": "Sesuai ketentuan pasal",
    "pic": "GA",
-   "cat": "Nomor tercatat 'Kepmenaker' — yang benar Permenaker 38/2016 (duplikasi dengan baris Permenaker 38/2016).",
+   "cat": "Semula tercatat \"Kepmenaker 38/2016\"; dikoreksi 11/11/2026 menjadi Permenaker 38/2016 (naskah: Permenaker 38/2016 tentang K3 Pesawat Tenaga dan Produksi).",
    "wil": "Nasional",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-10-09",
+   "tgl_tetap": "2016-12-27"
   },
   {
    "id": "S-022",
@@ -739,7 +751,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-09",
-   "tgl_tetap": "2003-10-31"
+   "tgl_tetap": "2003-10-31",
+   "tgl_asal": "db"
   },
   {
    "id": "S-023",
@@ -781,7 +794,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-09",
-   "tgl_tetap": "2008-12-18"
+   "tgl_tetap": "2008-12-18",
+   "tgl_asal": "db"
   },
   {
    "id": "S-025",
@@ -824,7 +838,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-09",
-   "tgl_tetap": "1979-02-28"
+   "tgl_tetap": "1979-02-28",
+   "tgl_asal": "db"
   },
   {
    "id": "S-027",
@@ -867,7 +882,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-09",
-   "tgl_tetap": "1992-12-30"
+   "tgl_tetap": "1992-12-30",
+   "tgl_asal": "db"
   },
   {
    "id": "S-029",
@@ -889,7 +905,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-09",
-   "tgl_tetap": "1980-03-06"
+   "tgl_tetap": "1980-03-06",
+   "tgl_asal": "db"
   },
   {
    "id": "S-030",
@@ -911,7 +928,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-09",
-   "tgl_tetap": "1980-03-14"
+   "tgl_tetap": "1980-03-14",
+   "tgl_asal": "db"
   },
   {
    "id": "S-031",
@@ -954,7 +972,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-09",
-   "tgl_tetap": "1982-03-08"
+   "tgl_tetap": "1982-03-08",
+   "tgl_asal": "db"
   },
   {
    "id": "S-033",
@@ -976,7 +995,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-09",
-   "tgl_tetap": "1983-08-10"
+   "tgl_tetap": "1983-08-10",
+   "tgl_asal": "db"
   },
   {
    "id": "S-034",
@@ -1018,13 +1038,14 @@
    "cek": "2026-09-16",
    "masuk": "",
    "tautan_dicoba": "2026-10-09",
-   "tgl_tetap": "2015-10-16"
+   "tgl_tetap": "2015-10-16",
+   "tgl_asal": "db"
   },
   {
    "id": "S-036",
    "kat": "Safety",
    "hier": "Permenaker",
-   "nomor": "Permenaker No.02 Th 1992",
+   "nomor": "Permenaker PER.02/MEN/1992",
    "judul": "Tata cara penunjukan, kewajiban dan wewenang ahli K3",
    "status": "Berlaku",
    "pasal": "Pasal 2; Pasal 3; Pasal 7",
@@ -1040,7 +1061,8 @@
    "cek": "2026-09-16",
    "masuk": "",
    "tautan_dicoba": "2026-10-09",
-   "tgl_tetap": "1992-12-30"
+   "tgl_tetap": "1992-12-30",
+   "tgl_asal": "db"
   },
   {
    "id": "S-037",
@@ -1082,7 +1104,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-09",
-   "tgl_tetap": "1995-10-12"
+   "tgl_tetap": "1995-10-12",
+   "tgl_asal": "db"
   },
   {
    "id": "S-039",
@@ -1104,7 +1127,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-09",
-   "tgl_tetap": "1998-02-26"
+   "tgl_tetap": "1998-02-26",
+   "tgl_asal": "db"
   },
   {
    "id": "S-040",
@@ -1126,7 +1150,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2008-08-13"
+   "tgl_tetap": "2008-08-13",
+   "tgl_asal": "db"
   },
   {
    "id": "S-041",
@@ -1148,7 +1173,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2010-07-06"
+   "tgl_tetap": "2010-07-06",
+   "tgl_asal": "db"
   },
   {
    "id": "S-042",
@@ -1170,7 +1196,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2012-04-12"
+   "tgl_tetap": "2012-04-12",
+   "tgl_asal": "db"
   },
   {
    "id": "S-043",
@@ -1192,7 +1219,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2015-04-09"
+   "tgl_tetap": "2015-04-09",
+   "tgl_asal": "db"
   },
   {
    "id": "S-044",
@@ -1214,7 +1242,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2016-03-10"
+   "tgl_tetap": "2016-03-10",
+   "tgl_asal": "db"
   },
   {
    "id": "S-045",
@@ -1236,7 +1265,8 @@
    "cek": "2026-09-16",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2016-03-10"
+   "tgl_tetap": "2016-03-10",
+   "tgl_asal": "db"
   },
   {
    "id": "S-046",
@@ -1258,7 +1288,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "1997-10-21"
+   "tgl_tetap": "1997-10-21",
+   "tgl_asal": "db"
   },
   {
    "id": "S-047",
@@ -1360,7 +1391,8 @@
    "cek": "2026-09-16",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2008-12-30"
+   "tgl_tetap": "2008-12-30",
+   "tgl_asal": "db"
   },
   {
    "id": "S-052",
@@ -1382,7 +1414,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2008-05-12"
+   "tgl_tetap": "2008-05-12",
+   "tgl_asal": "db"
   },
   {
    "id": "S-053",
@@ -1404,7 +1437,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2009-08-11"
+   "tgl_tetap": "2009-08-11",
+   "tgl_asal": "db"
   },
   {
    "id": "S-054",
@@ -1431,7 +1465,7 @@
    "id": "S-055",
    "kat": "Safety",
    "hier": "KEPMEN PU",
-   "nomor": "Keputusan Menteri Pekerjaan Umum No.10/KPTS/2000",
+   "nomor": "Kepmen PU No. 10/KPTS/2000",
    "judul": "Keputusan Menteri Pekerjaan Umum No.10/KPTS/2000 tentang Ketentuan Teknis Pengamanan terhadap bahaya kebakaran pada Bangunan Gedung dan Lingkungan.",
    "status": "Dicabut / Tidak Berlaku",
    "pasal": "Pasal 1",
@@ -1527,7 +1561,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2008-10-21"
+   "tgl_tetap": "2008-10-21",
+   "tgl_asal": "db"
   },
   {
    "id": "S-060",
@@ -1605,20 +1640,21 @@
    "bukti": "Laporan inspeksi/pemantauan, foto kondisi, prosedur/IK terkait",
    "frek": "Sesuai ketentuan pasal",
    "pic": "GA",
-   "cat": "",
+   "cat": "pasal.id (11/11/2026): berstatus Diubah oleh PP 23/2014; pencabutan oleh PP 25/2021 belum terverifikasi, cek naskah PP 25/2021.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2012-01-24"
+   "tgl_tetap": "2012-01-24",
+   "tgl_asal": "db"
   },
   {
    "id": "S-064",
    "kat": "Safety",
    "hier": "KepMen PU",
-   "nomor": "Keputusan Menteri Pekerjaan Umum No.10/KPTS/2000",
+   "nomor": "Kepmen PU No. 10/KPTS/2000",
    "judul": "Tentang Sistem Proteksi Kebakaran pada bangunan Gedung dan Lingkungan",
    "status": "Dicabut / Tidak Berlaku",
    "pasal": "Pasal 3; Bab 3; Bab 4",
@@ -1638,8 +1674,8 @@
    "id": "S-065",
    "kat": "Safety",
    "hier": "Perda DKI",
-   "nomor": "Peraturan Daerah No. 7 Tahun 2010",
-   "judul": "Peraturan Daerah No. 7 Tahun 2010 tentang Bangunan Dalam Wilayah DKI Jakarta; digunakan sebagai acuan untuk bangunan Dalam Wilayah DKI Jakarta",
+   "nomor": "Perda DKI 7/2010",
+   "judul": "Bangunan Gedung (Perda DKI Jakarta)",
    "status": "Berlaku",
    "pasal": "Ketentuan terkait (lihat kewajiban)",
    "kew": "Penyelengaraan bangunan gedung harus berdasarkan azas keselamatan Pengaturan penyelenggaraan bangunan gedung bertujuan untuk: a. mewujudkan bangunan gedung yang fungsional dan sesuai dengan tata bangunan gedung yang serasi dan selaras dengan lingkungannya; b. mewujudkan tertib penyelenggaraan bangunan gedung yang menjamin keandalan teknis bangunan gedung dari segi keselamatan, kesehatan, kenyamanan, dan kemudahan; dan c. mewujudkan kepastian hukum dalam penyelenggaraan bangunan gedung",
@@ -1650,7 +1686,7 @@
    "cat": "Tidak ditemukan info pencabutan; perizinan bangunan kini PBG/SLF (PP 16/2021). Konfirmasi JDIH DKI.",
    "wil": "DKI Jakarta",
    "src": "",
-   "saran": "",
+   "saran": "berlaku untuk gedung kantor pusat/cabang di DKI Jakarta. GA/QSHE: periksa IMB/PBG, Sertifikat Laik Fungsi, dan persyaratan keselamatan bangunan; petakan pasalnya dari naskah resmi (Perda ini perlu dicek apakah sudah diganti peraturan yang lebih baru).",
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10"
@@ -1658,8 +1694,8 @@
   {
    "id": "S-066",
    "kat": "Safety",
-   "hier": "Instruksi Gubernur",
-   "nomor": "Instruksi Gubernur No.30 tahun 2014",
+   "hier": "Instruksi Gubernur DKI",
+   "nomor": "Instruksi Gubernur DKI 30/2014",
    "judul": "Perlindungan tenaga kerja di Provinsi daerah khusus Ibukota jakarta melalui program Jaminan Sosial pada badan penyelenggara Jaminan Sosial Ketenaga kerjaan",
    "status": "Berlaku",
    "pasal": "Kesatu",
@@ -1671,7 +1707,7 @@
    "cat": "Instruksi Gubernur; gunakan sebagai referensi.",
    "wil": "DKI Jakarta",
    "src": "",
-   "saran": "",
+   "saran": "berlaku untuk kantor pusat dan cabang di DKI Jakarta. HR: pastikan seluruh pekerja (termasuk kontrak/outsourcing) terdaftar di BPJS Ketenagakerjaan dan bukti kepesertaan tersedia untuk pengawas.",
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10"
@@ -1822,7 +1858,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2015-12-11"
+   "tgl_tetap": "2015-12-11",
+   "tgl_asal": "db"
   },
   {
    "id": "S-074",
@@ -1844,7 +1881,8 @@
    "cek": "2026-09-16",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2016-07-14"
+   "tgl_tetap": "2016-07-14",
+   "tgl_asal": "db"
   },
   {
    "id": "S-075",
@@ -1866,7 +1904,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2016-04-13"
+   "tgl_tetap": "2016-04-13",
+   "tgl_asal": "db"
   },
   {
    "id": "S-076",
@@ -1881,14 +1920,14 @@
    "bukti": "Surat keterangan riksa uji bejana tekanan, inventaris per lokasi",
    "frek": "Tahunan",
    "pic": "GA",
-   "cat": "Database pengguna 10/11/2026 menyebut dicabut sebagian oleh Permenaker 11/2026; BELUM diverifikasi pada naskah (keterangan S-116 menyebut peraturan lain yang dicabut). Status tetap Berlaku; cek pasal pencabutan.",
+   "cat": "Permenaker 11/2026 Pasal 55 hanya mencabut Permenaker 33/2016 dan Permenaker 1/2020 (dicek pada naskah via pasal.id, 11/11/2026); peraturan ini tetap Berlaku.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
-   "cek": "",
+   "cek": "2026-11-11",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2016-12-27"
+   "tgl_tetap": "2016-12-23"
   },
   {
    "id": "S-077",
@@ -1903,11 +1942,11 @@
    "bukti": "Laporan riksa uji PTP, inspeksi pengaman mesin",
    "frek": "Tahunan",
    "pic": "GA",
-   "cat": "Database pengguna 10/11/2026 menyebut dicabut sebagian oleh Permenaker 11/2026; BELUM diverifikasi pada naskah (keterangan S-116 menyebut peraturan lain yang dicabut). Status tetap Berlaku; cek pasal pencabutan.",
+   "cat": "Permenaker 11/2026 Pasal 55 hanya mencabut Permenaker 33/2016 dan Permenaker 1/2020 (dicek pada naskah via pasal.id, 11/11/2026); peraturan ini tetap Berlaku.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
-   "cek": "",
+   "cek": "2026-11-11",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
    "tgl_tetap": "2016-12-27"
@@ -1916,7 +1955,7 @@
    "id": "S-078",
    "kat": "Safety",
    "hier": "Permenaker",
-   "nomor": "Permenaker no. 10 tahun 2016",
+   "nomor": "Permenaker No 10 Tahun 2016",
    "judul": "Tentang Tatacara pemberian kembali kerja serta kegiatan promotif dan kegiatan preventive Kecelakaan Kerja dan PAK",
    "status": "Berlaku",
    "pasal": "Pasal 2; Pasal 6 (1); Pasal 12 (1); Pasal 11; Pasal 18; Pasal 12; Pasal 13",
@@ -1932,7 +1971,8 @@
    "cek": "2026-09-16",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2016-03-10"
+   "tgl_tetap": "2016-03-10",
+   "tgl_asal": "db"
   },
   {
    "id": "S-079",
@@ -1954,7 +1994,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2017-06-22"
+   "tgl_tetap": "2017-06-22",
+   "tgl_asal": "db"
   },
   {
    "id": "S-080",
@@ -2059,7 +2100,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2006-09-11"
+   "tgl_tetap": "2006-09-11",
+   "tgl_asal": "db"
   },
   {
    "id": "S-094",
@@ -2081,7 +2123,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2012-07-06"
+   "tgl_tetap": "2012-07-06",
+   "tgl_asal": "db"
   },
   {
    "id": "S-095",
@@ -2096,11 +2139,11 @@
    "bukti": "Inventaris PAPA & ABAA, inspeksi pra-operasi, SWL tertera, tag status",
    "frek": "Harian (pra-operasi)",
    "pic": "Service (SSD/TSD)",
-   "cat": "Database pengguna 10/11/2026 menyebut dicabut sebagian oleh Permenaker 11/2026; BELUM diverifikasi pada naskah (keterangan S-116 menyebut peraturan lain yang dicabut). Status tetap Berlaku; cek pasal pencabutan.",
+   "cat": "Permenaker 11/2026 Pasal 55 hanya mencabut Permenaker 33/2016 dan Permenaker 1/2020 (dicek pada naskah via pasal.id, 11/11/2026); peraturan ini tetap Berlaku. JDIH Kemnaker: ditetapkan 8 Jun 2020, diundangkan 12 Jun 2020, status Berlaku; mencabut Permenakertrans PER.09/MEN/VII/2010.",
    "wil": "Nasional",
-   "src": "",
+   "src": "https://jdih.kemnaker.go.id/peraturan/detail/1668/peraturan-menteri-ketenagakerjaan-nomor-8-tahun-2020",
    "saran": "",
-   "cek": "",
+   "cek": "2026-11-11",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
    "tgl_tetap": "2020-06-08"
@@ -2118,11 +2161,11 @@
    "bukti": "Surat Keterangan Memenuhi Syarat K3, laporan riksa uji PJK3, jadwal riksa uji per aset",
    "frek": "Tahunan",
    "pic": "QSHE",
-   "cat": "Database pengguna 10/11/2026 menyebut dicabut sebagian oleh Permenaker 11/2026; BELUM diverifikasi pada naskah (keterangan S-116 menyebut peraturan lain yang dicabut). Status tetap Berlaku; cek pasal pencabutan.",
+   "cat": "Permenaker 11/2026 Pasal 55 hanya mencabut Permenaker 33/2016 dan Permenaker 1/2020 (dicek pada naskah via pasal.id, 11/11/2026); peraturan ini tetap Berlaku.",
    "wil": "Nasional",
-   "src": "",
+   "src": "https://jdih.kemnaker.go.id/peraturan/detail/1668/peraturan-menteri-ketenagakerjaan-nomor-8-tahun-2020",
    "saran": "",
-   "cek": "",
+   "cek": "2026-11-11",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
    "tgl_tetap": "2020-06-08"
@@ -2140,11 +2183,11 @@
    "bukti": "Database lisensi K3 (operator forklift/crane, rigger), reminder masa berlaku",
    "frek": "Bulanan",
    "pic": "QSHE",
-   "cat": "Database pengguna 10/11/2026 menyebut dicabut sebagian oleh Permenaker 11/2026; BELUM diverifikasi pada naskah (keterangan S-116 menyebut peraturan lain yang dicabut). Status tetap Berlaku; cek pasal pencabutan.",
+   "cat": "Permenaker 11/2026 Pasal 55 hanya mencabut Permenaker 33/2016 dan Permenaker 1/2020 (dicek pada naskah via pasal.id, 11/11/2026); peraturan ini tetap Berlaku.",
    "wil": "Nasional",
-   "src": "",
+   "src": "https://jdih.kemnaker.go.id/peraturan/detail/1668/peraturan-menteri-ketenagakerjaan-nomor-8-tahun-2020",
    "saran": "",
-   "cek": "",
+   "cek": "2026-11-11",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
    "tgl_tetap": "2020-06-08"
@@ -2169,7 +2212,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2019-09-06"
+   "tgl_tetap": "2019-09-06",
+   "tgl_asal": "db"
   },
   {
    "id": "S-100",
@@ -2213,7 +2257,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2015-07-14"
+   "tgl_tetap": "2015-07-14",
+   "tgl_asal": "db"
   },
   {
    "id": "S-102",
@@ -2235,13 +2280,14 @@
    "cek": "2026-09-16",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "1989-02-21"
+   "tgl_tetap": "1989-02-21",
+   "tgl_asal": "db"
   },
   {
    "id": "S-103",
    "kat": "Safety",
    "hier": "Permenaker",
-   "nomor": "Permenaker No. 12 Tahun 2015",
+   "nomor": "Permenaker 12/2015 jo. Permenaker 33/2015",
    "judul": "Tentang K3 Listrik di Tempat Kerja",
    "status": "Berlaku",
    "pasal": "Pasal 7; Pasal 11 (1); Pasal 10 ayat (2)",
@@ -2257,7 +2303,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2015-04-09"
+   "tgl_tetap": "2015-04-09",
+   "tgl_asal": "db"
   },
   {
    "id": "S-104",
@@ -2279,7 +2326,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2021-05-18"
+   "tgl_tetap": "2021-05-18",
+   "tgl_asal": "db"
   },
   {
    "id": "S-105",
@@ -2301,14 +2349,15 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2021-04-01"
+   "tgl_tetap": "2021-04-01",
+   "tgl_asal": "db"
   },
   {
    "id": "S-106",
    "kat": "Safety",
-   "hier": "PERMENTAN",
-   "nomor": "PERATURAN MENTERI PERTANIAN REPUBLIK INDONESIA NOMOR 43 TAHUN 2019",
-   "judul": "TENTANG PENDAFTARAN PESTISIDA",
+   "hier": "Permentan",
+   "nomor": "Permentan 43/2019",
+   "judul": "Pendaftaran Pestisida",
    "status": "Berlaku",
    "pasal": "Pasal 2 (1)",
    "kew": "Pasal 2 (1) Setiap orang dalam penggunaan Pestisida wajib menggunakan Pestisida yang telah mendapat izin Menteri.",
@@ -2319,7 +2368,7 @@
    "cat": "Relevansi rendah (pendaftaran pestisida — kewajiban produsen); cukup pastikan vendor pest control memakai pestisida terdaftar.",
    "wil": "Nasional",
    "src": "",
-   "saran": "",
+   "saran": "relevan bila cabang/workshop mengelola pestisida (mis. pemeliharaan lahan site). Safety manager: pastikan hanya pestisida terdaftar yang dipakai kontraktor, simpan SDS, dan masukkan ke daftar bahan kimia berbahaya; bila tidak ada penggunaan, tandai tidak berlaku bagi operasional.",
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11"
@@ -2364,7 +2413,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2018-05-02"
+   "tgl_tetap": "2018-05-02",
+   "tgl_asal": "db"
   },
   {
    "id": "S-109",
@@ -2386,7 +2436,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2019-08-01"
+   "tgl_tetap": "2019-08-01",
+   "tgl_asal": "db"
   },
   {
    "id": "S-111",
@@ -2429,7 +2480,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2020-01-30"
+   "tgl_tetap": "2020-01-30",
+   "tgl_asal": "db"
   },
   {
    "id": "S-113",
@@ -2444,14 +2496,15 @@
    "bukti": "Laporan tahap I & II ke BPJS TK, rekap klaim JKK",
    "frek": "Saat terjadi",
    "pic": "HR",
-   "cat": "Database pengguna 10/11/2026 menyebut diubah Permenaker 1/2025 (18-02-2025); lihat S-206.",
+   "cat": "Diubah oleh Permenaker 1/2025 (ditetapkan 18 Feb 2025); lihat S-206.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2021-03-31"
+   "tgl_tetap": "2021-03-31",
+   "tgl_asal": "db"
   },
   {
    "id": "S-114",
@@ -2473,7 +2526,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2023-11-21"
+   "tgl_tetap": "2023-11-21",
+   "tgl_asal": "db"
   },
   {
    "id": "S-115",
@@ -2495,7 +2549,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2025-11-17"
+   "tgl_tetap": "2025-11-17",
+   "tgl_asal": "db"
   },
   {
    "id": "S-116",
@@ -2510,13 +2565,14 @@
    "bukti": "Prosedur penanganan kunjungan pengawas, register nota pemeriksaan & tindak lanjut",
    "frek": "Saat pemeriksaan",
    "pic": "QSHE",
-   "cat": "",
+   "cat": "Ditetapkan 29 Jun 2026, diundangkan dan berlaku 3 Jul 2026 (Pasal 56); Pasal 55 mencabut Permenaker 33/2016 dan Permenaker 1/2020 (dicek pada naskah via pasal.id dan JDIH Kemnaker, 11/11/2026).",
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3070/peraturan-menteri-ketenagakerjaan-nomor-11-tahun-2026",
    "saran": "",
-   "cek": "2026-11-10",
+   "cek": "2026-11-11",
    "masuk": "",
-   "tgl_tetap": "2026-07-03"
+   "tgl_tetap": "2026-06-29",
+   "tgl_berlaku": "2026-07-03"
   },
   {
    "id": "H-001",
@@ -2538,7 +2594,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "1981-01-26"
+   "tgl_tetap": "1981-01-26",
+   "tgl_asal": "db"
   },
   {
    "id": "H-002",
@@ -2689,7 +2746,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "1989-06-13"
+   "tgl_tetap": "1989-06-13",
+   "tgl_asal": "db"
   },
   {
    "id": "H-009",
@@ -2711,7 +2769,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2004-04-26"
+   "tgl_tetap": "2004-04-26",
+   "tgl_asal": "db"
   },
   {
    "id": "H-010",
@@ -2754,7 +2813,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "1980-03-13"
+   "tgl_tetap": "1980-03-13",
+   "tgl_asal": "db"
   },
   {
    "id": "H-012",
@@ -2818,13 +2878,14 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "1982-04-23"
+   "tgl_tetap": "1982-04-23",
+   "tgl_asal": "db"
   },
   {
    "id": "H-015",
    "kat": "Health",
    "hier": "Permenaker",
-   "nomor": "Permenaker No. 3 Tahun 1998",
+   "nomor": "Permenaker PER.03/MEN/1998",
    "judul": "Tata Cara Pelaporan dan Pemeriksaan Kecelakaan",
    "status": "Berlaku",
    "pasal": "Pasal 2; Pasal 6",
@@ -2840,7 +2901,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "1998-02-26"
+   "tgl_tetap": "1998-02-26",
+   "tgl_asal": "db"
   },
   {
    "id": "H-016",
@@ -2862,13 +2924,14 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "1979-01-12"
+   "tgl_tetap": "1979-01-12",
+   "tgl_asal": "db"
   },
   {
    "id": "H-017",
    "kat": "Health",
-   "hier": "Kepmenkes",
-   "nomor": "Kepmenkes No 4 Tahun 2016",
+   "hier": "Permenkes",
+   "nomor": "Permenkes 4/2016",
    "judul": "Penggunaan Gas Medik dan Vakum Medik Pada Sarana Pelayanan Kesehatan",
    "status": "Berlaku",
    "pasal": "Pasal 6; Pasal 7",
@@ -2877,14 +2940,15 @@
    "bukti": "Laporan inspeksi/pemantauan, foto kondisi, prosedur/IK terkait",
    "frek": "Sesuai ketentuan pasal",
    "pic": "QSHE",
-   "cat": "Relevan bila klinik memakai gas medik; tidak ditemukan info pencabutan.",
+   "cat": "Semula tercatat \"Kepmenkes\"; yang benar Peraturan Menteri Kesehatan 4/2016. Relevan bila klinik memakai gas medik; tidak ditemukan info pencabutan.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2016-01-26"
+   "tgl_tetap": "2016-01-26",
+   "tgl_asal": "db"
   },
   {
    "id": "H-018",
@@ -2946,13 +3010,14 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2022-08-31"
+   "tgl_tetap": "2022-08-31",
+   "tgl_asal": "db"
   },
   {
    "id": "H-021",
    "kat": "Health",
-   "hier": "Kepmenkes",
-   "nomor": "Kepmenaker No.736/2010",
+   "hier": "Permenkes",
+   "nomor": "Permenkes 736/2010",
    "judul": "Tata Laksana Pengawasan Kualitas Air minum",
    "status": "Dicabut / Tidak Berlaku",
    "pasal": "Pasal 1; Pasal 3; Pasal 13",
@@ -2961,7 +3026,7 @@
    "bukti": "Laporan inspeksi/pemantauan, foto kondisi, prosedur/IK terkait",
    "frek": "Sesuai ketentuan pasal",
    "pic": "GA",
-   "cat": "Tidak dinilai: dicabut — rujukan pengganti/terkait: H-041. Ganti rujukan di prosedur/IK.",
+   "cat": "Dicabut oleh Permenkes 2/2023 Pasal 51 huruf i (dicek pada naskah via pasal.id, 11/11/2026). Pengganti: H-041. Ganti rujukan di prosedur/IK.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
@@ -2981,7 +3046,7 @@
    "bukti": "Laporan inspeksi/pemantauan, foto kondisi, prosedur/IK terkait",
    "frek": "Sesuai ketentuan pasal",
    "pic": "GA",
-   "cat": "Tidak dinilai: dicabut — rujukan pengganti/terkait: H-041. Ganti rujukan di prosedur/IK.",
+   "cat": "Dicabut oleh Permenkes 2/2023 Pasal 51 huruf h (dicek pada naskah via pasal.id, 11/11/2026). Pengganti: H-041. Ganti rujukan di prosedur/IK.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
@@ -3001,7 +3066,7 @@
    "bukti": "Laporan inspeksi/pemantauan, foto kondisi, prosedur/IK terkait",
    "frek": "Sesuai ketentuan pasal",
    "pic": "QSHE",
-   "cat": "Tidak dinilai: dicabut — rujukan pengganti/terkait: H-041. Ganti rujukan di prosedur/IK.",
+   "cat": "Dicabut oleh Permenkes 2/2023 Pasal 51 huruf l (dicek pada naskah via pasal.id, 11/11/2026). Pengganti: H-041. Ganti rujukan di prosedur/IK.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
@@ -3028,7 +3093,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2007-07-06"
+   "tgl_tetap": "2007-07-06",
+   "tgl_asal": "db"
   },
   {
    "id": "H-025",
@@ -3043,7 +3109,7 @@
    "bukti": "Laporan inspeksi/pemantauan, foto kondisi, prosedur/IK terkait",
    "frek": "Sesuai ketentuan pasal",
    "pic": "QSHE",
-   "cat": "Berlaku sebagaimana diubah Permenkes 26/2018 (pasal.id). Perizinan klinik kini melalui perizinan berusaha berbasis risiko — konfirmasi standar klinik terkini di JDIH Kemenkes.",
+   "cat": "Berlaku sebagaimana diubah Permenkes 26/2018; tidak dicabut oleh Permenkes 14/2021 (Pasal 5 hanya mencabut Permenkes 24/2016; dicek via pasal.id, 11/11/2026). Standar usaha klinik kini juga diatur Permenkes 11/2025 (H-052).",
    "wil": "Nasional",
    "src": "",
    "saran": "",
@@ -3094,7 +3160,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2016-10-26"
+   "tgl_tetap": "2016-10-26",
+   "tgl_asal": "db"
   },
   {
    "id": "H-028",
@@ -3102,21 +3169,21 @@
    "hier": "PERMENKES",
    "nomor": "PERMENKES NO. 56 TAHUN 2016",
    "judul": "TENTANG PENYELENGGARAAN PELAYANAN PENYAKIT AKIBAT KERJA",
-   "status": "Berlaku",
+   "status": "Dicabut / Tidak Berlaku",
    "pasal": "Pasal 2; Pasal 6; Pertama; Pasal 8",
    "kew": "Pasal 2: Pelayanan penyakit akibat kerja berlaku untuk semua pekerja baik sektor formal maupun informal Pasal 6 : Penyelenggaraan pelayanan penyakit akibat kerja di laksanakan pada fasilitas pelayanan kesehatan tingkat pertama atau fasilitas pelayanan kesehatan rujukan tingkat lanjutan Pasal 8 : Pelayanan penyakit akibat kerja di fasilitas pelayanan kesehatan tingkat pertama di laksanakan uleh dokter dengan kompetensi tambahan terkait penyakit akibat kerja yang di peroleh melalui pendidikan formal atau pelatihan",
    "jenis": "Teknis",
    "bukti": "Laporan inspeksi/pemantauan, foto kondisi, prosedur/IK terkait",
    "frek": "Sesuai ketentuan pasal",
    "pic": "HR",
-   "cat": "Tidak ditemukan info pencabutan; konfirmasi JDIH Kemenkes. Database pengguna 10/11/2026 menyebut dicabut Permenkes 11/2022; BELUM diverifikasi pada naskah, status tidak diubah. Konfirmasi di JDIH Kemkes.",
+   "cat": "Dicabut oleh Permenkes 11/2022 tentang Pelayanan Kesehatan Penyakit Akibat Kerja, Pasal 15 (ditetapkan 6 Apr 2022, diundangkan 13 Apr 2022; dicek pada naskah via pasal.id, 11/11/2026). Pengganti: H-053. Ganti rujukan di prosedur/IK.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
-   "cek": "",
+   "cek": "2026-11-11",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2016-11-17"
+   "tgl_tetap": "2016-10-24"
   },
   {
    "id": "H-029",
@@ -3131,7 +3198,7 @@
    "bukti": "Laporan pengukuran lingkungan kerja industri",
    "frek": "Tahunan",
    "pic": "QSHE",
-   "cat": "Perlu dicek keterkaitannya dengan Permenkes 2/2023 (dicabut sebagian Permenkes 3/2026).",
+   "cat": "Tidak termasuk daftar peraturan yang dicabut Pasal 51 Permenkes 2/2023 (dicek pada naskah via pasal.id, 11/11/2026); pasal.id mencatat Berlaku.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
@@ -3183,7 +3250,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2013-02-18"
+   "tgl_tetap": "2013-02-18",
+   "tgl_asal": "db"
   },
   {
    "id": "H-034",
@@ -3314,7 +3382,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2023-05-29"
+   "tgl_tetap": "2023-05-29",
+   "tgl_asal": "db"
   },
   {
    "id": "H-040",
@@ -3336,7 +3405,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2022-09-21"
+   "tgl_tetap": "2022-09-21",
+   "tgl_asal": "db"
   },
   {
    "id": "H-041",
@@ -3380,7 +3450,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2015-07-24"
+   "tgl_tetap": "2015-07-24",
+   "tgl_asal": "db"
   },
   {
    "id": "H-044",
@@ -3617,7 +3688,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
-   "tgl_tetap": "1998-07-03"
+   "tgl_tetap": "1998-07-03",
+   "tgl_asal": "db"
   },
   {
    "id": "E-007",
@@ -3746,7 +3818,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
-   "tgl_tetap": "1996-11-25"
+   "tgl_tetap": "1996-11-25",
+   "tgl_asal": "db"
   },
   {
    "id": "E-013",
@@ -3768,7 +3841,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
-   "tgl_tetap": "2009-04-15"
+   "tgl_tetap": "2009-04-15",
+   "tgl_asal": "db"
   },
   {
    "id": "E-014",
@@ -3790,7 +3864,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
-   "tgl_tetap": "2012-11-23"
+   "tgl_tetap": "2012-11-23",
+   "tgl_asal": "db"
   },
   {
    "id": "E-015",
@@ -3812,7 +3887,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
-   "tgl_tetap": "2006-08-01"
+   "tgl_tetap": "2006-08-01",
+   "tgl_asal": "db"
   },
   {
    "id": "E-016",
@@ -3854,7 +3930,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
-   "tgl_tetap": "2008-03-05"
+   "tgl_tetap": "2008-03-05",
+   "tgl_asal": "db"
   },
   {
    "id": "E-018",
@@ -3921,7 +3998,7 @@
    "id": "E-021",
    "kat": "Environment",
    "hier": "Kepmenaker",
-   "nomor": "Kepmenaker 187 tahun 1999",
+   "nomor": "Kepmenaker KEP.187/MEN/1999",
    "judul": "Pengendalian bahan kimia berbahaya di tempat kerja",
    "status": "Berlaku",
    "pasal": "Pasal 2; Pasal 3",
@@ -3937,7 +4014,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
-   "tgl_tetap": "1999-08-25"
+   "tgl_tetap": "1999-08-25",
+   "tgl_asal": "db"
   },
   {
    "id": "E-022",
@@ -3959,7 +4037,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
-   "tgl_tetap": "1997-02-20"
+   "tgl_tetap": "1997-02-20",
+   "tgl_asal": "db"
   },
   {
    "id": "E-023",
@@ -3981,7 +4060,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
-   "tgl_tetap": "2008-01-15"
+   "tgl_tetap": "2008-01-15",
+   "tgl_asal": "db"
   },
   {
    "id": "E-024",
@@ -4003,7 +4083,8 @@
    "cek": "2026-09-16",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
-   "tgl_tetap": "2001-04-05"
+   "tgl_tetap": "2001-04-05",
+   "tgl_asal": "db"
   },
   {
    "id": "E-025",
@@ -4025,7 +4106,8 @@
    "cek": "2026-09-16",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
-   "tgl_tetap": "2005-09-13"
+   "tgl_tetap": "2005-09-13",
+   "tgl_asal": "db"
   },
   {
    "id": "E-026",
@@ -4068,7 +4150,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
-   "tgl_tetap": "2010-06-01"
+   "tgl_tetap": "2010-06-01",
+   "tgl_asal": "db"
   },
   {
    "id": "E-028",
@@ -4111,7 +4194,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
-   "tgl_tetap": "2013-04-01"
+   "tgl_tetap": "2013-04-01",
+   "tgl_asal": "db"
   },
   {
    "id": "E-030",
@@ -4133,7 +4217,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
-   "tgl_tetap": "2014-04-03"
+   "tgl_tetap": "2014-04-03",
+   "tgl_asal": "db"
   },
   {
    "id": "E-032",
@@ -4155,7 +4240,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
-   "tgl_tetap": "2025-06-05"
+   "tgl_tetap": "2025-06-05",
+   "tgl_asal": "db"
   },
   {
    "id": "E-033",
@@ -4177,7 +4263,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
-   "tgl_tetap": "2009-05-26"
+   "tgl_tetap": "2009-05-26",
+   "tgl_asal": "db"
   },
   {
    "id": "E-034",
@@ -4219,7 +4306,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
-   "tgl_tetap": "2010-03-29"
+   "tgl_tetap": "2010-03-29",
+   "tgl_asal": "db"
   },
   {
    "id": "E-036",
@@ -4241,7 +4329,8 @@
    "cek": "2026-09-16",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
-   "tgl_tetap": "2015-06-17"
+   "tgl_tetap": "2015-06-17",
+   "tgl_asal": "db"
   },
   {
    "id": "E-037",
@@ -4298,7 +4387,7 @@
    "bukti": "Kebijakan/prosedur/program tertulis & bukti sosialisasi",
    "frek": "Sesuai ketentuan pasal",
    "pic": "QSHE",
-   "cat": "Tidak dinilai: dicabut — rujukan pengganti/terkait: H-041. Ganti rujukan di prosedur/IK.",
+   "cat": "Dicabut oleh Permenkes 2/2023 Pasal 51 huruf o (dicek pada naskah via pasal.id, 11/11/2026). Pengganti: H-041. Ganti rujukan di prosedur/IK.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
@@ -4308,8 +4397,8 @@
   {
    "id": "E-040",
    "kat": "Environment",
-   "hier": "Kepka Bappedal",
-   "nomor": "Kepka Bappedal 205 tahun 1996",
+   "hier": "Kepka Bapedal",
+   "nomor": "Kepka Bapedal 205/1996",
    "judul": "Pedoman Teknis Pengendalian Pencemaran Udara Sumber Tidak Bergerak",
    "status": "Berlaku",
    "pasal": "Lampiran 3",
@@ -4321,7 +4410,7 @@
    "cat": "Pedoman teknis Bapedal 1996 — pengaturan emisi sumber tidak bergerak telah diperbarui; konfirmasi JDIH KLH.",
    "wil": "Nasional",
    "src": "",
-   "saran": "",
+   "saran": "acuan teknis pengendalian emisi sumber tidak bergerak (genset, boiler, kompresor di workshop/cabang). QSHE: gunakan sebagai pelengkap baku mutu emisi terbaru saat menyusun IK pemantauan emisi; cek dahulu apakah masih berlaku.",
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-12"
@@ -4366,7 +4455,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
-   "tgl_tetap": "2013-04-04"
+   "tgl_tetap": "2013-04-04",
+   "tgl_asal": "db"
   },
   {
    "id": "E-047",
@@ -4388,7 +4478,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
-   "tgl_tetap": "2007-01-05"
+   "tgl_tetap": "2007-01-05",
+   "tgl_asal": "db"
   },
   {
    "id": "E-048",
@@ -4410,7 +4501,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
-   "tgl_tetap": "2014-09-22"
+   "tgl_tetap": "2014-09-22",
+   "tgl_asal": "db"
   },
   {
    "id": "E-049",
@@ -4518,7 +4610,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2020-07-24"
+   "tgl_tetap": "2020-07-24",
+   "tgl_asal": "db"
   },
   {
    "id": "E-054",
@@ -4668,7 +4761,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2021-02-02"
+   "tgl_tetap": "2021-02-02",
+   "tgl_asal": "db"
   },
   {
    "id": "E-061",
@@ -4686,7 +4780,7 @@
    "cat": "Berlaku (pasal.id) dan masih dijadikan dasar pelaporan SIMPEL oleh pemda pada 2025.",
    "wil": "Nasional",
    "src": "",
-   "saran": "",
+   "saran": "QSHE periksa apakah pelaporan perizinan lingkungan (mis. izin/persetujuan LB3, air limbah) memakai sistem elektronik yang dimaksud; naskah dan status berlaku perlu dicek karena peraturan lingkungan sudah banyak berubah sejak 2021.",
    "cek": "2026-09-16",
    "masuk": "",
    "tautan_dicoba": "2026-10-13"
@@ -4733,7 +4827,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2021-04-01"
+   "tgl_tetap": "2021-04-01",
+   "tgl_asal": "db"
   },
   {
    "id": "E-065",
@@ -4755,7 +4850,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2021-04-01"
+   "tgl_tetap": "2021-04-01",
+   "tgl_asal": "db"
   },
   {
    "id": "E-066",
@@ -4777,7 +4873,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2021-04-01"
+   "tgl_tetap": "2021-04-01",
+   "tgl_asal": "db"
   },
   {
    "id": "E-067",
@@ -4799,7 +4896,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2021-04-01"
+   "tgl_tetap": "2021-04-01",
+   "tgl_asal": "db"
   },
   {
    "id": "E-068",
@@ -4863,7 +4961,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2018-01-24"
+   "tgl_tetap": "2018-01-24",
+   "tgl_asal": "db"
   },
   {
    "id": "E-071",
@@ -4885,7 +4984,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2019-06-27"
+   "tgl_tetap": "2019-06-27",
+   "tgl_asal": "db"
   },
   {
    "id": "E-072",
@@ -4907,7 +5007,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2018-01-05"
+   "tgl_tetap": "2018-01-05",
+   "tgl_asal": "db"
   },
   {
    "id": "E-073",
@@ -4929,7 +5030,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2013-06-10"
+   "tgl_tetap": "2013-06-10",
+   "tgl_asal": "db"
   },
   {
    "id": "E-074",
@@ -4993,7 +5095,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2013-04-04"
+   "tgl_tetap": "2013-04-04",
+   "tgl_asal": "db"
   },
   {
    "id": "E-077",
@@ -5140,7 +5243,8 @@
    "cek": "2026-09-16",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2025-10-10"
+   "tgl_tetap": "2025-10-10",
+   "tgl_asal": "db"
   },
   {
    "id": "E-083",
@@ -5248,7 +5352,8 @@
    "cek": "2026-09-16",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2022-09-21"
+   "tgl_tetap": "2022-09-21",
+   "tgl_asal": "db"
   },
   {
    "id": "E-088",
@@ -5291,7 +5396,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2024-07-01"
+   "tgl_tetap": "2024-07-01",
+   "tgl_asal": "db"
   },
   {
    "id": "E-090",
@@ -5375,7 +5481,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2025-06-05"
+   "tgl_tetap": "2025-06-05",
+   "tgl_asal": "db"
   },
   {
    "id": "E-094",
@@ -5397,7 +5504,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2025-09-04"
+   "tgl_tetap": "2025-09-04",
+   "tgl_asal": "db"
   },
   {
    "id": "E-095",
@@ -5419,7 +5527,8 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2025-10-22"
+   "tgl_tetap": "2025-10-22",
+   "tgl_asal": "db"
   },
   {
    "id": "E-096",
@@ -5440,7 +5549,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tgl_tetap": "2025-08-19"
+   "tgl_tetap": "2025-08-19",
+   "tgl_asal": "db"
   },
   {
    "id": "E-097",
@@ -5461,7 +5571,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tgl_tetap": "2026-05-25"
+   "tgl_tetap": "2026-05-25",
+   "tgl_asal": "db"
   },
   {
    "id": "Q-017",
@@ -5482,7 +5593,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-11-10",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2026-07-14"
+   "tgl_tetap": "2026-07-14",
+   "tgl_asal": "db"
   },
   {
    "id": "E-099",
@@ -5503,7 +5615,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2011-04-04"
+   "tgl_tetap": "2011-04-04",
+   "tgl_asal": "db"
   },
   {
    "id": "E-100",
@@ -5524,7 +5637,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2016-12-22"
+   "tgl_tetap": "2016-12-22",
+   "tgl_asal": "db"
   },
   {
    "id": "E-101",
@@ -5545,7 +5659,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2019-02-25"
+   "tgl_tetap": "2019-02-25",
+   "tgl_asal": "db"
   },
   {
    "id": "E-102",
@@ -5566,7 +5681,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2020-04-27"
+   "tgl_tetap": "2020-04-27",
+   "tgl_asal": "db"
   },
   {
    "id": "Q-018",
@@ -5587,7 +5703,8 @@
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "1981-07-31"
+   "tgl_tetap": "1981-07-31",
+   "tgl_asal": "db"
   },
   {
    "id": "Q-019",
@@ -5609,7 +5726,8 @@
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
    "tautan_dicoba": "2026-11-09",
-   "tgl_tetap": "2017-11-06"
+   "tgl_tetap": "2017-11-06",
+   "tgl_asal": "db"
   },
   {
    "id": "S-117",
@@ -5651,7 +5769,8 @@
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2021-09-09"
+   "tgl_tetap": "2021-09-09",
+   "tgl_asal": "db"
   },
   {
    "id": "S-119",
@@ -5694,7 +5813,8 @@
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
    "tautan_dicoba": "2026-11-09",
-   "tgl_tetap": "2005-07-26"
+   "tgl_tetap": "2005-07-26",
+   "tgl_asal": "db"
   },
   {
    "id": "S-121",
@@ -5715,7 +5835,8 @@
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2012-05-15"
+   "tgl_tetap": "2012-05-15",
+   "tgl_asal": "db"
   },
   {
    "id": "S-122",
@@ -5736,7 +5857,8 @@
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2021-02-02"
+   "tgl_tetap": "2021-02-02",
+   "tgl_asal": "db"
   },
   {
    "id": "S-123",
@@ -5778,7 +5900,8 @@
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2015-06-30"
+   "tgl_tetap": "2015-06-30",
+   "tgl_asal": "db"
   },
   {
    "id": "H-049",
@@ -5820,7 +5943,8 @@
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2024-07-02"
+   "tgl_tetap": "2024-07-02",
+   "tgl_asal": "db"
   },
   {
    "id": "E-103",
@@ -5861,7 +5985,8 @@
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2020-07-17"
+   "tgl_tetap": "2020-07-17",
+   "tgl_asal": "db"
   },
   {
    "id": "E-105",
@@ -5882,7 +6007,8 @@
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2020-07-16"
+   "tgl_tetap": "2020-07-16",
+   "tgl_asal": "db"
   },
   {
    "id": "E-106",
@@ -5924,7 +6050,8 @@
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2024-12-02"
+   "tgl_tetap": "2024-12-02",
+   "tgl_asal": "db"
   },
   {
    "id": "E-108",
@@ -5945,7 +6072,8 @@
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "1996-11-25"
+   "tgl_tetap": "1996-11-25",
+   "tgl_asal": "db"
   },
   {
    "id": "E-109",
@@ -5966,7 +6094,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2016-04-18"
+   "tgl_tetap": "2016-04-18",
+   "tgl_asal": "db"
   },
   {
    "id": "E-110",
@@ -5987,7 +6116,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2008-01-14"
+   "tgl_tetap": "2008-01-14",
+   "tgl_asal": "db"
   },
   {
    "id": "E-111",
@@ -6008,7 +6138,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2022-04-12"
+   "tgl_tetap": "2022-04-12",
+   "tgl_asal": "db"
   },
   {
    "id": "E-112",
@@ -6029,7 +6160,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2019-08-13"
+   "tgl_tetap": "2019-08-13",
+   "tgl_asal": "db"
   },
   {
    "id": "E-113",
@@ -6050,7 +6182,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2014-05-20"
+   "tgl_tetap": "2014-05-20",
+   "tgl_asal": "db"
   },
   {
    "id": "E-114",
@@ -6071,7 +6204,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2012-02-13"
+   "tgl_tetap": "2012-02-13",
+   "tgl_asal": "db"
   },
   {
    "id": "E-115",
@@ -6092,7 +6226,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2011-03-14"
+   "tgl_tetap": "2011-03-14",
+   "tgl_asal": "db"
   },
   {
    "id": "E-116",
@@ -6113,7 +6248,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2022-06-17"
+   "tgl_tetap": "2022-06-17",
+   "tgl_asal": "db"
   },
   {
    "id": "E-117",
@@ -6134,7 +6270,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2014-04-14"
+   "tgl_tetap": "2014-04-14",
+   "tgl_asal": "db"
   },
   {
    "id": "E-118",
@@ -6155,7 +6292,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2023-12-29"
+   "tgl_tetap": "2023-12-29",
+   "tgl_asal": "db"
   },
   {
    "id": "E-119",
@@ -6176,7 +6314,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2016-04-26"
+   "tgl_tetap": "2016-04-26",
+   "tgl_asal": "db"
   },
   {
    "id": "E-120",
@@ -6197,7 +6336,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2014-12-29"
+   "tgl_tetap": "2014-12-29",
+   "tgl_asal": "db"
   },
   {
    "id": "E-121",
@@ -6218,7 +6358,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2019-07-29"
+   "tgl_tetap": "2019-07-29",
+   "tgl_asal": "db"
   },
   {
    "id": "E-122",
@@ -6239,7 +6380,8 @@
    "saran": "Pantau rancangan perda pengganti (Penyelenggaraan PPLH Kaltim) yang akan mencabut Perda 1/2014 dan Perda 02/2011. Sampai terbit, kedua perda ini tetap menjadi acuan.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2014-01-22"
+   "tgl_tetap": "2014-01-22",
+   "tgl_asal": "db"
   },
   {
    "id": "S-201",
@@ -6260,7 +6402,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-11-10",
    "masuk": "2026-10-08",
-   "tgl_tetap": "2026-06-15"
+   "tgl_tetap": "2026-06-15",
+   "tgl_asal": "db"
   },
   {
    "id": "S-202",
@@ -6281,7 +6424,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-11-10",
    "masuk": "2026-10-08",
-   "tgl_tetap": "2026-06-08"
+   "tgl_tetap": "2026-06-08",
+   "tgl_asal": "db"
   },
   {
    "id": "E-201",
@@ -6302,7 +6446,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-08",
    "masuk": "2026-10-08",
-   "tgl_tetap": "2008-05-12"
+   "tgl_tetap": "2008-05-12",
+   "tgl_asal": "db"
   },
   {
    "id": "E-202",
@@ -6323,7 +6468,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-08",
    "masuk": "2026-10-08",
-   "tgl_tetap": "2013-10-16"
+   "tgl_tetap": "2013-10-16",
+   "tgl_asal": "db"
   },
   {
    "id": "E-203",
@@ -6344,7 +6490,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-08",
    "masuk": "2026-10-08",
-   "tgl_tetap": "2024-11-15"
+   "tgl_tetap": "2024-11-15",
+   "tgl_asal": "db"
   },
   {
    "id": "E-204",
@@ -6365,7 +6512,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-08",
    "masuk": "2026-10-08",
-   "tgl_tetap": "2012-11-26"
+   "tgl_tetap": "2012-11-26",
+   "tgl_asal": "db"
   },
   {
    "id": "E-205",
@@ -6386,7 +6534,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-08",
    "masuk": "2026-10-08",
-   "tgl_tetap": "2012-08-30"
+   "tgl_tetap": "2012-08-30",
+   "tgl_asal": "db"
   },
   {
    "id": "E-206",
@@ -6407,7 +6556,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-10-08",
    "masuk": "2026-10-08",
-   "tgl_tetap": "2016-07-26"
+   "tgl_tetap": "2016-07-26",
+   "tgl_asal": "db"
   },
   {
    "id": "S-203",
@@ -6491,7 +6641,8 @@
    "saran": "Regulasi baru masuk daftar: ganti rujukan Permenkes 67/2016 (TB), 82/2014, dan 71/2015 pada IK/prosedur kesehatan kerja bila masih dipakai, dan petakan kewajiban tempat kerja (kesehatan lingkungan, Pasal 57) dari naskah resmi.",
    "cek": "2026-11-09",
    "masuk": "2026-11-09",
-   "tgl_tetap": "2026-02-27"
+   "tgl_tetap": "2026-02-27",
+   "tgl_asal": "db"
   },
   {
    "id": "H-052",
@@ -6577,7 +6728,8 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC lingkungan, petakan kewajiban pelaku usaha dari naskah resmi, lalu selaraskan prosedur emisi dan pemantauan udara.",
    "cek": "2026-11-09",
    "masuk": "2026-11-09",
-   "tgl_tetap": "2026-05-12"
+   "tgl_tetap": "2026-05-12",
+   "tgl_asal": "db"
   },
   {
    "id": "E-210",
@@ -6604,7 +6756,7 @@
    "kat": "Safety",
    "hier": "Permenaker",
    "nomor": "Permenaker 1/2025",
-   "judul": "Perubahan atas Permenaker 5/2021 tentang Penyelenggaraan Program JKK, JKM & JHT",
+   "judul": "Perubahan atas Permenaker 5/2021 tentang Tata Cara Penyelenggaraan Program JKK, JKM & JHT",
    "status": "Berlaku",
    "pasal": "",
    "kew": "",
@@ -6612,112 +6764,13 @@
    "bukti": "",
    "frek": "",
    "pic": "",
-   "cat": "Sumber data: Database pengguna 10/11/2026; judul dan tanggal belum dicocokkan dengan naskah resmi.",
+   "cat": "Ditetapkan 18 Feb 2025, diundangkan 24 Feb 2025; mengubah Permenaker 5/2021 (dicek via pasal.id, 11/11/2026).",
    "wil": "Nasional",
    "src": "",
-   "saran": "Regulasi perubahan masuk dari database: HR/QSHE selaraskan prosedur pelaporan dan klaim kecelakaan kerja/PAK dengan Permenaker 5/2021 sebagaimana diubah; telaah naskah untuk mengetahui pasal yang berubah (tenggat pelaporan, pihak pelapor) sebelum IK pelaporan kecelakaan direvisi.",
-   "cek": "2026-11-10",
-   "masuk": "2026-11-10"
-  },
-  {
-   "id": "S-207",
-   "kat": "Safety",
-   "hier": "Permentan",
-   "nomor": "Permentan 43/2019",
-   "judul": "Pendaftaran Pestisida",
-   "status": "Berlaku",
-   "pasal": "",
-   "kew": "",
-   "jenis": "",
-   "bukti": "",
-   "frek": "",
-   "pic": "",
-   "cat": "Sumber data: Database pengguna 10/11/2026; judul dan tanggal belum dicocokkan dengan naskah resmi.",
-   "wil": "Nasional",
-   "src": "",
-   "saran": "Masuk dari database: relevan bila cabang/workshop mengelola pestisida (mis. pemeliharaan lahan site). Safety manager: pastikan hanya pestisida terdaftar yang dipakai kontraktor, simpan SDS, dan masukkan ke daftar bahan kimia berbahaya; bila tidak ada penggunaan, tandai tidak berlaku bagi operasional.",
-   "cek": "2026-11-10",
-   "masuk": "2026-11-10"
-  },
-  {
-   "id": "S-208",
-   "kat": "Safety",
-   "hier": "Instruksi Gubernur DKI",
-   "nomor": "Instruksi Gubernur DKI 30/2014",
-   "judul": "Jaminan Sosial Tenaga Kerja",
-   "status": "Berlaku",
-   "pasal": "",
-   "kew": "",
-   "jenis": "",
-   "bukti": "",
-   "frek": "",
-   "pic": "",
-   "cat": "Sumber data: Database pengguna 10/11/2026; judul dan tanggal belum dicocokkan dengan naskah resmi.",
-   "wil": "DKI Jakarta",
-   "src": "",
-   "saran": "Masuk dari database: berlaku untuk kantor pusat dan cabang di DKI Jakarta. HR: pastikan seluruh pekerja (termasuk kontrak/outsourcing) terdaftar di BPJS Ketenagakerjaan dan bukti kepesertaan tersedia untuk pengawas.",
-   "cek": "2026-11-10",
-   "masuk": "2026-11-10"
-  },
-  {
-   "id": "S-209",
-   "kat": "Safety",
-   "hier": "Perda DKI",
-   "nomor": "Perda DKI 7/2010",
-   "judul": "Bangunan dalam Wilayah DKI Jakarta",
-   "status": "Berlaku",
-   "pasal": "",
-   "kew": "",
-   "jenis": "",
-   "bukti": "",
-   "frek": "",
-   "pic": "",
-   "cat": "Sumber data: Database pengguna 10/11/2026; judul dan tanggal belum dicocokkan dengan naskah resmi.",
-   "wil": "DKI Jakarta",
-   "src": "",
-   "saran": "Masuk dari database: berlaku untuk gedung kantor pusat/cabang di DKI Jakarta. GA/QSHE: periksa IMB/PBG, Sertifikat Laik Fungsi, dan persyaratan keselamatan bangunan; petakan pasalnya dari naskah resmi (Perda ini perlu dicek apakah sudah diganti peraturan yang lebih baru).",
-   "cek": "2026-11-10",
-   "masuk": "2026-11-10"
-  },
-  {
-   "id": "E-211",
-   "kat": "Environment",
-   "hier": "PermenLHK",
-   "nomor": "PermenLHK P.87/2016",
-   "judul": "Sistem Pelaporan Elektronik Perizinan Lingkungan Hidup",
-   "status": "Berlaku",
-   "pasal": "",
-   "kew": "",
-   "jenis": "",
-   "bukti": "",
-   "frek": "",
-   "pic": "",
-   "cat": "Sumber data: Database pengguna 10/11/2026; hanya tercatat bulan/tahun (November 2016), tgl_tetap dikosongkan; belum dicocokkan dengan naskah resmi.",
-   "wil": "Nasional",
-   "src": "",
-   "saran": "Masuk dari database (tanggal hanya diketahui November 2016): QSHE periksa apakah pelaporan perizinan lingkungan (mis. izin/persetujuan LB3, air limbah) memakai sistem elektronik yang dimaksud; naskah dan status berlaku perlu dicek karena peraturan lingkungan sudah banyak berubah sejak 2021.",
-   "cek": "2026-11-10",
-   "masuk": "2026-11-10"
-  },
-  {
-   "id": "E-212",
-   "kat": "Environment",
-   "hier": "Kepka Bapedal",
-   "nomor": "Kepka Bapedal 205/1996",
-   "judul": "Pedoman Teknis Pengendalian Pencemaran Udara Sumber Tidak Bergerak",
-   "status": "Berlaku",
-   "pasal": "",
-   "kew": "",
-   "jenis": "",
-   "bukti": "",
-   "frek": "",
-   "pic": "",
-   "cat": "Sumber data: Database pengguna 10/11/2026; judul dan tanggal belum dicocokkan dengan naskah resmi.",
-   "wil": "Nasional",
-   "src": "",
-   "saran": "Masuk dari database: acuan teknis pengendalian emisi sumber tidak bergerak (genset, boiler, kompresor di workshop/cabang). QSHE: gunakan sebagai pelengkap baku mutu emisi terbaru saat menyusun IK pemantauan emisi; cek dahulu apakah masih berlaku.",
-   "cek": "2026-11-10",
-   "masuk": "2026-11-10"
+   "saran": "HR/QSHE selaraskan prosedur pelaporan dan klaim kecelakaan kerja/PAK dengan Permenaker 5/2021 sebagaimana diubah; telaah naskah untuk mengetahui pasal yang berubah (tenggat pelaporan, pihak pelapor) sebelum IK pelaporan kecelakaan direvisi.",
+   "cek": "2026-11-11",
+   "masuk": "2026-11-10",
+   "tgl_tetap": "2025-02-18"
   },
   {
    "id": "S-210",
@@ -6738,6 +6791,34 @@
    "saran": "QSHE/HR: hapus rujukan Kepmenaker 609/2012 dari prosedur pelaporan dan penyelesaian kasus kecelakaan kerja/PAK; gunakan Permenaker 5/2021 jo. 1/2025 sebagai dasar. Tenggat: pada revisi IK pelaporan kecelakaan berikutnya.",
    "cek": "2026-11-10",
    "masuk": "2026-11-10"
+  },
+  {
+   "id": "H-053",
+   "kat": "Health",
+   "hier": "Permenkes",
+   "nomor": "Permenkes 11/2022",
+   "judul": "Pelayanan Kesehatan Penyakit Akibat Kerja (mencabut Permenkes 56/2016)",
+   "status": "Berlaku",
+   "pasal": "",
+   "kew": "",
+   "jenis": "",
+   "bukti": "",
+   "frek": "",
+   "pic": "HR",
+   "cat": "Ditetapkan 6 Apr 2022, diundangkan 13 Apr 2022; Pasal 15 mencabut Permenkes 56/2016 (dicek pada naskah via pasal.id, 11/11/2026).",
+   "wil": "Nasional",
+   "src": "https://jdih.kemkes.go.id/common/dokumen/2022permenkes011.pdf",
+   "saran": "Menggantikan Permenkes 56/2016. Dokter perusahaan/klinik dan HR: selaraskan alur penegakan diagnosis penyakit akibat kerja, rujukan, pencatatan dan pelaporan PAK dengan peraturan ini; QSHE: ganti rujukan Permenkes 56/2016 di IK Program Kesehatan Kerja, formulir pelaporan PAK, dan matriks regulasi; petakan pasal kewajiban dari naskah.",
+   "cek": "2026-11-11",
+   "masuk": "2026-11-11",
+   "tgl_tetap": "2022-04-06"
   }
+ ],
+ "hapus": [
+  "E-211",
+  "E-212",
+  "S-207",
+  "S-208",
+  "S-209"
  ]
 }

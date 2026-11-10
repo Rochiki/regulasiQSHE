@@ -82,7 +82,7 @@ def norm(s):
 
 KELAS = [(r"undang-undang|\buu\b", "uu"), (r"peraturan pemerintah|\bpp\b", "pp"), (r"peraturan presiden|perpres|per pres", "perpres"), (r"keputusan presiden|keppres", "keppres"),
          (r"peraturan daerah|perda|qanun", "perda"), (r"peraturan gubernur|pergub|per gub", "pergub"), (r"keputusan gubernur|kepgub", "kepgub"), (r"surat edaran|\bse\b", "se"),
-         (r"keputusan dir|kepdir", "kepdirjen"), (r"keputusan menteri|kepmen|kep\.?\s*men", "kepmen"), (r"peraturan menteri|permen|per\.?\s*men", "permen")]
+         (r"keputusan dir|kepdir", "kepdirjen"), (r"keputusan mena|keputusan menteri|kepmen|kep\.?\s*men", "kepmen"), (r"peraturan mena|peraturan menteri|permen|per\.?\s*men", "permen")]
 INST = [(r"naker|tenaga ?kerja", "naker"), (r"lhk|lingkungan|\blh\b|bplh", "lh"), (r"esdm|energi", "esdm"), (r"kes\b|menteri kesehatan|menkes", "kes"), (r"hub\b|perhubungan", "hub"),
         (r"pupr|\bpu\b|pekerjaan umum", "pu"), (r"perin\b|perindustrian", "perin"), (r"dag\b|perdagangan", "dag"), (r"tan\b|pertanian", "tan")]
 DAERAH = ["aceh", "sumatera utara", "sumatera barat", "riau", "jambi", "sumatera selatan", "bangka belitung", "lampung", "banten", "dki", "jakarta", "jawa barat", "jawa tengah",
@@ -192,13 +192,19 @@ def baca_kemnaker(html, url):
     for a in sup.select('a[href*="/peraturan/detail/"]'):
         nama = a.get_text(" ", strip=True)
         m = POLA.search(nama)
-        if not m:
+        slug = re.search(r"/peraturan/detail/\d+/[a-z0-9-]*?-nomor-(\d+)-tahun-(\d{4})(?:[/?#]|$)", a.get("href", ""))
+        if m:
+            jenis, nomor, tahun = m.group(1).strip(), m.group(2), m.group(3)
+        elif slug and re.match(r"(Peraturan|Keputusan|Surat Edaran|Instruksi|Undang)", nama, re.I):
+            # judul lama seperti "Peraturan Menakertrans Nomor PER.09/MEN/VII/2010": nomor dan tahun diambil dari tautannya
+            jenis, nomor, tahun = re.split(r"\s+(?:Nomor|No\.?)\s", nama, maxsplit=1, flags=re.I)[0].strip(), slug.group(1), slug.group(2)
+        else:
             continue
         baris = [b.strip() for b in blok_teks(a).split("\n") if b.strip()]
         lain = [b for b in baris if b != nama and not re.match(r"(Ditetapkan|Diundangkan|Diunduh)\b", b) and b not in ("Berlaku", "Tidak Berlaku") and not re.fullmatch(r"[A-Z0-9 ,&/().-]+( - [A-Z0-9 ,&/().-]+)+", b)]
         judul = max(lain, key=len) if lain else ""
         tgl = next((tanggal_iso(b) for b in baris if b.startswith("Ditetapkan")), "")
-        hasil.append(dict(jenis=m.group(1).strip(), nomor=m.group(2), tahun=m.group(3), judul=judul, tgl=tgl,
+        hasil.append(dict(jenis=jenis, nomor=nomor, tahun=tahun, judul=judul, tgl=tgl,
                           status="Dicabut / Tidak Berlaku" if "Tidak Berlaku" in baris else "Berlaku", src=urllib.parse.urljoin(url, a["href"])))
     return hasil
 
@@ -248,31 +254,68 @@ def status_dari_halaman(html):
 
 # ---------------------------------------------------------------- pelengkap tautan naskah resmi
 def nomor_tahun_pertama(baris):
-    m = re.search(r"(\d+[A-Za-z]?)\s*(?:/|\s+tahun\s+|\s+th\.?\s+)\s*(\d{4})", f"{baris.get('nomor', '')}", re.I)
+    teks = f"{baris.get('nomor', '')}"
+    m = re.search(r"(\d+[A-Za-z]?)\s*(?:/|\s+tahun\s+|\s+th\.?\s+)\s*(\d{4})", teks, re.I)
+    if not m:   # format lama: PER.04/MEN/1980, KEP.186/MEN/1999, No.25/MEN/XII/2008, PER/01/MEN/1976
+        m = re.search(r"(\d+)\s*/\s*MEN\s*/\s*(?:[IVXLC]+\s*/\s*)?(\d{4})", teks, re.I)
     return (m.group(1).lstrip("0").lower(), m.group(2)) if m else (None, None)
 
 
-def pilih_tautan(temuan, kelas, inst, no, th):
-    """Ambil tautan hanya bila jenis, instansi/provinsi, nomor, dan tahun semuanya cocok."""
+def pilih_temuan(temuan, kelas, inst, no, th):
+    """Ambil temuan hanya bila jenis, instansi/provinsi, nomor, dan tahun semuanya cocok."""
     for x in temuan:
         k, i = kelas_inst(x["jenis"])
         if x["nomor"].lstrip("0").lower() == no and x["tahun"] == th and k == kelas and (not inst or not i or i == inst):
-            return x["src"]
-    return ""
+            return x
+    return None
 
 
-def cari_tautan(baris, sesi):
-    """Cari halaman naskah resmi untuk satu baris register. Kembalikan URL atau ''."""
+def pilih_tautan(temuan, kelas, inst, no, th):
+    x = pilih_temuan(temuan, kelas, inst, no, th)
+    return x["src"] if x else ""
+
+
+KATA_UMUM = {"tentang", "dan", "atau", "yang", "di", "ke", "dari", "pada", "serta", "bagi", "untuk", "dalam", "atas", "k3", "tata", "cara", "the"}
+
+
+def kata_kunci_kemnaker(baris, no, th):
+    """Kotak Nomor/Tahun di JDIH Kemnaker tidak menyaring (diuji 10 Nov 2026); yang bekerja hanya kata kunci pada judul.
+    Urutan percobaan: 'Nomor N Tahun YYYY' (judul baku), lalu dua-tiga kata khas dari judul register (untuk judul format lama)."""
+    kata = [k for k in re.findall(r"[A-Za-z]{4,}", str(baris.get("judul", ""))) if k.lower() not in KATA_UMUM]
+    daftar = [f"Nomor {no} Tahun {th}"]
+    if len(kata) >= 2:
+        daftar.append(" ".join(kata[:3]))
+        daftar.append(" ".join(kata[:2]))
+    return daftar
+
+
+def cari_temuan(baris, sesi):
+    """Cari halaman naskah resmi untuk satu baris register. Kembalikan temuan (dict: src, tgl, status) atau None."""
     kelas, inst = kelas_inst(baris.get("nomor", "") + " " + baris.get("hier", ""))
     no, th = nomor_tahun_pertama(baris)
     if not no or kelas in ("lain", "se"):
-        return ""
+        return None
     if inst == "naker" and kelas in ("permen", "kepmen"):
-        url = f"https://jdih.kemnaker.go.id/peraturan?keyword=&nomor={no}&tahun={th}&status=&terjemahan=&per_page=15&sort=terbaru"
-        return pilih_tautan(baca_kemnaker(ambil(url, sesi), url), kelas, inst, no, th)
+        for kk in kata_kunci_kemnaker(baris, no, th):
+            url = f"https://jdih.kemnaker.go.id/peraturan?keyword={urllib.parse.quote_plus(kk)}&nomor=&tahun=&status=&terjemahan=&per_page=15&sort=terbaru"
+            x = pilih_temuan(baca_kemnaker(ambil(url, sesi), url), kelas, inst, no, th)
+            if x:
+                return x
+            time.sleep(1)
+        return None
     kata = urllib.parse.quote_plus(" ".join(str(baris.get("judul", "")).split()[:5]))
     url = f"https://peraturan.bpk.go.id/Search?keywords={kata}&tentang=&nomor={no}&tahun={th}"
-    return pilih_tautan(baca_generik(ambil(url, sesi), url, r"/Details/\d+"), kelas, inst, no, th)
+    return pilih_temuan(baca_generik(ambil(url, sesi), url, r"/Details/\d+"), kelas, inst, no, th)
+
+
+def tanggal_penetapan(html):
+    """Tanggal Penetapan pada halaman detail JDIH Kemnaker / 'Ditetapkan Tanggal' pada JDIH BPK. Kembalikan ISO atau ''."""
+    from bs4 import BeautifulSoup
+    t = re.sub(r"\s+", " ", BeautifulSoup(html, "html.parser").get_text(" ", strip=True))
+    m = re.search(r"(?:Tanggal Penetapan|Ditetapkan Tanggal|Tanggal Ditetapkan)\s*:?\s*(\d{1,2}\s+[A-Za-z]+\s+\d{4})", t)
+    return tanggal_iso(m.group(1)) if m else ""
+
+
 
 
 # ---------------------------------------------------------------- alur utama
@@ -328,11 +371,12 @@ def jalankan():
                 for kata in (s.get("kata") or [""]):
                     for pv in (prov_kini if s.get("per_provinsi") else [""]):
                         daftar.append((pola.replace("{tahun}", str(th)).replace("{kata}", urllib.parse.quote_plus(kata)).replace("{provinsi}", urllib.parse.quote_plus(pv)), pv or s.get("wil", "Nasional")))
-        berhasil = 0
+        berhasil = n_temuan = 0
         for url, wil in daftar:
             try:
                 html = ambil(url, sesi)
                 temuan = baca_kemnaker(html, url) if s["adapter"] == "kemnaker" else baca_generik(html, url, s.get("pola_href"))
+                n_temuan += len(temuan)
                 u, d = susun_kandidat(temuan, s, wil, aturan, tahun_min, punya, tolak_kid, ada_kid)
                 kandidat += u
                 disaring += d
@@ -345,16 +389,25 @@ def jalankan():
             except Exception as e:
                 gagal.append(dict(id=s["id"], url=url, galat=str(e)))
             time.sleep(jeda)
-        if berhasil:
-            ok.append(f"{s['nama']} ({berhasil}/{len(daftar)} halaman)")
+        if berhasil and n_temuan:
+            ok.append(f"{s['nama']} ({berhasil}/{len(daftar)} halaman, {n_temuan} judul regulasi terbaca)")
+        elif berhasil:   # halaman terbuka tetapi tidak memuat satu pun judul regulasi: jangan dilaporkan sebagai sumber yang terbaca
+            gagal.append(dict(id=s["id"], url=s["url"][0], galat="halaman terbuka tetapi tidak ada judul regulasi yang terbaca (daftar dimuat lewat JavaScript atau susunan halaman berubah)"))
     # cek ulang status baris yang punya tautan sumber resmi
+    tgl_terisi = 0
     berubah, bisa = [], [b for b in reg["baris"] if re.search(r"jdih\.kemnaker\.go\.id/peraturan/detail/|peraturan\.bpk\.go\.id/(Home/)?Details/", b.get("src", "")) and b["status"] not in ("Dicabut / Tidak Berlaku", "Kedaluwarsa")]
     bisa.sort(key=lambda b: b.get("cek", ""))
     for b in bisa[: int(cfg.get("cek_status_per_jalan", 60))]:
         if habis:
             break
         try:
-            st, bukti = status_dari_halaman(ambil(b["src"], sesi))
+            html_b = ambil(b["src"], sesi)
+            st, bukti = status_dari_halaman(html_b)
+            tp = tanggal_penetapan(html_b)
+            if tp and (not b.get("tgl_tetap") or b.get("tgl_asal") == "db"):   # tanggal dari sumber resmi menggantikan tanggal yang belum terverifikasi
+                b["tgl_tetap"] = tp
+                b.pop("tgl_asal", None)
+                tgl_terisi += 1
             if st == "Dicabut / Tidak Berlaku":
                 berubah.append(dict(id=b["id"], nomor=b["nomor"], dari=b["status"], ke=st, bukti=bukti, src=b["src"]))
                 b["status"] = st
@@ -373,16 +426,17 @@ def jalankan():
     terisi, tanpa = 0, [b for b in reg["baris"] if not b.get("src") and b["status"] not in ("Dicabut / Tidak Berlaku", "Kedaluwarsa")]
     tanpa.sort(key=lambda b: b.get("tautan_dicoba", ""))
     sudah = {}
-    for b in tanpa[: int(cfg.get("tautan_per_jalan", 40))]:
-        if habis:
+    kuota = int(cfg.get("tautan_per_jalan", 40))
+    for b in tanpa:     # baris yang sumbernya sedang diblokir dilewati TANPA memakan kuota (dulu 40 baris pertama selalu baris BPK yang ditolak, sehingga baris Kemnaker tidak pernah dicoba)
+        if habis or kuota <= 0:
             break
         kunci_b = norm(b.get("nomor", ""))
         try:
             if kunci_b not in sudah:
-                sudah[kunci_b] = cari_tautan(b, sesi)
+                sudah[kunci_b] = cari_temuan(b, sesi)
+                kuota -= 1
                 time.sleep(jeda)
             if sudah[kunci_b]:
-                b["src"] = sudah[kunci_b]
                 terisi += 1
         except HostDiblokir:
             continue                          # baris ini dicoba lagi besok, bukan ditandai "sudah dicoba"
@@ -392,9 +446,21 @@ def jalankan():
         except Exception as e:
             gagal.append(dict(id="tautan", url=b.get("nomor", ""), galat=str(e)))
         b["tautan_dicoba"] = HARI_INI
-    for b in reg["baris"]:   # baris lain dari regulasi yang sama ikut terisi
-        if not b.get("src") and sudah.get(norm(b.get("nomor", ""))):
-            b["src"] = sudah[norm(b.get("nomor", ""))]
+    for b in reg["baris"]:   # semua baris dari regulasi yang sama ikut terisi: tautan, tanggal ditetapkan, dan status pada sumber
+        x = sudah.get(norm(b.get("nomor", "")))
+        if not x or b.get("src"):
+            continue
+        b["src"] = x["src"]
+        if x.get("tgl") and (not b.get("tgl_tetap") or b.get("tgl_asal") == "db"):
+            b["tgl_tetap"] = x["tgl"]
+            b.pop("tgl_asal", None)
+            tgl_terisi += 1
+        if x.get("status") == "Dicabut / Tidak Berlaku" and b["status"] == "Berlaku":
+            berubah.append(dict(id=b["id"], nomor=b["nomor"], dari=b["status"], ke=x["status"], bukti="Status pada sumber: Tidak Berlaku", src=x["src"]))
+            b["status"] = x["status"]
+            b["cat"] = f"Status pada sumber: Tidak Berlaku (JDIH resmi, dicek {HARI_INI[8:]}-{HARI_INI[5:7]}-{HARI_INI[:4]}). Cari peraturan penggantinya dan ganti rujukan di prosedur/IK."
+        b["cek"] = HARI_INI
+    print(f"Tanggal ditetapkan terisi dari sumber resmi: {tgl_terisi}.")
     print(f"Tautan naskah resmi terisi: {terisi}; masih tanpa tautan: {sum(1 for b in reg['baris'] if not b.get('src'))}.")
     if terisi or tanpa or berubah or any(b.get("cek") == HARI_INI for b in bisa):
         reg["versi"] = HARI_INI
@@ -420,6 +486,10 @@ CONTOH_KEMNAKER = """<div class="card"><div class="card-body"><span>SKKNI - INDU
 <span class="badge">Berlaku</span><p>Organisasi dan Tata Kerja Kementerian Ketenagakerjaan</p><small>Ditetapkan: 24 September 2026</small></div></div>
 <div class="card"><div class="card-body"><h5><a href="/peraturan/detail/3070/x">Peraturan Menteri Ketenagakerjaan Nomor 11 Tahun 2026</a></h5>
 <span class="badge">Berlaku</span><p>Tata Cara Pengawasan Ketenagakerjaan</p><small>Ditetapkan: 29 Juni 2026</small></div></div>"""
+CONTOH_KEMNAKER_LAMA = """<div class="card"><div class="card-body"><h5><a href="https://jdih.kemnaker.go.id/peraturan/detail/159/peraturan-menakertrans-nomor-9-tahun-2010">Peraturan Menakertrans Nomor PER.09/MEN/VII/2010</a></h5>
+<span class="badge">Tidak Berlaku</span><p>Operator dan Petugas Pesawat Angkat dan Angkut</p><small>Ditetapkan: 13 Juli 2010</small></div></div>
+<div class="card"><div class="card-body"><h5><a href="/peraturan/detail/692/keputusan-menakertrans-nomor-245-tahun-2007">Keputusan Menakertrans Nomor KEP.245/MEN/V/2007</a></h5>
+<span class="badge">Berlaku</span><p>Penetapan Standar Kompetensi Kerja Nasional Indonesia Sektor Industri Minyak Dan Gas Bumi</p><small>Ditetapkan: 31 Mei 2007</small></div></div>"""
 CONTOH_GENERIK = """<ul><li><a href="/Details/999001/perda-prov-x-no-3-tahun-2026">Peraturan Daerah (PERDA) Provinsi Kalimantan Barat Nomor 3 Tahun 2026 tentang Pengelolaan Limbah Bahan Berbahaya dan Beracun</a></li>
 <li><div><a href="/Details/999002/pergub">Peraturan Gubernur Riau Nomor 12 Tahun 2026</a><p>Pajak Daerah dan Retribusi Daerah</p></div></li>
 <li><a href="/tentang">Tentang kami</a></li></ul>"""
@@ -453,6 +523,14 @@ def uji():
     assert pilih_tautan(hasil_cari, "kepmen", "naker", "199", "2026").endswith("nomor-199-tahun-2026")
     assert pilih_tautan(hasil_cari, "permen", "lh", "11", "2026") == "" and pilih_tautan(hasil_cari, "permen", "naker", "12", "2026") == ""
     assert pilih_tautan(b, "perda", "kalimantan barat", "3", "2026").endswith("/Details/999001/perda-prov-x-no-3-tahun-2026") and pilih_tautan(b, "perda", "riau", "3", "2026") == ""
+    lama_k = baca_kemnaker(CONTOH_KEMNAKER_LAMA, "https://jdih.kemnaker.go.id/peraturan")
+    assert len(lama_k) == 2 and lama_k[0]["nomor"] == "9" and lama_k[0]["tahun"] == "2010" and lama_k[0]["status"] == "Dicabut / Tidak Berlaku" and lama_k[0]["tgl"] == "2010-07-13", lama_k
+    assert kelas_inst(lama_k[0]["jenis"]) == ("permen", "naker") and kelas_inst(lama_k[1]["jenis"]) == ("kepmen", "naker"), lama_k
+    assert pilih_temuan(lama_k, "permen", "naker", "9", "2010")["src"].endswith("nomor-9-tahun-2010")
+    assert nomor_tahun_pertama(dict(nomor="Permenakertrans PER.04/MEN/1980")) == ("4", "1980") and nomor_tahun_pertama(dict(nomor="Kepmenaker No.25/MEN/XII/2008")) == ("25", "2008")
+    assert nomor_tahun_pertama(dict(nomor="Permenaker No. PER/01/MEN/1976")) == ("1", "1976")
+    assert kata_kunci_kemnaker(dict(judul="K3 Pesawat Angkat & Pesawat Angkut"), "8", "2020") == ["Nomor 8 Tahun 2020", "Pesawat Angkat Pesawat", "Pesawat Angkat"]
+    assert tanggal_penetapan("<dt>Tanggal Penetapan</dt><dd>08 Juni 2020</dd><dt>Tanggal Pengundangan</dt><dd>12 Juni 2020</dd>") == "2020-06-08"
     assert nomor_tahun_pertama(dict(nomor="UU 13/2003 jo. UU 6/2023")) == ("13", "2003") and nomor_tahun_pertama(dict(nomor="Permenaker No. 05 Tahun 2018")) == ("5", "2018")
     # --- pemutus host & batas waktu (penyebab run dibatalkan tiap hari sejak 13 Okt 2026) ---
     class _R:
