@@ -454,7 +454,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "1993-07-14"
   },
   {
    "id": "S-010",
@@ -584,7 +585,9 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "2013-12-19",
+   "tgl_berlaku": "2014-01-01"
   },
   {
    "id": "S-016",
@@ -2174,16 +2177,16 @@
    "hier": "KepMenaker",
    "nomor": "KepMenaker No 609 Tahun 2012",
    "judul": "Tentang Pedoman Penyelesaian Kasus Kecelakaan Kerja dan Penyakit Akibat Kerja",
-   "status": "Berlaku",
+   "status": "Dicabut / Tidak Berlaku",
    "pasal": "Ketentuan terkait (lihat kewajiban)",
    "kew": "1. Setiap tenaga kerjayang mengalami kecelakaan kerja dan penyakit akibat kerja berhak untuk memperoleh jaminan kecelakaan kerja. 2. Bahwa suatu kasus dinyatakan kasus kecelakaan kerja apabila terdapat unsur ruda paksa yaitu cedera pada tubuh manusia akibat suatu peristiwa atau kejadian (seperti terjatuh, terpukul, tertabrak dan lain-lain). 3. Penyakit Akibat Kerja yang selanjutnya disingkat PAK (Occupational Disease)yaitu penyakit yang disebabkan oleh pekerjaan atau lingkungan kerja yang dalam Keputusan Presiden Nomor 22 Tahun 1993 disebut Penyakit Yang Timbul Karena Hubungan Kerja",
    "jenis": "Teknis",
    "bukti": "Laporan inspeksi/pemantauan, foto kondisi, prosedur/IK terkait",
    "frek": "Sesuai ketentuan pasal",
    "pic": "QSHE",
-   "cat": "Dasar hukumnya (UU 3/1992, PP 14/1993, Keppres 22/1993, PER.04/MEN/1993) sudah diganti; tidak ditemukan pencabutan formal. Penyelesaian kasus KK/PAK kini mengacu Permenaker 5/2021 jo. 1/2025. Database pengguna 10/11/2026 menyebut dicabut Kepmenaker 136/2021 (8-10-2021); BELUM diverifikasi pada naskah, status tidak diubah. Konfirmasi di JDIH Kemnaker.",
+   "cat": "Dicabut oleh Kepmenaker 136/2021 (8-10-2021), terverifikasi di JDIH Kemnaker (status Tidak Berlaku). Penyelesaian kasus KK/PAK kini mengacu Permenaker 5/2021 jo. 1/2025; ganti rujukan di prosedur/IK.",
    "wil": "Nasional",
-   "src": "",
+   "src": "https://jdih.kemnaker.go.id/peraturan/detail/438/keputusan-menteri-tenaga-kerja-dan-transmigrasi-nomor-609-tahun-2012",
    "saran": "",
    "cek": "",
    "masuk": "",
@@ -2620,7 +2623,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "2003-03-10"
   },
   {
    "id": "H-006",
@@ -2640,7 +2644,9 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "2013-01-18",
+   "tgl_berlaku": "2014-01-01"
   },
   {
    "id": "H-007",
@@ -3240,7 +3246,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "2019-12-26"
   },
   {
    "id": "H-037",
@@ -3673,7 +3680,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "2005-09-10"
   },
   {
    "id": "E-010",
@@ -3693,7 +3701,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "2009-11-16"
   },
   {
    "id": "E-011",
@@ -4592,7 +4601,8 @@
    "src": "",
    "saran": "",
    "cek": "",
-   "masuk": ""
+   "masuk": "",
+   "tgl_tetap": "2020-11-02"
   },
   {
    "id": "E-058",
@@ -6517,7 +6527,7 @@
    "bukti": "",
    "frek": "",
    "pic": "",
-   "cat": "",
+   "cat": "Tanggal diverifikasi pada naskah (via pasal.id): ditetapkan 21-09-2026, diundangkan dan berlaku 29-09-2026 (Pasal 83); tanggal 29-09 di database pengguna adalah tanggal pengundangan.",
    "wil": "Nasional",
    "src": "https://pasal.id/peraturan/permen/permenklhbph-12-2026",
    "saran": "Regulasi baru masuk daftar: dugaan pidana ditangani dari laporan hasil pengawasan LH dan korporasi beserta penanggung jawabnya dapat dimintai pertanggungjawaban pidana. Selaraskan IK respons pengawasan LH (bersama Permen LH/BPLH 6/2026) dan ganti rujukan Permen LH 11/2012.",
@@ -6706,6 +6716,26 @@
    "wil": "Nasional",
    "src": "",
    "saran": "Masuk dari database: acuan teknis pengendalian emisi sumber tidak bergerak (genset, boiler, kompresor di workshop/cabang). QSHE: gunakan sebagai pelengkap baku mutu emisi terbaru saat menyusun IK pemantauan emisi; cek dahulu apakah masih berlaku.",
+   "cek": "2026-11-10",
+   "masuk": "2026-11-10"
+  },
+  {
+   "id": "S-210",
+   "kat": "Safety",
+   "hier": "Kepmenaker",
+   "nomor": "Kepmenaker 136/2021",
+   "judul": "Pencabutan Keputusan Menteri Tenaga Kerja dan Transmigrasi Nomor 609 Tahun 2012 tentang Pedoman Penyelesaian Kasus Kecelakaan Kerja dan Penyakit Akibat Kerja",
+   "status": "Berlaku",
+   "pasal": "",
+   "kew": "",
+   "jenis": "",
+   "bukti": "",
+   "frek": "",
+   "pic": "",
+   "cat": "Terverifikasi di JDIH Kemnaker: mencabut Kepmenaker 609/2012; substansi dialihkan ke Permenaker 5/2021.",
+   "wil": "Nasional",
+   "src": "https://jdih.kemnaker.go.id/peraturan/detail/1981/keputusan-menteri-ketenagakerjaan-nomor-136-tahun-2021",
+   "saran": "QSHE/HR: hapus rujukan Kepmenaker 609/2012 dari prosedur pelaporan dan penyelesaian kasus kecelakaan kerja/PAK; gunakan Permenaker 5/2021 jo. 1/2025 sebagai dasar. Tenggat: pada revisi IK pelaporan kecelakaan berikutnya.",
    "cek": "2026-11-10",
    "masuk": "2026-11-10"
   }
