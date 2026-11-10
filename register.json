@@ -1,5 +1,5 @@
 {
- "versi": "2026-11-09",
+ "versi": "2026-11-10",
  "baris": [
   {
    "id": "Q-001",
@@ -661,7 +661,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-11-10"
   },
   {
    "id": "S-020",
@@ -682,7 +682,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-09"
+   "tautan_dicoba": "2026-11-10"
   },
   {
    "id": "S-021",
@@ -2450,7 +2450,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3070/peraturan-menteri-ketenagakerjaan-nomor-11-tahun-2026",
    "saran": "",
-   "cek": "2026-11-09",
+   "cek": "2026-11-10",
    "masuk": ""
   },
   {
@@ -5348,7 +5348,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3072/keputusan-menteri-ketenagakerjaan-nomor-199-tahun-2026",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
-   "cek": "2026-11-09",
+   "cek": "2026-11-10",
    "masuk": "2026-10-07"
   },
   {
@@ -6095,7 +6095,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3059/keputusan-menteri-ketenagakerjaan-nomor-157-tahun-2026",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
-   "cek": "2026-11-09",
+   "cek": "2026-11-10",
    "masuk": "2026-10-08"
   },
   {
@@ -6115,7 +6115,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3054/keputusan-menteri-ketenagakerjaan-nomor-151-tahun-2026",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
-   "cek": "2026-11-09",
+   "cek": "2026-11-10",
    "masuk": "2026-10-08"
   },
   {
@@ -6255,7 +6255,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3102/keputusan-menteri-ketenagakerjaan-nomor-277-tahun-2026",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
-   "cek": "2026-11-09",
+   "cek": "2026-11-10",
    "masuk": "2026-11-09",
    "tgl_tetap": "2026-10-08"
   },
@@ -6297,7 +6297,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/2645/keputusan-menteri-ketenagakerjaan-nomor-46-tahun-2025",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
-   "cek": "2026-11-09",
+   "cek": "2026-11-10",
    "masuk": "2026-11-09",
    "tgl_tetap": "2025-03-10"
   },

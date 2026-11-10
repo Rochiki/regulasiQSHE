@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-11-09",
+ "diperbarui": "2026-11-10",
  "sumber_ok": [
   "JDIH Kemnaker (6/6 halaman)",
   "JDIH KLH/BPLH (1/1 halaman)",
@@ -35,16 +35,16 @@
   {
    "id": "dilewati",
    "url": "peraturan.bpk.go.id",
-   "galat": "91 URL dilewati: host gagal 3 URL berturut-turut (ditolak 401/403 atau tidak merespons) dari GitHub Actions"
+   "galat": "94 URL dilewati: host gagal 3 URL berturut-turut (ditolak 401/403 atau tidak merespons) dari GitHub Actions"
   }
  ],
  "provinsi_dicek": [
-  "Nusa Tenggara Timur",
-  "Maluku",
-  "Maluku Utara",
-  "Papua",
-  "Papua Selatan",
-  "Papua Barat Daya"
+  "Aceh",
+  "Sumatera Utara",
+  "Sumatera Barat",
+  "Riau",
+  "Jambi",
+  "Sumatera Selatan"
  ],
  "kandidat": [],
  "perubahan_status": [],
@@ -352,7 +352,7 @@
  ],
  "kesehatan": {
   "selesai": true,
-  "detik": 162,
+  "detik": 155,
   "batas_detik": 1020,
   "host_diblokir": [
    "peraturan.bpk.go.id"
