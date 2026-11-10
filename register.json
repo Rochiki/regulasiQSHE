@@ -87,8 +87,7 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-09",
-   "tgl_tetap": "2009-03-25",
-   "tgl_asal": "db"
+   "tgl_tetap": "2009-03-25"
   },
   {
    "id": "Q-007",
@@ -571,8 +570,7 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-09",
-   "tgl_tetap": "2012-10-12",
-   "tgl_asal": "db"
+   "tgl_tetap": "2012-10-12"
   },
   {
    "id": "S-015",
@@ -1038,8 +1036,7 @@
    "cek": "2026-09-16",
    "masuk": "",
    "tautan_dicoba": "2026-10-09",
-   "tgl_tetap": "2015-10-16",
-   "tgl_asal": "db"
+   "tgl_tetap": "2015-10-16"
   },
   {
    "id": "S-036",
@@ -1196,8 +1193,7 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2012-04-12",
-   "tgl_asal": "db"
+   "tgl_tetap": "2012-04-12"
   },
   {
    "id": "S-043",
@@ -1219,8 +1215,7 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2015-04-09",
-   "tgl_asal": "db"
+   "tgl_tetap": "2015-04-09"
   },
   {
    "id": "S-044",
@@ -1242,8 +1237,7 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2016-03-10",
-   "tgl_asal": "db"
+   "tgl_tetap": "2016-03-10"
   },
   {
    "id": "S-045",
@@ -1265,8 +1259,7 @@
    "cek": "2026-09-16",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2016-03-10",
-   "tgl_asal": "db"
+   "tgl_tetap": "2016-03-10"
   },
   {
    "id": "S-046",
@@ -1640,15 +1633,14 @@
    "bukti": "Laporan inspeksi/pemantauan, foto kondisi, prosedur/IK terkait",
    "frek": "Sesuai ketentuan pasal",
    "pic": "GA",
-   "cat": "pasal.id (11/11/2026): berstatus Diubah oleh PP 23/2014; pencabutan oleh PP 25/2021 belum terverifikasi, cek naskah PP 25/2021.",
+   "cat": "Berlaku sebagaimana diubah PP 23/2014. PP 25/2021 Pasal 63 menyatakan PP 14/2012 tetap berlaku sepanjang tidak bertentangan (dicek pada naskah via pasal.id, 11/11/2026).",
    "wil": "Nasional",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2012-01-24",
-   "tgl_asal": "db"
+   "tgl_tetap": "2012-01-24"
   },
   {
    "id": "S-064",
@@ -1890,22 +1882,21 @@
    "hier": "PERMEN ESDM",
    "nomor": "PERMEN ESDM NO.10 TAHUN 2016",
    "judul": "Tentang perubahan atas peraturan menteri ESDM No. 5 tahun 2014 tentang tata cara akreditasi dan sertifikasi ketenaga listrikan",
-   "status": "Berlaku",
+   "status": "Dicabut / Tidak Berlaku",
    "pasal": "Pasal 11; Pasal 15; Pasal 25",
    "kew": "Pasal 11 : setiap instalasi penyediaan tenaga listrik dan pemanfaat tenaga listrik tegangan tinggi dan tegangan menengah wajib memiliki sertifikat laik operasi . Pasal 15 : Instalasi penyediaan tenaga listrik wajib memiliki izin operasi Pasal 25 : Tenaga teknik ketenagalistrikan yang bekerja pada usaha ketenagalistrikan wajib memiliki Sertifikat Kompetensi yang diberikan oleh Lembaga Sertifikasi Kompetensi terakreditasi.",
    "jenis": "Teknis",
    "bukti": "Laporan inspeksi/pemantauan, foto kondisi, prosedur/IK terkait",
    "frek": "Sesuai ketentuan pasal",
    "pic": "GA",
-   "cat": "Perubahan Permen ESDM 5/2014 (akreditasi & sertifikasi ketenagalistrikan) — kemungkinan telah diganti regulasi 2021; konfirmasi JDIH ESDM.",
+   "cat": "Dicabut oleh Permen ESDM 38/2018 tentang Tata Cara Akreditasi dan Sertifikasi Ketenagalistrikan (dicek via pasal.id, 11/11/2026). Penggantinya belum ada di register; cek status terkini Permen ESDM 38/2018 sebelum dijadikan rujukan.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
-   "cek": "",
+   "cek": "2026-11-11",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2016-04-13",
-   "tgl_asal": "db"
+   "tgl_tetap": "2016-04-05"
   },
   {
    "id": "S-076",
@@ -1971,8 +1962,7 @@
    "cek": "2026-09-16",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2016-03-10",
-   "tgl_asal": "db"
+   "tgl_tetap": "2016-03-10"
   },
   {
    "id": "S-079",
@@ -2116,15 +2106,14 @@
    "bukti": "Laporan & bukti penyampaian ke instansi (tanda terima)",
    "frek": "Sesuai ketentuan pasal",
    "pic": "GA",
-   "cat": "Usaha jasa penunjang tenaga listrik — pengaturan perizinan sektor ESDM telah banyak disesuaikan pasca UU Cipta Kerja; konfirmasi status PP 62/2012 di JDIH ESDM.",
+   "cat": "Berlaku. PP 25/2021 Pasal 63 menyatakan PP 62/2012 tetap berlaku sepanjang tidak bertentangan (dicek pada naskah via pasal.id, 11/11/2026).",
    "wil": "Nasional",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2012-07-06",
-   "tgl_asal": "db"
+   "tgl_tetap": "2012-07-06"
   },
   {
    "id": "S-095",
@@ -2198,22 +2187,21 @@
    "hier": "Permen",
    "nomor": "Permen ESDM 12/2019",
    "judul": "Kapasitas Pembangkit untuk Kepentingan Sendiri",
-   "status": "Berlaku",
+   "status": "Dicabut / Tidak Berlaku",
    "pasal": "Pasal 2",
    "kew": "Pembangkit untuk kepentingan sendiri di atas batas kapasitas wajib izin operasi; di bawah batas wajib dilaporkan/dicatat sesuai ketentuan.",
    "jenis": "Perizinan",
    "bukti": "Izin operasi/laporan genset, data kVA per lokasi",
    "frek": "Tahunan",
    "pic": "GA",
-   "cat": "",
+   "cat": "Dicabut oleh Permen ESDM 11/2021 tentang Pelaksanaan Usaha Ketenagalistrikan (ditetapkan 2 Jun 2021, diundangkan 11 Jun 2021; abstrak resmi JDIH ESDM dan pasal.id, dicek 11/11/2026). Pengganti: S-211. Ganti rujukan di prosedur/IK genset.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
-   "cek": "",
+   "cek": "2026-11-11",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
-   "tgl_tetap": "2019-09-06",
-   "tgl_asal": "db"
+   "tgl_tetap": "2019-09-02"
   },
   {
    "id": "S-100",
@@ -2303,8 +2291,7 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2015-04-09",
-   "tgl_asal": "db"
+   "tgl_tetap": "2015-04-09"
   },
   {
    "id": "S-104",
@@ -2326,8 +2313,7 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2021-05-18",
-   "tgl_asal": "db"
+   "tgl_tetap": "2021-05-18"
   },
   {
    "id": "S-105",
@@ -2349,8 +2335,7 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2021-04-01",
-   "tgl_asal": "db"
+   "tgl_tetap": "2021-04-01"
   },
   {
    "id": "S-106",
@@ -2413,8 +2398,7 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2018-05-02",
-   "tgl_asal": "db"
+   "tgl_tetap": "2018-05-02"
   },
   {
    "id": "S-109",
@@ -2503,8 +2487,7 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2021-03-31",
-   "tgl_asal": "db"
+   "tgl_tetap": "2021-03-31"
   },
   {
    "id": "S-114",
@@ -2526,8 +2509,7 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2023-11-21",
-   "tgl_asal": "db"
+   "tgl_tetap": "2023-11-21"
   },
   {
    "id": "S-115",
@@ -2549,8 +2531,7 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2025-11-17",
-   "tgl_asal": "db"
+   "tgl_tetap": "2025-11-17"
   },
   {
    "id": "S-116",
@@ -2594,8 +2575,7 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "1981-01-26",
-   "tgl_asal": "db"
+   "tgl_tetap": "1981-04-01"
   },
   {
    "id": "H-002",
@@ -2947,8 +2927,7 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2016-01-26",
-   "tgl_asal": "db"
+   "tgl_tetap": "2016-01-26"
   },
   {
    "id": "H-018",
@@ -3010,8 +2989,7 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2022-08-31",
-   "tgl_asal": "db"
+   "tgl_tetap": "2022-08-31"
   },
   {
    "id": "H-021",
@@ -3160,8 +3138,7 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2016-10-26",
-   "tgl_asal": "db"
+   "tgl_tetap": "2016-09-28"
   },
   {
    "id": "H-028",
@@ -3243,15 +3220,14 @@
    "bukti": "Laporan inspeksi/pemantauan, foto kondisi, prosedur/IK terkait",
    "frek": "Sesuai ketentuan pasal",
    "pic": "GA",
-   "cat": "Peraturan pelaksana PP 33/2012 (ASI eksklusif) yang telah dicabut PP 28/2024; konfirmasi status di JDIH Kemenkes.",
+   "cat": "pasal.id mencatat Berlaku (ditetapkan 18 Feb 2013, diundangkan 15 Mar 2013; dicek 11/11/2026). Peraturan induknya PP 33/2012 telah dicabut PP 28/2024; cek kelanjutan pengaturan ruang laktasi.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2013-02-18",
-   "tgl_asal": "db"
+   "tgl_tetap": "2013-02-18"
   },
   {
    "id": "H-034",
@@ -3405,8 +3381,7 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2022-09-21",
-   "tgl_asal": "db"
+   "tgl_tetap": "2022-09-21"
   },
   {
    "id": "H-041",
@@ -3443,15 +3418,14 @@
    "bukti": "Sertifikat kalibrasi alkes",
    "frek": "Tahunan",
    "pic": "QSHE",
-   "cat": "Konfirmasi status pengujian & kalibrasi alat kesehatan di JDIH Kemenkes.",
+   "cat": "Berlaku, diubah sebagian oleh Permenkes 26/2018 (dicek via pasal.id, 11/11/2026).",
    "wil": "Nasional",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
-   "tgl_tetap": "2015-07-24",
-   "tgl_asal": "db"
+   "tgl_tetap": "2015-07-24"
   },
   {
    "id": "H-044",
@@ -3857,7 +3831,7 @@
    "bukti": "Laporan inspeksi/pemantauan, foto kondisi, prosedur/IK terkait",
    "frek": "Sesuai ketentuan pasal",
    "pic": "QSHE",
-   "cat": "pasal.id mencatat Berlaku; namun pedoman dokumen lingkungan sudah diatur ulang pasca PP 22/2021 (PermenLHK 4/2021). Konfirmasi JDIH KLH.",
+   "cat": "pasal.id mencatat Berlaku; tidak termasuk yang dicabut PermenLHK 4/2021 (yang dicabut hanya PermenLHK P.38/2019) (dicek pada naskah via pasal.id, 11/11/2026). Pedoman dokumen lingkungan kini mengikuti PP 22/2021 dan PermenLHK 4/2021.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
@@ -3873,18 +3847,18 @@
    "hier": "Permen LH",
    "nomor": "Permen LH 5 tahun 2006",
    "judul": "Ambang batas emisi gas buang kendaraan bermotor lama",
-   "status": "Berlaku",
+   "status": "Dicabut / Tidak Berlaku",
    "pasal": "Pasal 2; Pasal 4 (1); Pasal 3 ayat (1)",
    "kew": "Pasal 2 : Ruang lingkup peraturan ini meliputi ambang batas emisi gas buang, metode uji, prosedur pengujian, evaluasi, dan pelaporan pelaksanaan penaatan ambang batas emisi gas buang kendaraan bermotor lama. Pasal 4 (1) Setiap kendaraan bermotor lama wajib memenuhi ambang batas emisi gas buang kendaraan bermotor lama sebagaimana dimaksud dalam Pasal 3 ayat (1) (2) Setiap kendaraan bermotor lama wajib melakukan uji emisi sesuai dengan peraturan perundang-undangan.",
    "jenis": "Pelaporan",
    "bukti": "Laporan & bukti penyampaian ke instansi (tanda terima)",
    "frek": "Sesuai ketentuan pasal",
    "pic": "QSHE",
-   "cat": "Kemungkinan telah diganti pengaturan baku mutu emisi kendaraan yang lebih baru (Permen LH 8/2023); konfirmasi JDIH KLH.",
+   "cat": "Dicabut oleh PermenLHK 8/2023 tentang Penerapan Baku Mutu Emisi Kendaraan Bermotor Kategori M, N, O, dan L (ditetapkan 4 Agu 2023) (dicek pada naskah via pasal.id, 11/11/2026). Pengganti: E-085. Ganti rujukan di prosedur/IK uji emisi kendaraan operasional.",
    "wil": "Nasional",
    "src": "",
    "saran": "",
-   "cek": "",
+   "cek": "2026-11-11",
    "masuk": "",
    "tautan_dicoba": "2026-10-12",
    "tgl_tetap": "2006-08-01",
@@ -4523,7 +4497,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-12"
+   "tautan_dicoba": "2026-10-12",
+   "tgl_tetap": "2019-10-18"
   },
   {
    "id": "E-050",
@@ -4761,8 +4736,7 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2021-02-02",
-   "tgl_asal": "db"
+   "tgl_tetap": "2021-02-02"
   },
   {
    "id": "E-061",
@@ -4820,15 +4794,14 @@
    "bukti": "Laporan inspeksi/pemantauan, foto kondisi, prosedur/IK terkait",
    "frek": "Sesuai ketentuan pasal",
    "pic": "QSHE",
-   "cat": "Tidak ditemukan info pencabutan.",
+   "cat": "pasal.id mencatat Berlaku (dicek pada naskah via pasal.id, 11/11/2026).",
    "wil": "Nasional",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2021-04-01",
-   "tgl_asal": "db"
+   "tgl_tetap": "2021-04-01"
   },
   {
    "id": "E-065",
@@ -4850,8 +4823,7 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2021-04-01",
-   "tgl_asal": "db"
+   "tgl_tetap": "2021-04-01"
   },
   {
    "id": "E-066",
@@ -4873,8 +4845,7 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2021-04-01",
-   "tgl_asal": "db"
+   "tgl_tetap": "2021-04-01"
   },
   {
    "id": "E-067",
@@ -4896,8 +4867,7 @@
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2021-04-01",
-   "tgl_asal": "db"
+   "tgl_tetap": "2021-04-01"
   },
   {
    "id": "E-068",
@@ -4918,7 +4888,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2021-05-19"
   },
   {
    "id": "E-069",
@@ -5046,13 +5017,14 @@
    "bukti": "Laporan inspeksi/pemantauan, foto kondisi, prosedur/IK terkait",
    "frek": "Sesuai ketentuan pasal",
    "pic": "QSHE",
-   "cat": "Tidak ditemukan info pencabutan.",
+   "cat": "pasal.id mencatat Berlaku (dicek pada naskah via pasal.id, 11/11/2026).",
    "wil": "Nasional",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2021-06-25"
   },
   {
    "id": "E-075",
@@ -5291,8 +5263,8 @@
   {
    "id": "E-085",
    "kat": "Environment",
-   "hier": "Permen / Pergub",
-   "nomor": "Permen LH 8/2023 & Pergub DKI 66/2020",
+   "hier": "PermenLHK",
+   "nomor": "PermenLHK 8/2023 & Pergub DKI 66/2020",
    "judul": "Baku Mutu Emisi Kendaraan Kategori M, N, O, L; Uji Emisi",
    "status": "Berlaku",
    "pasal": "Permen 8/2023 Pasal 2; Pergub 66/2020 Pasal 3",
@@ -5301,13 +5273,14 @@
    "bukti": "Rekap uji emisi per kendaraan per lokasi",
    "frek": "Tahunan",
    "pic": "GA",
-   "cat": "",
+   "cat": "PermenLHK 8/2023 ditetapkan 4 Agu 2023, diundangkan 14 Agu 2023; mencabut Permen LH 5/2006 (dicek pada naskah via pasal.id, 11/11/2026).",
    "wil": "Nasional; DKI Jakarta",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2023-08-04"
   },
   {
    "id": "E-086",
@@ -5352,8 +5325,7 @@
    "cek": "2026-09-16",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2022-09-21",
-   "tgl_asal": "db"
+   "tgl_tetap": "2022-09-21"
   },
   {
    "id": "E-088",
@@ -5368,13 +5340,14 @@
    "bukti": "Laporan inspeksi/pemantauan, foto kondisi, prosedur/IK terkait",
    "frek": "Sesuai ketentuan pasal",
    "pic": "QSHE",
-   "cat": "Tidak ditemukan info pencabutan.",
+   "cat": "pasal.id mencatat Berlaku (dicek pada naskah via pasal.id, 11/11/2026).",
    "wil": "Nasional",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2023-10-26"
   },
   {
    "id": "E-089",
@@ -5389,15 +5362,14 @@
    "bukti": "Laporan inspeksi/pemantauan, foto kondisi, prosedur/IK terkait",
    "frek": "Sesuai ketentuan pasal",
    "pic": "QSHE",
-   "cat": "Tidak ditemukan info pencabutan.",
+   "cat": "pasal.id mencatat Berlaku (dicek pada naskah via pasal.id, 11/11/2026).",
    "wil": "Nasional",
    "src": "",
    "saran": "",
    "cek": "",
    "masuk": "",
    "tautan_dicoba": "2026-10-13",
-   "tgl_tetap": "2024-07-01",
-   "tgl_asal": "db"
+   "tgl_tetap": "2024-07-01"
   },
   {
    "id": "E-090",
@@ -5418,7 +5390,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2024-08-30"
   },
   {
    "id": "E-091",
@@ -5439,7 +5412,8 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-10-13"
+   "tautan_dicoba": "2026-10-13",
+   "tgl_tetap": "2024-08-30"
   },
   {
    "id": "E-092",
@@ -5726,8 +5700,7 @@
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
    "tautan_dicoba": "2026-11-09",
-   "tgl_tetap": "2017-11-06",
-   "tgl_asal": "db"
+   "tgl_tetap": "2017-11-03"
   },
   {
    "id": "S-117",
@@ -5769,8 +5742,7 @@
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2021-09-09",
-   "tgl_asal": "db"
+   "tgl_tetap": "2021-09-09"
   },
   {
    "id": "S-119",
@@ -5835,8 +5807,7 @@
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2012-05-15",
-   "tgl_asal": "db"
+   "tgl_tetap": "2012-05-15"
   },
   {
    "id": "S-122",
@@ -5937,14 +5908,13 @@
    "bukti": "",
    "frek": "",
    "pic": "",
-   "cat": "",
+   "cat": "Tanggal 2 Jul 2024: database pengguna dan pasal.id sama pada tanggal dan bulan (pasal.id salah menulis tahun 2026).",
    "wil": "Nasional",
    "src": "",
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2024-07-02",
-   "tgl_asal": "db"
+   "tgl_tetap": "2024-07-02"
   },
   {
    "id": "E-103",
@@ -5964,7 +5934,8 @@
    "src": "",
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
-   "masuk": "2026-10-07"
+   "masuk": "2026-10-07",
+   "tgl_tetap": "2021-10-25"
   },
   {
    "id": "E-104",
@@ -6050,8 +6021,7 @@
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
    "cek": "2026-10-07",
    "masuk": "2026-10-07",
-   "tgl_tetap": "2024-12-02",
-   "tgl_asal": "db"
+   "tgl_tetap": "2024-12-02"
   },
   {
    "id": "E-108",
@@ -6424,8 +6394,7 @@
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
    "cek": "2026-11-10",
    "masuk": "2026-10-08",
-   "tgl_tetap": "2026-06-08",
-   "tgl_asal": "db"
+   "tgl_tetap": "2026-06-08"
   },
   {
    "id": "E-201",
@@ -6635,14 +6604,14 @@
    "bukti": "",
    "frek": "",
    "pic": "",
-   "cat": "",
+   "cat": "Ditetapkan 27 Feb 2026, diundangkan dan berlaku 11 Mar 2026 (dicek via pasal.id, 11/11/2026).",
    "wil": "Nasional",
    "src": "https://www.peraturan.go.id/files/permenkes-no-3-tahun-2026.pdf",
    "saran": "Regulasi baru masuk daftar: ganti rujukan Permenkes 67/2016 (TB), 82/2014, dan 71/2015 pada IK/prosedur kesehatan kerja bila masih dipakai, dan petakan kewajiban tempat kerja (kesehatan lingkungan, Pasal 57) dari naskah resmi.",
    "cek": "2026-11-09",
    "masuk": "2026-11-09",
    "tgl_tetap": "2026-02-27",
-   "tgl_asal": "db"
+   "tgl_berlaku": "2026-03-11"
   },
   {
    "id": "H-052",
@@ -6812,6 +6781,27 @@
    "cek": "2026-11-11",
    "masuk": "2026-11-11",
    "tgl_tetap": "2022-04-06"
+  },
+  {
+   "id": "S-211",
+   "kat": "Safety",
+   "hier": "Permen ESDM",
+   "nomor": "Permen ESDM 11/2021",
+   "judul": "Pelaksanaan Usaha Ketenagalistrikan (mencabut antara lain Permen ESDM 12/2019)",
+   "status": "Berlaku",
+   "pasal": "",
+   "kew": "",
+   "jenis": "",
+   "bukti": "",
+   "frek": "",
+   "pic": "GA",
+   "cat": "Ditetapkan 2 Jun 2021, diundangkan 11 Jun 2021; mencabut Permen ESDM 26/2012, 28/2012 jo. 7/2016, 35/2013 jo. 12/2016, 36/2013, 1/2015, 1/2017, 10/2019, dan 12/2019 (abstrak resmi JDIH ESDM, dicek 11/11/2026).",
+   "wil": "Nasional",
+   "src": "https://jdih.esdm.go.id/storage/document/Permen%20ESDM%20No.%2011%20Tahun%202021%20new.pdf",
+   "saran": "Menggantikan Permen ESDM 12/2019 untuk genset/pembangkit kepentingan sendiri. GA dan QSHE: inventarisasi seluruh genset per lokasi (kapasitas kVA/kW), cocokkan dengan ketentuan perizinan atau pelaporan pembangkit untuk kepentingan sendiri dan Sertifikat Laik Operasi di peraturan ini, lalu perbarui daftar izin dan IK pengoperasian genset; petakan pasal kewajiban dari naskah.",
+   "cek": "2026-11-11",
+   "masuk": "2026-11-11",
+   "tgl_tetap": "2021-06-02"
   }
  ],
  "hapus": [

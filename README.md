@@ -62,6 +62,17 @@ JDIH pusat & daerah ──► robot (GitHub Actions) ──► kandidat.json ─
 Bila `register.json` tidak terjangkau (misalnya berkas dibuka langsung dari komputer), tombol memakai
 paket pembaruan yang tertanam di `index.html`.
 
+## Aturan data register.json (diperbarui 11 Nov 2026)
+
+- `tgl_tetap` = tanggal **ditetapkan** (bukan diundangkan); `tgl_berlaku` = tanggal mulai berlaku, diisi hanya bila naskah menyebutnya jelas.
+- `tgl_asal: "db"` = tanggal berasal dari database pengguna dan belum dicocokkan dengan naskah. Aplikasi menampilkannya sebagai "Terbit …" (miring). Setelah dicocokkan, betulkan tanggalnya dan hapus kunci ini.
+- `hapus` (di samping `baris`) = daftar ID baris ganda/keliru yang sudah dibuang dari register. Aplikasi ikut menghapusnya di perangkat pengguna saat sinkron. ID di daftar ini tidak boleh dipakai lagi.
+- Sebelum menambah baris, cocokkan **nomor + tahun + jenis + instansi**, bukan teks nomor ("Permentan 43/2019" sama dengan "PERATURAN MENTERI PERTANIAN … NOMOR 43 TAHUN 2019").
+- Baris arsip sebaiknya menyebut penggantinya di kolom `cat` dengan format `Pengganti: X-000`; menu **Cek database saya** memakainya.
+- ID 901 ke atas dipakai aplikasi untuk baris yang dibuat di perangkat; ID dari repositori selalu di bawah 900.
+- Baris yang tidak diubah manual di perangkat selalu mengikuti repositori (status, keterangan, tautan, tanggal). Data ditarik setiap kali aplikasi dibuka.
+- Robot harian mencari di JDIH Kemnaker dengan **kata kunci** (kotak Nomor/Tahun di situs itu tidak menyaring), lalu mengisi tautan, tanggal penetapan, dan status dari sana. JDIH KLH/BPLH dimuat lewat JavaScript dan tidak terbaca robot; pencariannya ditangani tugas terjadwal 3 harian.
+
 ## Membagikan perubahan ke seluruh tim
 
 Perubahan di aplikasi (menerima kandidat, menambah regulasi, mengubah baris) tersimpan di peramban perangkat itu.
