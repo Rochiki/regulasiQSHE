@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-11-11",
+ "diperbarui": "2026-11-12",
  "sumber_ok": [
   "JDIH Kemnaker (9/9 halaman, 135 judul regulasi terbaca)",
   "JDIH ESDM (1/1 halaman, 7 judul regulasi terbaca)",
@@ -43,12 +43,12 @@
   }
  ],
  "provinsi_dicek": [
-  "Kepulauan Bangka Belitung",
-  "Lampung",
-  "Banten",
-  "DKI Jakarta",
-  "Jawa Barat",
-  "Jawa Tengah"
+  "Jawa Timur",
+  "Kalimantan Barat",
+  "Kalimantan Tengah",
+  "Kalimantan Selatan",
+  "Kalimantan Timur",
+  "Kalimantan Utara"
  ],
  "kandidat": [
   {
@@ -112,51 +112,22 @@
    "ditemukan": "2026-11-11"
   }
  ],
- "perubahan_status": [
-  {
-   "id": "S-016",
-   "nomor": "KEP. 155/MEN/1984",
-   "dari": "Berlaku",
-   "ke": "Dicabut / Tidak Berlaku",
-   "bukti": "Status pada sumber: Tidak Berlaku",
-   "src": "https://jdih.kemnaker.go.id/peraturan/detail/1886/keputusan-menakertrans-nomor-155-tahun-1984"
-  }
- ],
+ "perubahan_status": [],
  "disaring": [
   {
-   "nomor": "Kepdirjen 3804/2026",
-   "judul": "Pedoman Pelayanan Penempatan Tenaga Kerja Antar Daerah",
+   "nomor": "Kepmenaker 315/2026",
+   "judul": "Pedoman Penguatan Integritas di Kementerian Ketenagakerjaan",
    "alasan": "skor relevansi 0 di bawah ambang"
   },
   {
-   "nomor": "Kepdirjen 1920/2026",
-   "judul": "Pedoman Sertifikasi Penguji Kompetensi Jabatan Fungsional Pengantar Kerja",
-   "alasan": "memuat 'jabatan fungsional'"
-  },
-  {
-   "nomor": "Kepdirjen 1919/2026",
-   "judul": "Pedoman Penetapan Petugas Antar Kerja dalam Penyelengaraan Layanan Penempatan Tenaga Kerja Dalam Negeri",
+   "nomor": "UU 27/2026",
+   "judul": "Pelindungan Ketenagakerjaan",
    "alasan": "skor relevansi 0 di bawah ambang"
   },
   {
-   "nomor": "Kepdirjen 1813/2026",
-   "judul": "Petunjuk Teknis Uji Kompetensi Jabatan Fungsional Pengantar Kerja",
-   "alasan": "memuat 'jabatan fungsional'"
-  },
-  {
-   "nomor": "Kepdirjen 1812/2026",
-   "judul": "Pedoman Evaluasi Kinerja Pengantar Kerja dan Petugas Antar Kerja",
-   "alasan": "memuat 'pengantar kerja'"
-  },
-  {
-   "nomor": "Keputusan Sekretaris Jenderal 1537/2026",
-   "judul": "Pencabutan Keputusan Sekretaris Jenderal Nomor 1/0235/KP.08.04/III/2021 tentang Unit Pembina Jabatan Fungsional di Lingkungan Kementerian Ketenagakerjaan",
-   "alasan": "memuat 'jabatan fungsional'"
-  },
-  {
-   "nomor": "Keputusan Sekretaris Jenderal 1536/2026",
-   "judul": "Pedoman Tata Cara Pengangkatan dan Pemberhentian Sekretaris dan Anggota Senat Politeknik Ketenagakerjaan",
-   "alasan": "memuat 'pengangkatan'"
+   "nomor": "Permenaker 16/2026",
+   "judul": "Perubahan Kedua Atas Peraturan Menteri Ketenagakerjaan Nomor 10 Tahun 2022 tentang Pedoman Pemberian Bantuan Pemerintah Berupa Subsidi Gaji/Upah Bagi Pekerja/Buruh",
+   "alasan": "memuat 'bantuan pemerintah'"
   },
   {
    "nomor": "Kepmenaker 299/2026",
@@ -164,7 +135,7 @@
    "alasan": "memuat 'pendidikan'"
   },
   {
-   "nomor": "Kepmenaker 298/2926",
+   "nomor": "Kepmenaker 298/2026",
    "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Kesehatan Manusia dan Aktivitas Sosial Golongan Pokok Aktivitas Sosial Tanpa Pekerjaan Sosial",
    "alasan": "skor relevansi 2 di bawah ambang"
   },
@@ -172,6 +143,11 @@
    "nomor": "Kepmenaker 297/2026",
    "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Profesional, Ilmiah, dan Teknis Golongan Pokok Aktivitas Kantor Pusat dan Konsultansi Manajemen Bidang Pengelolaan Penyuluhan Kelautan dan Perikanan",
    "alasan": "memuat 'perikanan'"
+  },
+  {
+   "nomor": "SE 8/2026",
+   "judul": "Hari Libur Nasional dan Cuti Bersama Tahun 2027 di Kementerian Ketenagakerjaan",
+   "alasan": "skor relevansi 0 di bawah ambang"
   },
   {
    "nomor": "Kepmenaker 283/2026",
@@ -209,6 +185,16 @@
    "alasan": "skor relevansi 2 di bawah ambang"
   },
   {
+   "nomor": "Permenaker 14/2026",
+   "judul": "Organisasi dan Tata Kerja Kementerian Ketenagakerjaan",
+   "alasan": "memuat 'organisasi dan tata kerja'"
+  },
+  {
+   "nomor": "Permenaker 13/2026",
+   "judul": "Pedoman Penyaluran Bantuan Pemerintah di Lingkungan Kementerian Ketenagakerjaan Tahun Anggaran 2027",
+   "alasan": "memuat 'anggaran'"
+  },
+  {
    "nomor": "Kepmenaker 256/2026",
    "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Pertambangan dan Penggalian Golongan Pokok Pertambangan Minyak Bumi Mentah dan Gas Alam Bidang Manajemen Tanggap Darurat, Krisis, dan Kelangsungan Bisnis",
    "alasan": "memuat 'minyak bumi'"
@@ -216,6 +202,11 @@
   {
    "nomor": "Kepmenaker 255/2026",
    "judul": "Program Mitra Kebijakan di Kementerian Ketenagakerjaan",
+   "alasan": "skor relevansi 0 di bawah ambang"
+  },
+  {
+   "nomor": "Keputusan Bersama Menteri Agam 3/2026",
+   "judul": "Hari Libur Nasional dan Cuti Bersama Tahun 2027",
    "alasan": "skor relevansi 0 di bawah ambang"
   },
   {
@@ -229,9 +220,24 @@
    "alasan": "memuat 'bantuan pemerintah'"
   },
   {
+   "nomor": "Keputusan Bersama Menteri Kete 1/2026",
+   "judul": "Integrasi Sistem Online Single Submission Pada Kementerian Investasi dan Hilirisasi/BKPM Dengan Sistem Informasi dan Aplikasi Pelayanan Ketenagakerjaan dan Aplikasi All Indonesia Pada Kementerian Imigrasi dan Pemasyarakatan Dalam Rangka Pelayanan Pengesahan Rencana Penggunaan Tenaga Kerja Asing Untuk Pengajuan Visa Tinggal Terbatas, Izin Tinggal Terbatas dan Izin Tinggal Terbatas dan Izin Tinggal Tetap Bagi Tenaga Kerja Asing Dalam Rangka Penanaman Modal",
+   "alasan": "memuat 'tenaga kerja asing'"
+  },
+  {
    "nomor": "Kepmenaker 247/2026",
    "judul": "Peta Jabatan Aparatur Sipil Negara di Kementerian Ketenagakerjaan",
    "alasan": "memuat 'peta jabatan'"
+  },
+  {
+   "nomor": "Permenaker 12/2026",
+   "judul": "Perubahan Ketiga atas Peraturan Menteri Ketenagakerjaan Nomor 8 Tahun 2025 tentang Pedoman Pemberian Bantuan Pemerintah Program Pemagangan Lulusan Perguruan Tinggi",
+   "alasan": "memuat 'bantuan pemerintah'"
+  },
+  {
+   "nomor": "Permen 9/2026",
+   "judul": "Jaminan Sosial Pekerja Migran Indonesia",
+   "alasan": "memuat 'pekerja migran'"
   },
   {
    "nomor": "Kepmenaker 235/2026",
@@ -241,6 +247,16 @@
   {
    "nomor": "Kepmenaker 230/2026",
    "judul": "Penyelenggaraan Pengembangan Talenta dan Inovasi Melalui Layanan Talenta dan Inovasi (Talent and Innovation Hub) di Kementerian Ketenagakerjaan",
+   "alasan": "skor relevansi 0 di bawah ambang"
+  },
+  {
+   "nomor": "SE 7/2026",
+   "judul": "Dukungan Pelaksanaan Sensus Ekonomi 2026",
+   "alasan": "skor relevansi 0 di bawah ambang"
+  },
+  {
+   "nomor": "Kepdirjen 3804/2026",
+   "judul": "Pedoman Pelayanan Penempatan Tenaga Kerja Antar Daerah",
    "alasan": "skor relevansi 0 di bawah ambang"
   },
   {
@@ -259,6 +275,26 @@
    "alasan": "memuat 'minyak bumi'"
   },
   {
+   "nomor": "PP 31/2026",
+   "judul": "Konsesi Bagi Penyandang Disabilitas dan Insentif Bagi Perusahaan",
+   "alasan": "skor relevansi 0 di bawah ambang"
+  },
+  {
+   "nomor": "PP 27/2026",
+   "judul": "Perubahan Kedua Atas Peraturan Pemerintah Nomor 99 Tahun 2013 Tentang Pengelolaan Aset Jaminan Sosial Ketenagakerjaan",
+   "alasan": "skor relevansi 3 di bawah ambang"
+  },
+  {
+   "nomor": "Permenaker 10/2026",
+   "judul": "Pencabutan Peraturan Menteri Tenaga Kerja dan Transmigrasi Nomor Per.12/Men/X/2011 tentang Atase Ketenagakerjaan dan Staf Teknis Ketenagakerjaan pada Perwakilan Republik Indonesia di Luar Negeri",
+   "alasan": "skor relevansi 0 di bawah ambang"
+  },
+  {
+   "nomor": "Permenaker 9/2026",
+   "judul": "Perubahan Kedua atas Peraturan Menteri Ketenagakerjaan Nomor 8 Tahun 2025 tentang Pedoman Pemberian Bantuan Pemerintah Program Pemagangan Lulusan Perguruan Tinggi",
+   "alasan": "memuat 'bantuan pemerintah'"
+  },
+  {
    "nomor": "Kepmenaker 153/2026",
    "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Pertambangan dan Penggalian Golongan Pokok Aktivitas Jasa Penunjang Pertambangan Bidang Intervensi Sumur Dengan Coiled Tubing",
    "alasan": "skor relevansi 3 di bawah ambang"
@@ -269,64 +305,9 @@
    "alasan": "memuat 'perikanan'"
   },
   {
-   "nomor": "Kepmenaker 150/2026",
-   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Telekomunikasi, Pemrograman Komputer, Konsultasi, Infrastruktur Komputasi, dan Jasa Informasi Lainnya Golongan Pokok Telekomunikasi Bidang Pengujian Perangkat dan Kalibrasi Alat Ukur Komunikasi",
-   "alasan": "memuat 'telekomunikasi'"
-  },
-  {
-   "nomor": "Kepmenaker 145/2026",
-   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Administrasi Pemerintahan dan Pertahanan, Serta Jaminan Sosial Wajib Bidang Pengawasan atau Audit Intern",
-   "alasan": "skor relevansi 3 di bawah ambang"
-  },
-  {
-   "nomor": "Kepmenaker 137/2026",
-   "judul": "Ketua Senat Politeknik Ketenagakerjaan Tahun 2026 - 2030",
-   "alasan": "memuat 'politeknik'"
-  },
-  {
-   "nomor": "Kepmenaker 125/2026",
-   "judul": "Pencabutan Keputusan Menteri Tenaga Kerja dan Transmigrasi Nomor KEP.190/MEN/VIII/2025 tentang Penetapan Standar Kompetensi Kerja Nasional Indonesia Sektor Perikanan Sub Sektor Budidaya Ikan Air Payau, Keputusan Menteri Tenaga Kerja dan Transmigrasi Nomor KEP.212/MEN/IX/2005 tentang Penetapan Standar Kompetensi Kerja Nasional Indonesia Sektor Perikanan Sub Sektor Budidaya Ikan Hias, dan Keputusan Menteri Tenaga Kerja dan Transmigrasi Nomor KEP.213/MEN/IX/2005 tentang Penetapan Standar Kompetensi Kerja Nasional Indonesia Sektor Perikanan Sub Sektor Teknika Perikanan Laut",
-   "alasan": "memuat 'perikanan'"
-  },
-  {
-   "nomor": "Kepmenaker 122/2026",
-   "judul": "Unit Organisasi Pembina Jabatan Fungsional di Kementerian Ketenagakerjaan",
-   "alasan": "memuat 'jabatan fungsional'"
-  },
-  {
-   "nomor": "Kepmenaker 121/2026",
-   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Administrasi Pemerintahan dan Pertahanan, Serta Jaminan Sosial Wajib Golongan Pokok Administrasi Pemerintahan dan Pertahanan, Serta Jaminan Sosial Wajib Bidang Manajemen Risiko Sektor Publik",
-   "alasan": "skor relevansi 3 di bawah ambang"
-  },
-  {
-   "nomor": "Kepmenaker 120/2026",
-   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Profesional, Ilmiah, dan Teknis Golongan Pokok Aktivitas Arsitektural dan Enjinering; Pengujian dan Analisis Teknis Bidang Arsitektur",
-   "alasan": "skor relevansi 2 di bawah ambang"
-  },
-  {
-   "nomor": "Kepmenaker 119/2026",
-   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Konstruksi Golongan Pokok Konstruksi Bangunan Sipil Pada Bidang Irigasi dan Rawa",
-   "alasan": "skor relevansi 2 di bawah ambang"
-  },
-  {
-   "nomor": "Kepmenaker 118/2026",
-   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Keuangan dan Asuransi Golongan Pokok Aktivitas Jasa Keuangan, Kecuali Asuransi dan Dana Pensiun Bidang Tresuri Pasar Uang dan Pasar Valuta Asing",
-   "alasan": "skor relevansi 2 di bawah ambang"
-  },
-  {
-   "nomor": "Kepmenaker 108/2026",
-   "judul": "Pedoman Tata Cara Pengangkatan dan Pemberhentian Direktur, Wakil Direktur, Ketua Senat, dan Dewan Penyantun Politeknik Ketenagakerjaan",
-   "alasan": "memuat 'pengangkatan'"
-  },
-  {
-   "nomor": "Kepmenaker 105/2026",
-   "judul": "Pencabutan Keputusan Menteri Tenaga Kerja dan Transmigrasi Nomor 225 Tahun 2014 tentang Standar Audit Aparat Pengawasan Intern Pemerintah Kementerian Tenaga kerja dan Transmigrasi",
-   "alasan": "memuat 'pencabutan keputusan'"
-  },
-  {
-   "nomor": "Kepmenaker 103/2026",
-   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Telekomunikasi, Pemrograman Komputer, Konsultansi, Infrastruktur Komputasi, dan Jasa Informasi Lainnya Golongan Pokok Aktivitas Pemrograman, Konsultansi Komputer, dan Aktivitas Terkait Bidang Keahlian Artificial Intelligence Subbidang Knowledge Based System",
-   "alasan": "memuat 'telekomunikasi'"
+   "nomor": "UU 27/2026",
+   "judul": "Pelindungan Ketenagakerjaan",
+   "alasan": "skor relevansi 0 di bawah ambang"
   },
   {
    "nomor": "Kepmenaker 282/2026",
@@ -394,17 +375,22 @@
    "alasan": "skor relevansi 3 di bawah ambang"
   },
   {
-   "nomor": "Kepmenaker 20/2025",
-   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Konstruksi Golongan Pokok Konstruksi Bangunan Sipil Bidang Terowongan",
-   "alasan": "skor relevansi 2 di bawah ambang"
-  },
-  {
    "nomor": "Permenaker 4/2025",
    "judul": "Operator Pesawat Uap",
    "alasan": "skor relevansi 3 di bawah ambang"
   },
   {
-   "nomor": "Kepmenaker 298/2926",
+   "nomor": "Kepmenaker 20/2025",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Konstruksi Golongan Pokok Konstruksi Bangunan Sipil Bidang Terowongan",
+   "alasan": "skor relevansi 2 di bawah ambang"
+  },
+  {
+   "nomor": "UU 27/2026",
+   "judul": "Pelindungan Ketenagakerjaan",
+   "alasan": "skor relevansi 0 di bawah ambang"
+  },
+  {
+   "nomor": "Kepmenaker 298/2026",
    "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Aktivitas Kesehatan Manusia dan Aktivitas Sosial Golongan Pokok Aktivitas Sosial Tanpa Pekerjaan Sosial",
    "alasan": "skor relevansi 2 di bawah ambang"
   },
@@ -422,11 +408,16 @@
    "nomor": "PP 27/2026",
    "judul": "Perubahan Kedua Atas Peraturan Pemerintah Nomor 99 Tahun 2013 Tentang Pengelolaan Aset Jaminan Sosial Ketenagakerjaan",
    "alasan": "skor relevansi 3 di bawah ambang"
+  },
+  {
+   "nomor": "Kepmenaker 317/2025",
+   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Industri Pengolahan Golongan Pokok Industri Produk  Dari  Batu  Bara  dan Pengilangan  Minyak  Bumi Bidang Pengelolaan dan Pengendalian Mutu Bahan Bakar Minyak Penerbangan",
+   "alasan": "memuat 'minyak bumi'"
   }
  ],
  "kesehatan": {
   "selesai": true,
-  "detik": 308,
+  "detik": 347,
   "batas_detik": 1020,
   "host_diblokir": [
    "peraturan.bpk.go.id"

@@ -1,5 +1,5 @@
 {
- "versi": "2026-11-11",
+ "versi": "2026-11-12",
  "baris": [
   {
    "id": "Q-001",
@@ -63,7 +63,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "2015-12-16",
    "tgl_asal": "db"
   },
@@ -196,7 +196,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "2026-09-16",
    "tgl_asal": "db"
   },
@@ -242,7 +242,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "2017-07-18",
    "tgl_asal": "db"
   },
@@ -634,7 +634,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "1987-08-03",
    "tgl_asal": "db"
   },
@@ -657,7 +657,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "1990-05-07",
    "tgl_asal": "db"
   },
@@ -678,7 +678,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3122/keputusan-menteri-tenaga-kerja-nomor-186-tahun-1999",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "1999-09-29"
@@ -700,7 +700,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/2608/keputusan-menteri-nomor-187-tahun-1999",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "1999-09-29"
@@ -724,7 +724,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "2016-12-27"
   },
   {
@@ -744,7 +744,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/308/keputusan-menakertrans-nomor-235-tahun-2003",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "2003-10-31"
@@ -788,7 +788,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "2008-12-18",
    "tgl_asal": "db"
   },
@@ -809,7 +809,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3119/peraturan-menteri-tenaga-kerja-transmigrasi-dan-koperasi-nomor-1-tahun-1976",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "1976-06-13"
@@ -833,7 +833,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "1979-02-28",
    "tgl_asal": "db"
   },
@@ -875,7 +875,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/242/peraturan-menteri-tenaga-kerja-nomor-2-tahun-1992",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "1992-12-30"
@@ -899,7 +899,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "1980-03-06",
    "tgl_asal": "db"
   },
@@ -922,7 +922,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "1980-03-14",
    "tgl_asal": "db"
   },
@@ -943,7 +943,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/2403/peraturan-menteri-nomor-1-tahun-1981",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "1981-04-04"
@@ -965,7 +965,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3078/peraturan-menteri-tenaga-kerja-dan-transmigrasi-nomor-2-tahun-1982",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "1982-03-08"
@@ -1030,7 +1030,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/1154/peraturan-menteri-ketenagakerjaan-nomor-31-tahun-2015",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "2015-10-16"
@@ -1052,7 +1052,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/242/peraturan-menteri-tenaga-kerja-nomor-2-tahun-1992",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "1992-12-30"
@@ -1096,7 +1096,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "1995-10-12",
    "tgl_asal": "db"
   },
@@ -1117,7 +1117,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/2214/peraturan-menteri-tenaga-kerja-nomor-3-tahun-1998",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "1998-02-26"
@@ -1141,7 +1141,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "2008-08-13",
    "tgl_asal": "db"
   },
@@ -1162,7 +1162,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/158/peraturan-menteri-nomor-8-tahun-2010",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "2010-07-06"
@@ -1206,7 +1206,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/610/peraturan-menteri-ketenagakerjaan-nomor-12-tahun-2015",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "2015-04-09"
@@ -1228,7 +1228,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/1210/peraturan-menteri-ketenagakerjaan-nomor-9-tahun-2016",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "2016-03-10"
@@ -1252,7 +1252,7 @@
    "saran": "",
    "cek": "2026-09-16",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "2016-03-10",
    "tgl_asal": "db"
   },
@@ -1275,7 +1275,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "1997-10-21",
    "tgl_asal": "db"
   },
@@ -1401,7 +1401,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "2008-05-12",
    "tgl_asal": "db"
   },
@@ -1424,7 +1424,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "2009-08-11",
    "tgl_asal": "db"
   },
@@ -1447,7 +1447,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11"
+   "tautan_dicoba": "2026-11-12"
   },
   {
    "id": "S-055",
@@ -1697,7 +1697,7 @@
    "saran": "berlaku untuk kantor pusat dan cabang di DKI Jakarta. HR: pastikan seluruh pekerja (termasuk kontrak/outsourcing) terdaftar di BPJS Ketenagakerjaan dan bukti kepesertaan tersedia untuk pengawas.",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11"
+   "tautan_dicoba": "2026-11-12"
   },
   {
    "id": "S-067",
@@ -1718,7 +1718,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11"
+   "tautan_dicoba": "2026-11-12"
   },
   {
    "id": "S-068",
@@ -1739,7 +1739,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11"
+   "tautan_dicoba": "2026-11-12"
   },
   {
    "id": "S-069",
@@ -1760,7 +1760,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11"
+   "tautan_dicoba": "2026-11-12"
   },
   {
    "id": "S-070",
@@ -1781,7 +1781,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11"
+   "tautan_dicoba": "2026-11-12"
   },
   {
    "id": "S-071",
@@ -1910,7 +1910,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/1429/peraturan-menteri-ketenagakerjaan-nomor-37-tahun-2016",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "2016-12-23"
@@ -1934,7 +1934,7 @@
    "saran": "",
    "cek": "2026-11-11",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "2016-12-27"
   },
   {
@@ -1956,7 +1956,7 @@
    "saran": "",
    "cek": "2026-09-16",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "2016-03-10",
    "tgl_asal": "db"
   },
@@ -2002,7 +2002,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11"
+   "tautan_dicoba": "2026-11-12"
   },
   {
    "id": "S-081",
@@ -2023,7 +2023,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11"
+   "tautan_dicoba": "2026-11-12"
   },
   {
    "id": "S-082",
@@ -2064,7 +2064,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11"
+   "tautan_dicoba": "2026-11-12"
   },
   {
    "id": "S-093",
@@ -2085,7 +2085,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "2006-09-11",
    "tgl_asal": "db"
   },
@@ -2128,7 +2128,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/1668/peraturan-menteri-ketenagakerjaan-nomor-8-tahun-2020",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
    "tgl_tetap": "2020-06-08"
@@ -2150,7 +2150,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/1668/peraturan-menteri-ketenagakerjaan-nomor-8-tahun-2020",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
    "tgl_tetap": "2020-06-08"
@@ -2172,7 +2172,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/1668/peraturan-menteri-ketenagakerjaan-nomor-8-tahun-2020",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-10-10",
    "tgl_tetap": "2020-06-08"
@@ -2261,7 +2261,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/1241/peraturan-menteri-tenaga-kerja-nomor-2-tahun-1989",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "1989-02-21"
@@ -2283,7 +2283,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/610/peraturan-menteri-ketenagakerjaan-nomor-12-tahun-2015",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "2015-04-09"
@@ -2414,7 +2414,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "2019-08-01",
    "tgl_asal": "db"
   },
@@ -2437,7 +2437,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11"
+   "tautan_dicoba": "2026-11-12"
   },
   {
    "id": "S-112",
@@ -2481,7 +2481,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "2021-03-31",
    "tgl_asal": "db"
   },
@@ -2502,7 +2502,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/2412/peraturan-menteri-ketenagakerjaan-nomor-11-tahun-2023",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "2023-11-21"
@@ -2524,7 +2524,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/2788/peraturan-menteri-ketenagakerjaan-nomor-13-tahun-2025",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "2025-11-17"
@@ -2546,7 +2546,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3070/peraturan-menteri-ketenagakerjaan-nomor-11-tahun-2026",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tgl_tetap": "2026-06-29",
    "tgl_berlaku": "2026-07-03"
@@ -2719,7 +2719,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/2405/keputusan-menteri-nomor-333-tahun-1989",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "1989-07-01"
@@ -2743,7 +2743,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "2004-04-26",
    "tgl_asal": "db"
   },
@@ -2764,7 +2764,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/284/keputusan-menteri-tenaga-kerja-dan-transmigrasi-nomor-68-tahun-2004",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "2004-04-28"
@@ -2786,7 +2786,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/2402/peraturan-menteri-nomor-2-tahun-1980",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "1980-03-13"
@@ -2850,7 +2850,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/2404/peraturan-menteri-nomor-3-tahun-1982",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "1982-04-23"
@@ -2872,7 +2872,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/2214/peraturan-menteri-tenaga-kerja-nomor-3-tahun-1998",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-10-11",
    "tgl_tetap": "1998-02-26"
@@ -2896,7 +2896,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "1979-01-12",
    "tgl_asal": "db"
   },
@@ -3263,7 +3263,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11"
+   "tautan_dicoba": "2026-11-12"
   },
   {
    "id": "H-036",
@@ -3348,7 +3348,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/2311/keputusan-menteri-ketenagakerjaan-nomor-88-tahun-2023",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "2023-05-29"
@@ -3370,7 +3370,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/2225/peraturan-menteri-ketenagakerjaan-nomor-13-tahun-2022",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "2022-09-21"
@@ -3459,7 +3459,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11"
+   "tautan_dicoba": "2026-11-12"
   },
   {
    "id": "H-046",
@@ -3480,7 +3480,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11"
+   "tautan_dicoba": "2026-11-12"
   },
   {
    "id": "H-047",
@@ -3501,7 +3501,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11"
+   "tautan_dicoba": "2026-11-12"
   },
   {
    "id": "H-048",
@@ -3522,7 +3522,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11"
+   "tautan_dicoba": "2026-11-12"
   },
   {
    "id": "E-001",
@@ -3977,7 +3977,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/2608/keputusan-menteri-nomor-187-tahun-1999",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "1999-09-29"
@@ -4001,7 +4001,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "1997-02-20",
    "tgl_asal": "db"
   },
@@ -4093,7 +4093,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11"
+   "tautan_dicoba": "2026-11-12"
   },
   {
    "id": "E-027",
@@ -4270,7 +4270,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11",
+   "tautan_dicoba": "2026-11-12",
    "tgl_tetap": "2010-03-29",
    "tgl_asal": "db"
   },
@@ -4316,7 +4316,7 @@
    "saran": "",
    "cek": "",
    "masuk": "",
-   "tautan_dicoba": "2026-11-11"
+   "tautan_dicoba": "2026-11-12"
   },
   {
    "id": "E-038",
@@ -5379,7 +5379,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/2436/keputusan-menteri-ketenagakerjaan-nomor-11-tahun-2024",
    "saran": "",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "2024-08-30"
@@ -5556,7 +5556,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3072/keputusan-menteri-ketenagakerjaan-nomor-199-tahun-2026",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "2026-10-07",
    "tgl_tetap": "2026-07-14"
   },
@@ -5772,7 +5772,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/227/peraturan-menteri-tenaga-kerja-dan-transmigrasi-nomor-15-tahun-2005",
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "2026-10-07",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "2005-07-26"
@@ -5880,7 +5880,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/225/peraturan-menteri-tenaga-kerja-dan-transmigrasi-nomor-11-tahun-2005",
    "saran": "Ditambahkan dari telaah kelengkapan daftar: pastikan sudah tercakup dalam prosedur/IK dan evaluasi kepatuhan.",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "2026-10-07",
    "tautan_dicoba": "2026-11-11",
    "tgl_tetap": "2005-06-27"
@@ -6360,7 +6360,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3059/keputusan-menteri-ketenagakerjaan-nomor-157-tahun-2026",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "2026-10-08",
    "tgl_tetap": "2026-06-15"
   },
@@ -6381,7 +6381,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3054/keputusan-menteri-ketenagakerjaan-nomor-151-tahun-2026",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "2026-10-08",
    "tgl_tetap": "2026-06-08"
   },
@@ -6534,7 +6534,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/3102/keputusan-menteri-ketenagakerjaan-nomor-277-tahun-2026",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "2026-11-09",
    "tgl_tetap": "2026-10-08"
   },
@@ -6576,7 +6576,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/2645/keputusan-menteri-ketenagakerjaan-nomor-46-tahun-2025",
    "saran": "Regulasi baru masuk daftar: sosialisasikan ke PIC terkait, petakan pasal dari naskah resmi, lalu selaraskan prosedur/IK.",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "2026-11-09",
    "tgl_tetap": "2025-03-10"
   },
@@ -6726,7 +6726,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/2642/peraturan-menteri-ketenagakerjaan-nomor-1-tahun-2025",
    "saran": "HR/QSHE selaraskan prosedur pelaporan dan klaim kecelakaan kerja/PAK dengan Permenaker 5/2021 sebagaimana diubah; telaah naskah untuk mengetahui pasal yang berubah (tenggat pelaporan, pihak pelapor) sebelum IK pelaporan kecelakaan direvisi.",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "2026-11-10",
    "tgl_tetap": "2025-02-18",
    "tautan_dicoba": "2026-11-11"
@@ -6748,7 +6748,7 @@
    "wil": "Nasional",
    "src": "https://jdih.kemnaker.go.id/peraturan/detail/1981/keputusan-menteri-ketenagakerjaan-nomor-136-tahun-2021",
    "saran": "QSHE/HR: hapus rujukan Kepmenaker 609/2012 dari prosedur pelaporan dan penyelesaian kasus kecelakaan kerja/PAK; gunakan Permenaker 5/2021 jo. 1/2025 sebagai dasar. Tenggat: pada revisi IK pelaporan kecelakaan berikutnya.",
-   "cek": "2026-11-11",
+   "cek": "2026-11-12",
    "masuk": "2026-11-10",
    "tgl_tetap": "2021-10-08"
   },
