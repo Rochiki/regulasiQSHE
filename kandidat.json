@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-11-12",
+ "diperbarui": "2026-11-13",
  "sumber_ok": [
   "JDIH Kemnaker (9/9 halaman, 135 judul regulasi terbaca)",
   "JDIH ESDM (1/1 halaman, 7 judul regulasi terbaca)",
@@ -39,16 +39,16 @@
   {
    "id": "dilewati",
    "url": "peraturan.bpk.go.id",
-   "galat": "189 URL dilewati: host gagal 3 URL berturut-turut (ditolak 401/403 atau tidak merespons) dari GitHub Actions"
+   "galat": "182 URL dilewati: host gagal 3 URL berturut-turut (ditolak 401/403 atau tidak merespons) dari GitHub Actions"
   }
  ],
  "provinsi_dicek": [
-  "Jawa Timur",
-  "Kalimantan Barat",
-  "Kalimantan Tengah",
-  "Kalimantan Selatan",
-  "Kalimantan Timur",
-  "Kalimantan Utara"
+  "Sulawesi Utara",
+  "Gorontalo",
+  "Sulawesi Tengah",
+  "Sulawesi Selatan",
+  "Sulawesi Tenggara",
+  "Nusa Tenggara Barat"
  ],
  "kandidat": [
   {
@@ -114,6 +114,11 @@
  ],
  "perubahan_status": [],
  "disaring": [
+  {
+   "nomor": "Kepmenaker 316/2026",
+   "judul": "Sentralisasi Belanja Pegawai di Kementerian Ketenagakerjaan",
+   "alasan": "skor relevansi 0 di bawah ambang"
+  },
   {
    "nomor": "Kepmenaker 315/2026",
    "judul": "Pedoman Penguatan Integritas di Kementerian Ketenagakerjaan",
@@ -408,16 +413,11 @@
    "nomor": "PP 27/2026",
    "judul": "Perubahan Kedua Atas Peraturan Pemerintah Nomor 99 Tahun 2013 Tentang Pengelolaan Aset Jaminan Sosial Ketenagakerjaan",
    "alasan": "skor relevansi 3 di bawah ambang"
-  },
-  {
-   "nomor": "Kepmenaker 317/2025",
-   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Industri Pengolahan Golongan Pokok Industri Produk  Dari  Batu  Bara  dan Pengilangan  Minyak  Bumi Bidang Pengelolaan dan Pengendalian Mutu Bahan Bakar Minyak Penerbangan",
-   "alasan": "memuat 'minyak bumi'"
   }
  ],
  "kesehatan": {
   "selesai": true,
-  "detik": 347,
+  "detik": 332,
   "batas_detik": 1020,
   "host_diblokir": [
    "peraturan.bpk.go.id"
