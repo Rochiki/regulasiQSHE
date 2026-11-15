@@ -5493,15 +5493,15 @@
    "bukti": "Laporan inspeksi/pemantauan, foto kondisi, prosedur/IK terkait",
    "frek": "Sesuai ketentuan pasal",
    "pic": "QSHE",
-   "cat": "Tidak ditemukan info pencabutan.",
+   "cat": "Ditetapkan 22 Okt 2025, diundangkan 27 Okt 2025 (LN 2025 No. 873), berlaku pada tanggal diundangkan (Pasal 16). Pasal 15 menyatakan Pasal 56, 57, 58 Permen LHK 18/2021 tidak berlaku (dicek via pasal.id, 15/11/2026; halaman pasal.id berstatus belum ditinjau, bandingkan dengan naskah JDIH KLH).",
    "wil": "Nasional",
-   "src": "",
+   "src": "https://pasal.id/peraturan/permen/permenklhbph-no-22-tahun-2025",
    "saran": "",
-   "cek": "",
-   "masuk": "",
+   "cek": "2026-11-15",
+   "masuk": "2026-11-15",
    "tautan_dicoba": "2026-10-13",
    "tgl_tetap": "2025-10-22",
-   "tgl_asal": "db"
+   "tgl_berlaku": "2025-10-27"
   },
   {
    "id": "E-096",
@@ -6708,12 +6708,14 @@
    "bukti": "",
    "frek": "",
    "pic": "",
-   "cat": "",
+   "cat": "Ditetapkan 26 Okt 2026, diundangkan 2 Nov 2026 (LN 2026 No. 747), berlaku pada tanggal diundangkan (Pasal 41). Pasal 40 mencabut Permen LHK P.15/MENLHK/SETJEN/PLA.4/7/2020 (pengawasan RKL-RPL rinci di KEK). Pasal 39: pengelola kawasan wajib memiliki Petugas Lingkungan Kawasan dalam 6 bulan sejak diundangkan, yaitu paling lambat 2 Mei 2027 (dicek via pasal.id, 15/11/2026; belum ditinjau, cocokkan dengan naskah JDIH KLH).",
    "wil": "Nasional",
-   "src": "",
+   "src": "https://pasal.id/peraturan/permen/permenklhbph-14-2026",
    "saran": "Regulasi baru masuk daftar (judul dari naskah, tanggal ditetapkan/berlaku belum terverifikasi): berlaku bagi usaha di dalam kawasan (mis. kawasan industri). Cabang/site yang berada di kawasan: cek RKL-RPL rinci, kewajiban pelaporan ke pengelola kawasan, dan risiko sanksi administratif; petakan pasal dari naskah resmi lalu selaraskan prosedur.",
-   "cek": "2026-11-09",
-   "masuk": "2026-11-09"
+   "cek": "2026-11-15",
+   "masuk": "2026-11-09",
+   "tgl_tetap": "2026-10-26",
+   "tgl_berlaku": "2026-11-02"
   },
   {
    "id": "S-206",
