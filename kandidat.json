@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-11-15",
+ "diperbarui": "2026-11-16",
  "sumber_ok": [
   "JDIH Kemnaker (9/9 halaman, 135 judul regulasi terbaca)",
   "JDIH ESDM (1/1 halaman, 7 judul regulasi terbaca)",
@@ -39,16 +39,16 @@
   {
    "id": "dilewati",
    "url": "peraturan.bpk.go.id",
-   "galat": "182 URL dilewati: host gagal 3 URL berturut-turut (ditolak 401/403 atau tidak merespons) dari GitHub Actions"
+   "galat": "180 URL dilewati: host gagal 3 URL berturut-turut (ditolak 401/403 atau tidak merespons) dari GitHub Actions"
   }
  ],
  "provinsi_dicek": [
-  "Aceh",
-  "Sumatera Utara",
-  "Sumatera Barat",
-  "Riau",
-  "Jambi",
-  "Sumatera Selatan"
+  "Kepulauan Bangka Belitung",
+  "Lampung",
+  "Banten",
+  "DKI Jakarta",
+  "Jawa Barat",
+  "Jawa Tengah"
  ],
  "kandidat": [
   {
@@ -417,7 +417,7 @@
  ],
  "kesehatan": {
   "selesai": true,
-  "detik": 331,
+  "detik": 325,
   "batas_detik": 1020,
   "host_diblokir": [
    "peraturan.bpk.go.id"
