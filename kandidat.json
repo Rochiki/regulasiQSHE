@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-11-17",
+ "diperbarui": "2026-11-18",
  "sumber_ok": [
   "JDIH Kemnaker (9/9 halaman, 135 judul regulasi terbaca)",
   "JDIH ESDM (1/1 halaman, 7 judul regulasi terbaca)",
@@ -43,12 +43,12 @@
   }
  ],
  "provinsi_dicek": [
-  "Jawa Timur",
-  "Kalimantan Barat",
-  "Kalimantan Tengah",
-  "Kalimantan Selatan",
-  "Kalimantan Timur",
-  "Kalimantan Utara"
+  "Sulawesi Utara",
+  "Gorontalo",
+  "Sulawesi Tengah",
+  "Sulawesi Selatan",
+  "Sulawesi Tenggara",
+  "Nusa Tenggara Barat"
  ],
  "kandidat": [
   {
@@ -114,6 +114,11 @@
  ],
  "perubahan_status": [],
  "disaring": [
+  {
+   "nomor": "Permenaker 17/2026",
+   "judul": "Pencabutan Peraturan Menteri Ketenagakerjaan Nomor 4 Tahun 2023 tentang Jaminan Sosial Pekerja Migran Indonesia",
+   "alasan": "memuat 'pekerja migran'"
+  },
   {
    "nomor": "Kepmenaker 316/2026",
    "judul": "Sentralisasi Belanja Pegawai di Kementerian Ketenagakerjaan",
@@ -305,11 +310,6 @@
    "alasan": "skor relevansi 3 di bawah ambang"
   },
   {
-   "nomor": "Kepmenaker 152/2026",
-   "judul": "Penetapan Standar Kompetensi Kerja Nasional Indonesia Kategori Pertanian, Kehutanan, dan Perikanan Golongan Pokok Perikanan Bidang Pengembangbiakan Karang Hias",
-   "alasan": "memuat 'perikanan'"
-  },
-  {
    "nomor": "UU 27/2026",
    "judul": "Pelindungan Ketenagakerjaan",
    "alasan": "skor relevansi 0 di bawah ambang"
@@ -417,7 +417,7 @@
  ],
  "kesehatan": {
   "selesai": true,
-  "detik": 336,
+  "detik": 316,
   "batas_detik": 1020,
   "host_diblokir": [
    "peraturan.bpk.go.id"
