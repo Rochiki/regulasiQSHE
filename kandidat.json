@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-11-20",
+ "diperbarui": "2026-11-21",
  "sumber_ok": [
   "JDIH Kemnaker (9/9 halaman, 135 judul regulasi terbaca)",
   "JDIH ESDM (1/1 halaman, 7 judul regulasi terbaca)",
@@ -43,12 +43,12 @@
   }
  ],
  "provinsi_dicek": [
-  "Aceh",
-  "Sumatera Utara",
-  "Sumatera Barat",
-  "Riau",
-  "Jambi",
-  "Sumatera Selatan"
+  "Kepulauan Bangka Belitung",
+  "Lampung",
+  "Banten",
+  "DKI Jakarta",
+  "Jawa Barat",
+  "Jawa Tengah"
  ],
  "kandidat": [
   {
@@ -417,7 +417,7 @@
  ],
  "kesehatan": {
   "selesai": true,
-  "detik": 321,
+  "detik": 334,
   "batas_detik": 1020,
   "host_diblokir": [
    "peraturan.bpk.go.id"
